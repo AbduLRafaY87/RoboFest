@@ -1,0 +1,735 @@
+/* =========================================================
+   MODERN ROBOTICS NAVBAR
+   ========================================================= */
+
+.navbar-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 14, 20, 0.94),
+      rgba(10, 14, 20, 0.82)
+    );
+
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.18);
+
+  isolation: isolate;
+}
+
+/* Subtle futuristic bottom glow */
+.navbar-header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 55%;
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 210, 255, 0.65),
+    rgba(58, 123, 213, 0.65),
+    transparent
+  );
+
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   NAVBAR CONTAINER
+   ========================================================= */
+
+.navbar {
+  max-width: 1350px;
+  min-height: 72px;
+
+  margin: 0 auto;
+
+  padding: 0.75rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.navbar-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  height: 42px;
+  width: auto;
+
+  display: block;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.navbar-logo:hover img {
+  transform: scale(1.04);
+
+  filter:
+    drop-shadow(0 0 10px rgba(0, 210, 255, 0.2));
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.35rem;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+
+/* =========================================================
+   NAV LINK
+   ========================================================= */
+
+.nav-link {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.65rem 0.9rem;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 550;
+  letter-spacing: 0.01em;
+
+  border-radius: 8px;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+/* Hover background */
+.nav-link:hover {
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.045);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ACTIVE NAV LINK
+   Add .active to current page
+   ========================================================= */
+
+.nav-link.active {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 210, 255, 0.10),
+      rgba(58, 123, 213, 0.06)
+    );
+
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 210, 255, 0.08);
+}
+
+
+/* Active indicator */
+.nav-link.active::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 18px;
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #00d2ff,
+    #3a7bd5
+  );
+
+  box-shadow:
+    0 0 10px rgba(0, 210, 255, 0.55);
+}
+
+
+/* =========================================================
+   HOVER INDICATOR
+   ========================================================= */
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #00d2ff,
+    #3a7bd5
+  );
+
+  box-shadow:
+    0 0 8px rgba(0, 210, 255, 0.5);
+
+  transition:
+    width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after {
+  width: 22px;
+}
+
+
+/* =========================================================
+   DROPDOWN ARROW
+   ========================================================= */
+
+.arrow {
+  font-size: 0.65rem;
+
+  opacity: 0.55;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav-link:hover .arrow {
+  opacity: 1;
+}
+
+.dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+   ========================================================= */
+
+.dropdown-menu {
+  position: absolute;
+
+  top: calc(100% + 0.5rem);
+  left: 50%;
+
+  min-width: 230px;
+
+  transform:
+    translate(-50%, 10px)
+    scale(0.97);
+
+  transform-origin: top center;
+
+  padding: 0.45rem;
+
+  list-style: none;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(27, 31, 38, 0.98),
+      rgba(16, 19, 24, 0.98)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(0, 210, 255, 0.025);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  pointer-events: none;
+
+  transition:
+    opacity 0.22s ease,
+    transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.22s ease;
+}
+
+
+/* Small glowing top line */
+.dropdown-menu::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 20%;
+  right: 20%;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 210, 255, 0.7),
+    transparent
+  );
+}
+
+
+/* Active dropdown */
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, 0)
+    scale(1);
+}
+
+
+/* =========================================================
+   DROPDOWN LINKS
+   ========================================================= */
+
+.dropdown-menu li {
+  margin: 2px 0;
+}
+
+.dropdown-menu li a {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0.75rem 0.9rem;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  text-decoration: none;
+
+  font-size: 0.87rem;
+  font-weight: 500;
+
+  border-radius: 9px;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 210, 255, 0.10),
+      rgba(58, 123, 213, 0.04)
+    );
+
+  padding-left: 1.1rem;
+}
+
+
+/* Tiny indicator */
+.dropdown-menu li a::before {
+  content: "";
+
+  width: 4px;
+  height: 4px;
+
+  margin-right: 0;
+
+  border-radius: 50%;
+
+  background: #00d2ff;
+
+  opacity: 0;
+
+  transform: scale(0);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    margin-right 0.2s ease;
+}
+
+.dropdown-menu li a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  margin-right: 8px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   Use this for "Register", "Join Competition", etc.
+   ========================================================= */
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.65rem 1.05rem;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00b8e6,
+      #3474d4
+    );
+
+  box-shadow:
+    0 5px 18px rgba(0, 174, 239, 0.18);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+
+  filter: brightness(1.08);
+
+  box-shadow:
+    0 8px 25px rgba(0, 174, 239, 0.30);
+}
+
+
+/* =========================================================
+   HAMBURGER
+   ========================================================= */
+
+.hamburger {
+  display: none;
+
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 5px;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color:
+    rgba(0, 210, 255, 0.25);
+}
+
+.bar {
+  width: 19px;
+  height: 2px;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+
+/* Hamburger animation */
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.nav-link:focus-visible,
+.dropdown-menu a:focus-visible,
+.nav-cta:focus-visible,
+.hamburger:focus-visible {
+  outline: 2px solid #00d2ff;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 968px) {
+
+  .navbar {
+    min-height: 66px;
+    padding: 0.7rem 1.25rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0.25rem;
+
+    padding: 0.8rem;
+
+    background:
+      rgba(10, 14, 20, 0.98);
+
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+      0 20px 35px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(20px);
+  }
+
+  .nav-links.open {
+    display: flex;
+
+    animation:
+      mobileMenuIn 0.25s ease forwards;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+
+    padding: 0.85rem 1rem;
+
+    border-radius: 9px;
+  }
+
+  .nav-link:hover {
+    background:
+      rgba(255, 255, 255, 0.05);
+
+    transform: none;
+  }
+
+  .nav-link::after,
+  .nav-link.active::before {
+    display: none;
+  }
+
+
+  /* Mobile dropdown */
+
+  .dropdown-menu {
+    position: static;
+
+    width: 100%;
+    min-width: 0;
+
+    transform: none !important;
+
+    margin-top: 0.25rem;
+
+    padding: 0.35rem;
+
+    background:
+      rgba(255, 255, 255, 0.025);
+
+    border:
+      1px solid rgba(255, 255, 255, 0.05);
+
+    border-radius: 10px;
+
+    box-shadow: none;
+
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .dropdown-menu li a {
+    padding: 0.7rem 0.9rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar-logo img {
+    height: 36px;
+  }
+
+  .nav-links {
+    padding: 0.7rem;
+  }
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes mobileMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

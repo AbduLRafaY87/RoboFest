@@ -1,0 +1,150 @@
+.wro-footer {
+  background-color: #12091b; /* Dark purple background matching the layout */
+  color: #ffffff;
+  position: relative;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; */
+  overflow: hidden;
+  padding-bottom: 3.5rem;
+}
+
+/* Top Accent Line */
+.footer-top-border {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #1b2bd8, #db16d1);
+}
+
+.footer-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 0 2rem;
+}
+
+/* Logo */
+.footer-logo-container {
+  margin-bottom: 2rem;
+}
+
+.wro-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+/* 5 Column Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.col-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Address & Contact Button */
+.address-block p {
+  margin: 0 0 0.35rem 0;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.35;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background-color: #7b1fa2;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  padding: 0.55rem 1.1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #9c27b0;
+  transform: translateY(-1px);
+}
+
+/* Nav Lists */
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 0.65rem;
+}
+
+.footer-menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+/* Bottom Notice */
+.footer-notice {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.8rem;
+}
+
+.footer-notice p {
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 900px;
+}
+
+.footer-notice strong {
+  color: #cbd5e1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
