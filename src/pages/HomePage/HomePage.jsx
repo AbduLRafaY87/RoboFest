@@ -4,11 +4,13 @@ import banner1 from '../../assets/carousels/banner1.png'
 import banner2 from '../../assets/carousels/banner2.png'
 import banner3 from '../../assets/carousels/banner3.png'
 import About from '../../assets/About.jpg'
-import aboutOne from '../../assets/about1.jpg'
-import aboutTwo from '../../assets/about2.jpg'
-import aboutThree from '../../assets/about3.jpg'
-import aboutFour from '../../assets/about4.jpg'
+import aboutOne from '/standout1.png'
+import aboutTwo from '/standout2.png'
+import aboutThree from '/standout3.png'
+import aboutFour from '/standout4.png'
 import NumbersSection from "./NumbersSection";
+import PartnersSection from "../../components/PartnersSection";
+import ShowcaseSection from "./ShowcaseSection";
 
 const banners = [
   {
@@ -315,147 +317,162 @@ const HomePage = () => {
 
       <section className="robofest-event">
 
-        {/* Background Effects */}
-        <div className="event-glow event-glow-one"></div>
-        <div className="event-glow event-glow-two"></div>
-        <div className="event-grid"></div>
+  {/* Background Effects */}
+  <div className="event-glow event-glow-one"></div>
+  <div className="event-glow event-glow-two"></div>
+  <div className="event-grid"></div>
 
-        <div className="robofest-event-container">
+  <div className="robofest-event-container">
 
-          {/* Event Header */}
-          <div className="event-header">
+    {/* Event Top Layout (Content + Image Side-by-Side) */}
+    <div className="event-main-content">
+      
+      {/* Left Column: Event Header */}
+      <div className="event-header">
 
-            <div className="event-badge">
-              <span className="event-live-dot"></span>
-              UPCOMING EVENT
-            </div>
-
-            <span className="event-year">
-              ROBOFEST 2026
-            </span>
-
-            <h2>
-              Swarm
-              <span> Robotics</span>
-            </h2>
-
-            <div className="event-divider"></div>
-
-            <h3>
-              Bridging Gaps, Empowering Equality
-            </h3>
-
-            <p>
-              Join us at RoboFest 2026 and be part of a movement shaping
-              the future of robotics and STEM education in Pakistan.
-            </p>
-
-          </div>
-
-
-          {/* Competition Categories */}
-          {/* <div className="event-categories">
-
-            <article className="event-category">
-              <div className="category-number">01</div>
-
-              <div className="category-icon">
-                🤖
-              </div>
-
-              <div>
-                <h4>Robotics</h4>
-                <p>
-                  Hands-on robotics challenges and competitions
-                </p>
-              </div>
-
-              <span className="category-arrow">↗</span>
-            </article>
-
-
-            <article className="event-category">
-              <div className="category-number">02</div>
-
-              <div className="category-icon">
-                &lt;/&gt;
-              </div>
-
-              <div>
-                <h4>Programming</h4>
-                <p>
-                  Coding challenges and software development
-                </p>
-              </div>
-
-              <span className="category-arrow">↗</span>
-            </article>
-
-
-            <article className="event-category">
-              <div className="category-number">03</div>
-
-              <div className="category-icon">
-                ⚙
-              </div>
-
-              <div>
-                <h4>STEAM</h4>
-                <p>
-                  Science, Technology, Engineering & Mathematics
-                </p>
-              </div>
-
-              <span className="category-arrow">↗</span>
-            </article>
-
-
-            <article className="event-category">
-              <div className="category-number">04</div>
-
-              <div className="category-icon">
-                ◈
-              </div>
-
-              <div>
-                <h4>E-Gaming</h4>
-                <p>
-                  Competitive gaming and esports tournaments
-                </p>
-              </div>
-
-              <span className="category-arrow">↗</span>
-            </article>
-
-          </div> */}
-
-
-          {/* CTA */}
-          <div className="event-cta">
-
-            <div className="event-cta-text">
-              <span>READY TO COMPETE?</span>
-              <p>
-                Build. Innovate. Compete. Make your mark at RoboFest 2026.
-              </p>
-            </div>
-
-            <a
-              href="https://robofest.pk/competition_2026.php"
-              className="event-register-btn"
-            >
-              Register Now
-              <span>→</span>
-            </a>
-
-          </div>
-
+        <div className="event-badge">
+          <span className="event-live-dot"></span>
+          UPCOMING EVENT
         </div>
 
-      </section>
+        <span className="event-year">
+          ROBOFEST 2026
+        </span>
+
+        <h2>
+          Swarm
+          <span> Robotics</span>
+        </h2>
+
+        <div className="event-divider"></div>
+
+        <h3>
+          Bridging Gaps, Empowering Equality
+        </h3>
+
+        <p>
+          Join us at RoboFest 2026 and be part of a movement shaping
+          the future of robotics and STEM education in Pakistan.
+        </p>
+
+      </div>
+
+      {/* Right Column: Trophy Image */}
+      <div className="event-image-wrapper">
+        <img 
+          src="/trophy.jpg" 
+          alt="Robofest Trophy" 
+          className="event-trophy-img" 
+        />
+      </div>
+
+    </div>
+
+
+    {/* Competition Categories */}
+    <div className="event-categories">
+
+      <article className="event-category">
+        <div className="category-number">01</div>
+
+        <div className="category-icon">
+          🤖
+        </div>
+
+        <div>
+          <h4>Robotics</h4>
+          <p>
+            Hands-on robotics challenges and competitions
+          </p>
+        </div>
+
+        <span className="category-arrow">↗</span>
+      </article>
+
+
+      <article className="event-category">
+        <div className="category-number">02</div>
+
+        <div className="category-icon">
+          &lt;/&gt;
+        </div>
+
+        <div>
+          <h4>Programming</h4>
+          <p>
+            Coding challenges and software development
+          </p>
+        </div>
+
+        <span className="category-arrow">↗</span>
+      </article>
+
+
+      <article className="event-category">
+        <div className="category-number">03</div>
+
+        <div className="category-icon">
+          ⚙
+        </div>
+
+        <div>
+          <h4>STEAM</h4>
+          <p>
+            Science, Technology, Engineering & Mathematics
+          </p>
+        </div>
+
+        <span className="category-arrow">↗</span>
+      </article>
+
+
+      <article className="event-category">
+        <div className="category-number">04</div>
+
+        <div className="category-icon">
+          ◈
+        </div>
+
+        <div>
+          <h4>E-Gaming</h4>
+          <p>
+            Competitive gaming and esports tournaments
+          </p>
+        </div>
+
+        <span className="category-arrow">↗</span>
+      </article>
+
+    </div>
+
+
+    {/* CTA */}
+    <div className="event-cta">
+
+      <div className="event-cta-text">
+        <span>READY TO COMPETE?</span>
+        <p>
+          Build. Innovate. Compete. Make your mark at RoboFest 2026.
+        </p>
+      </div>
+
+      <a
+        href="https://robofest.pk/competition_2026.php"
+        className="event-register-btn"
+      >
+        Register Now
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
       
       <NumbersSection/>
-
+      <PartnersSection/>
+      <ShowcaseSection/>
       
 
     </main>

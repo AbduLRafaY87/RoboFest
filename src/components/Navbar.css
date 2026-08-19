@@ -11,8 +11,8 @@
   background:
     linear-gradient(
       180deg,
-      rgba(10, 14, 20, 0.94),
-      rgba(10, 14, 20, 0.82)
+      rgba(6, 58, 137, 0.94),
+      rgba(0, 24, 60, 0.82)
     );
 
   backdrop-filter: blur(18px) saturate(140%);

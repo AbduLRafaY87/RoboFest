@@ -11,6 +11,8 @@ import JoinPage from './pages/JoinPage/JoinPage'
 import PastEventsPage from './pages/PastEventsPage/PastEventsPage'
 import CompetitionPage from './pages/CompetitionPage/CompetitionPage'
 import NewsroomPage from './pages/NewsroomPage/NewsroomPage'
+import Association from './pages/AboutPage/Association'
+import Vision from './pages/AboutPage/VIsion'
 
 const App = () => {
   return (
@@ -20,7 +22,8 @@ const App = () => {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/association" element={<Association/>} />
+          <Route path="/vision" element={<Vision/>} />
           <Route path="/join" element={<JoinPage />} />
           <Route path="/past-events" element={<PastEventsPage />} />
           <Route path="/competition" element={<CompetitionPage />} />

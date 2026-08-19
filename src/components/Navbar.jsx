@@ -58,8 +58,8 @@ const Navbar = () => {
               About Robofest <span className="arrow">▾</span>
             </a>
             <ul className="dropdown-menu">
-              <li><a href="/about/association">Association</a></li>
-              <li><a href="/about/vision">Vision</a></li>
+              <li><a href="/association">Association</a></li>
+              <li><a href="/vision">Vision</a></li>
               <li><a href="/about/partner">Partner</a></li>
             </ul>
           </li>
