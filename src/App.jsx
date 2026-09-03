@@ -9,10 +9,12 @@ import HomePage from './pages/HomePage/HomePage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import JoinPage from './pages/JoinPage/JoinPage'
 import PastEventsPage from './pages/PastEventsPage/PastEventsPage'
-import CompetitionPage from './pages/CompetitionPage/CompetitionPage'
+// import CompetitionPage from './pages/CompetitionPage/CompetitionPage'
 import NewsroomPage from './pages/NewsroomPage/NewsroomPage'
 import Association from './pages/AboutPage/Association'
 import Vision from './pages/AboutPage/VIsion'
+import Competition2025 from './pages/PastEventsPage/Competition2025'
+import Competition2026 from './pages/PastEventsPage/Competition2026'
 
 const App = () => {
   return (
@@ -26,7 +28,8 @@ const App = () => {
           <Route path="/vision" element={<Vision/>} />
           <Route path="/join" element={<JoinPage />} />
           <Route path="/past-events" element={<PastEventsPage />} />
-          <Route path="/competition" element={<CompetitionPage />} />
+          <Route path="/events/2025" element={<Competition2025/>} />
+          <Route path="/competition/2026" element={<Competition2026/>} />
           <Route path="/newsroom" element={<NewsroomPage />} />
           <Route path="/*" element={<NotFound/>} />
         </Routes>

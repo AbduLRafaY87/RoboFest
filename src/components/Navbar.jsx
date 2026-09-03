@@ -103,7 +103,7 @@ const Navbar = () => {
               Competition <span className="arrow">▾</span>
             </a>
             <ul className="dropdown-menu">
-              <li><a href="/competition/2025">Season 2025</a></li>
+              <li><a href="/competition/2026">Season 2026</a></li>
               <li><a href="/competition/faq">Questions and Answers</a></li>
             </ul>
           </li>
