@@ -13,6 +13,10 @@ import {
   // Github,
   // Instagram,
   BriefcaseBusiness,
+  Bot,
+  Code2,
+  FlaskConical,
+  Gamepad2,
 } from "lucide-react";
 import EventInfo from "./EventInfo";
 
@@ -458,94 +462,107 @@ const CompetitionPage = ({ competition }) => {
 
 {competition.competitions?.length > 0 && (
   <section className="competition-list-section">
-
     <div className="competition-list-container">
 
+      {/* Section Heading */}
       <div className="competition-section-heading centered">
+        <span>ROBOFEST {competition.year}</span>
 
-        <span>
-          ROBOFEST {competition.year}
-        </span>
-
-        <h2>
-          Competitions
-        </h2>
+        <h2>Competitions</h2>
 
         <p className="competition-list-intro">
           Explore the competitions across Robotics,
           Programming, STEAM, and E-Gaming.
         </p>
-
       </div>
 
 
-      <div className="competition-category-grid">
+      {/* Categories */}
+      <div className="competition-categories">
 
-        {competition.competitions.map(
-          (category, index) => (
+        {competition.competitions.map((category, index) => {
+
+          const categoryName = category.category?.toLowerCase();
+
+          let CategoryIcon = Bot;
+          let categoryClass = "robotics";
+
+          if (categoryName?.includes("program")) {
+            CategoryIcon = Code2;
+            categoryClass = "programming";
+          } else if (
+            categoryName?.includes("steam") ||
+            categoryName?.includes("stem")
+          ) {
+            CategoryIcon = FlaskConical;
+            categoryClass = "steam";
+          } else if (
+            categoryName?.includes("gaming") ||
+            categoryName?.includes("e gaming") ||
+            categoryName?.includes("e-gaming")
+          ) {
+            CategoryIcon = Gamepad2;
+            categoryClass = "gaming";
+          }
+
+          return (
             <div
-              className="competition-category-card"
-              key={
-                category.category || index
-              }
+              className={`competition-category ${categoryClass}`}
+              key={category.category || index}
             >
 
+              {/* Category Header */}
               <div className="competition-category-header">
 
-                <div className="competition-category-number">
-                  {String(index + 1).padStart(2, "0")}
+                <div className="competition-category-icon">
+                  <CategoryIcon size={34} strokeWidth={1.8} />
                 </div>
 
-                <div>
+                <div className="competition-category-title">
                   <span>
-                    CATEGORY
+                    CATEGORY {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  <h3>
-                    {category.category}
-                  </h3>
+                  <h3>{category.category}</h3>
+
+                  <div className="competition-category-line">
+                    <span></span>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </div>
                 </div>
 
               </div>
 
 
+              {/* Competition Names */}
               <div className="competition-items">
 
-                {category.competitions?.map(
-                  (item, itemIndex) => (
-                    <a
-                      key={
-                        item.name ||
-                        itemIndex
-                      }
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="competition-item"
-                    >
+                {category.competitions?.map((item, itemIndex) => (
+                  <div
+                    className="competition-item"
+                    key={item.name || itemIndex}
+                  >
+                    <span className="competition-item-number">
+                      {String(itemIndex + 1).padStart(2, "0")}
+                    </span>
 
-                      <span>
-                        {item.name}
-                      </span>
-
-                      <ExternalLink
-                        size={16}
-                      />
-
-                    </a>
-                  )
-                )}
+                    <span className="competition-item-name">
+                      {item.name}
+                    </span>
+                  </div>
+                ))}
 
               </div>
 
             </div>
-          )
-        )}
+          );
+        })}
 
       </div>
 
     </div>
-
   </section>
 )}
 
@@ -694,11 +711,11 @@ const ProfileCard = ({ person }) => {
         )}
 
 
-        {person.organization && (
+        {/* {person.organization && (
           <p className="profile-organization">
             {person.organization}
           </p>
-        )}
+        )} */}
 
 
         {person.domain && (

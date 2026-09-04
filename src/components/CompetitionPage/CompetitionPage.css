@@ -15,7 +15,7 @@
 
 .competition-hero {
   position: relative;
-  min-height: 630px;
+  min-height: 730px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -892,7 +892,7 @@
 
 .partner-card img {
   max-width: 100%;
-  max-height: 75px;
+  max-height: 125px;
 
   object-fit: contain;
 }
@@ -1125,7 +1125,7 @@
 }
 
 .event-info-heading {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1148,7 +1148,7 @@
 
   color: #071b3a;
 
-  font-size: clamp(30px, 4vw, 48px);
+  font-size: clamp(30px, 2.5vw, 48px);
 
   line-height: 1.15;
 
@@ -1240,207 +1240,666 @@
 }
 
 /* =========================================================
-   COMPETITIONS SHOWCASE
+   COMPETITIONS SECTION
 ========================================================= */
 
 .competition-list-section {
-  padding: 90px 0 100px;
+  position: relative;
+  padding: 110px 0 0px;
+  background: #06152f;
+  overflow: hidden;
+  margin-top: 50px;
+  border-radius: 25px;
+}
 
-  background:
+
+/* Subtle background glow */
+
+.competition-list-section::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 174, 255, 0.07);
+  filter: blur(120px);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* Technical grid */
+
+.competition-list-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.035;
+
+  background-image:
     linear-gradient(
-      180deg,
-      #f7faff 0%,
-      #ffffff 100%
+      rgba(0, 210, 255, 0.5) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 210, 255, 0.5) 1px,
+      transparent 1px
     );
 
-  border-bottom: 1px solid #e5edf6;
+  background-size: 50px 50px;
+
+  pointer-events: none;
 }
+
 
 .competition-list-container {
-  max-width: 1300px;
-  margin: auto;
+  position: relative;
+  z-index: 2;
 
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
   padding: 0 30px;
 }
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.competition-list-section
+.competition-section-heading {
+  margin-bottom: 85px;
+}
+
+
+.competition-list-section
+.competition-section-heading span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #00d2ff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+
+.competition-list-section
+.competition-section-heading h2 {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
 
 .competition-list-intro {
   max-width: 650px;
 
-  margin: 15px auto 0;
+  margin: 0 auto;
 
-  color: #667085;
+  color: #aebfd4;
 
-  font-size: 16px;
-
+  font-size: 17px;
   line-height: 1.7;
 }
 
-.competition-category-grid {
-  display: grid;
 
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+/* =========================================================
+   CATEGORIES
+========================================================= */
 
-  gap: 25px;
-
-  margin-top: 55px;
+.competition-categories {
+  display: flex;
+  flex-direction: column;
 }
 
 
-/* CATEGORY CARD */
+/* =========================================================
+   CATEGORY
+========================================================= */
 
-.competition-category-card {
-  padding: 30px;
-
-  background: #ffffff;
-
-  border: 1px solid #e1eaf4;
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 15px 45px rgba(14, 73, 130, 0.05);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.competition-category-card:hover {
-  transform: translateY(-5px);
-
-  border-color: #b8dff7;
-
-  box-shadow:
-    0 25px 55px rgba(14, 73, 130, 0.09);
+.competition-category {
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.015); */
+  padding: 0 0 65px;
+  margin-bottom: 65px;
 }
 
 
-/* CATEGORY HEADER */
+.competition-category:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================================
+   CATEGORY HEADER
+========================================================= */
 
 .competition-category-header {
   display: flex;
   align-items: center;
-
-  gap: 16px;
-
-  margin-bottom: 25px;
-
-  padding-bottom: 22px;
-
-  border-bottom: 1px solid #edf1f6;
+  /* text-align: center; */
+  width:fit-content;
+  margin: 0 auto;
+  gap: 28px;
+  /* justify-content: center; */
+  margin-bottom: 35px;
 }
 
-.competition-category-number {
-  width: 50px;
-  height: 50px;
+
+/* Icon */
+
+.competition-category-icon {
+  flex-shrink: 0;
+
+  width: 82px;
+  height: 82px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid currentColor;
+
+  transition: all 0.3s ease;
+}
+
+
+.competition-category:hover
+.competition-category-icon {
+  transform: translateY(-3px);
+}
+
+
+/* Category title */
+
+.competition-category-title {
+  flex: 1;
+}
+
+
+.competition-category-title > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #7f91a8;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.competition-category-title h3 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   CATEGORY DECORATIVE LINE
+========================================================= */
+
+.competition-category-line {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 13px;
+}
+
+
+.competition-category-line span {
+  display: block;
+
+  width: 38px;
+  height: 2px;
+
+  background: currentColor;
+}
+
+
+.competition-category-line i {
+  display: block;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+
+/* =========================================================
+   COMPETITION ITEMS
+========================================================= */
+
+.competition-items {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 14px 16px;
+}
+
+
+/* Individual competition */
+
+.competition-item {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 13px 18px;
+
+  border: 1px solid currentColor;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  color: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.competition-item:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Number */
+
+.competition-item-number {
   flex-shrink: 0;
 
-  border-radius: 14px;
+  font-size: 10px;
+  font-weight: 800;
 
-  color: #0879c9;
+  opacity: 0.65;
+
+  letter-spacing: 1px;
+}
+
+
+/* Name */
+
+.competition-item-name {
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   ROBOTICS
+========================================================= */
+
+.competition-category.robotics {
+  color: #ff7a00;
+}
+
+
+.competition-category.robotics
+.competition-category-title h3 {
+  color: #ff7a00;
+}
+
+
+.competition-category.robotics
+.competition-category-icon {
+  color: #ff7a00;
+
+  box-shadow:
+    0 0 30px rgba(255, 122, 0, 0.12);
+}
+
+
+.competition-category.robotics
+.competition-item {
+  border-color: rgba(255, 122, 0, 0.7);
 
   background:
     linear-gradient(
       135deg,
-      #e3f8ff,
-      #edf3ff
+      rgba(255, 122, 0, 0.18),
+      rgba(255, 122, 0, 0.07)
+    );
+}
+
+
+.competition-category.robotics
+.competition-item:hover {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 122, 0, 0.3),
+      rgba(255, 122, 0, 0.12)
     );
 
-  font-size: 14px;
-
-  font-weight: 800;
-}
-
-.competition-category-header span {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color: #98a2b3;
-
-  font-size: 10px;
-
-  font-weight: 800;
-
-  letter-spacing: 1.5px;
-}
-
-.competition-category-header h3 {
-  margin: 0;
-
-  color: #071b3a;
-
-  font-size: 25px;
-
-  font-weight: 800;
+  box-shadow:
+    0 8px 30px rgba(255, 122, 0, 0.12);
 }
 
 
-/* COMPETITION ITEMS */
+/* =========================================================
+   PROGRAMMING
+========================================================= */
 
-.competition-items {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 8px;
+.competition-category.programming {
+  color: #00c8ff;
 }
 
+
+.competition-category.programming
+.competition-category-title h3 {
+  color: #00c8ff;
+}
+
+
+.competition-category.programming
+.competition-category-icon {
+  color: #00c8ff;
+
+  box-shadow:
+    0 0 30px rgba(0, 200, 255, 0.12);
+}
+
+
+.competition-category.programming
 .competition-item {
-  display: flex;
+  border-color: rgba(0, 200, 255, 0.7);
 
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
-
-  padding: 13px 15px;
-
-  border-radius: 10px;
-
-  background: #f7faff;
-
-  color: #344054;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  text-decoration: none;
-
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 200, 255, 0.17),
+      rgba(0, 200, 255, 0.06)
+    );
 }
 
-.competition-item svg {
-  flex-shrink: 0;
 
-  color: #98a2b3;
-
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
-}
-
+.competition-category.programming
 .competition-item:hover {
-  background: #e9f7ff;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 200, 255, 0.3),
+      rgba(0, 200, 255, 0.1)
+    );
 
-  color: #0879c9;
-
-  transform: translateX(4px);
+  box-shadow:
+    0 8px 30px rgba(0, 200, 255, 0.12);
 }
 
-.competition-item:hover svg {
-  color: #0879c9;
 
-  transform: translate(2px, -2px);
+/* =========================================================
+   STEAM
+========================================================= */
+
+.competition-category.steam {
+  color: #55d52c;
+}
+
+
+.competition-category.steam
+.competition-category-title h3 {
+  color: #55d52c;
+}
+
+
+.competition-category.steam
+.competition-category-icon {
+  color: #55d52c;
+
+  box-shadow:
+    0 0 30px rgba(85, 213, 44, 0.12);
+}
+
+
+.competition-category.steam
+.competition-item {
+  border-color: rgba(85, 213, 44, 0.7);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(85, 213, 44, 0.17),
+      rgba(85, 213, 44, 0.06)
+    );
+}
+
+
+.competition-category.steam
+.competition-item:hover {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(85, 213, 44, 0.3),
+      rgba(85, 213, 44, 0.1)
+    );
+
+  box-shadow:
+    0 8px 30px rgba(85, 213, 44, 0.12);
+}
+
+
+/* =========================================================
+   E-GAMING
+========================================================= */
+
+.competition-category.gaming {
+  color: #ff287d;
+}
+
+
+.competition-category.gaming
+.competition-category-title h3 {
+  color: #ff287d;
+}
+
+
+.competition-category.gaming
+.competition-category-icon {
+  color: #ff287d;
+
+  box-shadow:
+    0 0 30px rgba(255, 40, 125, 0.12);
+}
+
+
+.competition-category.gaming
+.competition-item {
+  border-color: rgba(255, 40, 125, 0.7);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 40, 125, 0.18),
+      rgba(255, 40, 125, 0.06)
+    );
+}
+
+
+.competition-category.gaming
+.competition-item:hover {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 40, 125, 0.3),
+      rgba(255, 40, 125, 0.1)
+    );
+
+  box-shadow:
+    0 8px 30px rgba(255, 40, 125, 0.12);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .competition-list-section {
+    padding: 90px 0 100px;
+  }
+
+  .competition-items {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .competition-list-section {
+    padding: 75px 0 80px;
+  }
+
+
+  .competition-list-container {
+    padding: 0 20px;
+  }
+
+
+  .competition-list-section
+  .competition-section-heading {
+    margin-bottom: 60px;
+  }
+
+
+  .competition-list-section
+  .competition-section-heading h2 {
+    font-size: 42px;
+  }
+
+
+  .competition-list-intro {
+    font-size: 15px;
+  }
+
+
+  .competition-category {
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+  }
+
+
+  .competition-category-header {
+    gap: 18px;
+
+    margin-bottom: 28px;
+  }
+
+
+  .competition-category-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+
+  .competition-category-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+
+  .competition-category-title h3 {
+    font-size: 24px;
+  }
+
+
+  .competition-items {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+
+  .competition-item {
+    min-height: 50px;
+
+    padding: 12px 15px;
+  }
+
+
+  .competition-item-name {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .competition-category-header {
+    align-items: flex-start;
+  }
+
+
+  .competition-category-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+
+  .competition-category-title h3 {
+    font-size: 21px;
+  }
+
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 
-const Competition2025 = () => {
+const Competition2022 = () => {
   return (
     <UnderConstruction
       title="Past Events Coming Soon"
@@ -10,4 +10,4 @@ const Competition2025 = () => {
   );
 };
 
-export default Competition2025;
+export default Competition2022;

@@ -349,7 +349,202 @@ export const competitions = {
          * }
          */
 
-        profiles: [],
+        profiles: [
+          {
+            name: "Abdul Rafay",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/1.png",
+          },
+          {
+            name: "Dania",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/2.jpeg",
+          },
+          {
+            name: "Rizwan Shah",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/4.png",
+          },
+          {
+            name: "Muhammad Zayan",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/32.jpg",
+          },
+          {
+            name: "Aliza Tharwani",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/5.jpeg",
+          },
+          {
+            name: "Neva Kumari",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/6.jpg",
+          },
+          {
+            name: "Sanaan",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/7.jpg",
+          },
+          {
+            name: "Noman Akhter",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/8.jpg",
+          },
+          {
+            name: "Maryam Asif",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/9.png",
+          },
+          {
+            name: "Ayaan Anees",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/3.jpg",
+          },
+          {
+            name: "Uzair Hussain",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/10.jpg",
+          },
+          {
+            name: "Asma Khan",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/11.jpeg",
+          },
+          {
+            name: "Mohsin Salman",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/12.jpeg",
+          },
+          {
+            name: "Anara",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/13.jpg",
+          },
+          {
+            name: "Mohsin Haseeb",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/14.jpg",
+          },
+          {
+            name: "Ayaad Rupani",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/15.JPG",
+          },
+          {
+            name: "Umer Syed",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/16.png",
+          },
+          {
+            name: "Syeda Hadia",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/17.jpg",
+          },
+          {
+            name: "Osailah Atif",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/18.jpg",
+          },
+          {
+            name: "Rizwana Alam",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/19.png",
+          },
+          {
+            name: "Taha Ahmed",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/20.jpeg",
+          },
+          {
+            name: "Sohaib Kamran",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/21.jpg",
+          },
+          {
+            name: "Kamil",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/22.jpg",
+          },
+          {
+            name: "Furqan Khatti",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/23.jpg",
+          },
+          {
+            name: "Usman Ali",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/24.jpg",
+          },
+          {
+            name: "Kabir Karim",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/25.jpg",
+          },
+          {
+            name: "Shagufta Zafar",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/26.jpg",
+          },
+          {
+            name: "Syed Hannan",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/27.jpg",
+          },
+          {
+            name: "Muhammad Salik",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/28.jpg",
+          },
+          {
+            name: "Yasir Karim",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/30.jpeg",
+          },
+          {
+            name: "Yabish Charania",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/31.jpg",
+          },
+          {
+            name: "Zunair",
+            role: "Student",
+            organization: "Organization Name",
+            image: "/volunteers/33.jpg",
+          },
+          
+          
+        ],
       },
 
       /*
@@ -653,22 +848,22 @@ export const competitions = {
         name: "partner1",
         logo: "/2025/beaconhouseLogo.png",
       },
-      {
-        name: "partner1",
-        logo: "/2025/fabercartellLogo.png",
-      },
-      {
-        name: "partner1",
-        logo: "/2025/g1.jpg",
-      },
+      // {
+      //   name: "partner1",
+      //   logo: "/2025/fabercartellLogo.png",
+      // },
+      // {
+      //   name: "partner1",
+      //   logo: "/2025/g1.jpg",
+      // },
       {
         name: "partner1",
         logo: "/2025/g2.png",
       },
-      {
-        name: "partner1",
-        logo: "/2025/indigoLogo.png",
-      },
+      // {
+      //   name: "partner1",
+      //   logo: "/2025/indigoLogo.png",
+      // },
       {
         name: "partner1",
         logo: "/2025/s2.png",
