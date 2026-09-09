@@ -13,10 +13,6 @@ import {
   // Github,
   // Instagram,
   BriefcaseBusiness,
-  Bot,
-  Code2,
-  FlaskConical,
-  Gamepad2,
 } from "lucide-react";
 import EventInfo from "./EventInfo";
 
@@ -81,6 +77,15 @@ const CompetitionPage = ({ competition }) => {
         year={competition.year}
       />
 
+      {competition.previousYearYoutube && (
+          <CompetitionVideo
+            url={competition.previousYearYoutube}
+            year={String(Number(competition.year) - 1)}
+            eyebrow="LAST YEAR'S HIGHLIGHTS"
+            variant="previous-year"
+          />
+        )}
+
 
       {/* ================= STICKY TABS ================= */}
 
@@ -111,7 +116,7 @@ const CompetitionPage = ({ competition }) => {
         </div>
       </nav>
 
-      
+
 
 
       {/* =========================================================
@@ -119,6 +124,8 @@ const CompetitionPage = ({ competition }) => {
       ========================================================= */}
 
       <main className="competition-content">
+
+        
 
         {activeTabData && (
           <section className="competition-tab-content">
@@ -147,24 +154,34 @@ const CompetitionPage = ({ competition }) => {
 
                 <div className="concept-main-card">
 
-                  <div className="concept-icon">
-                    <FileText size={26} />
+                  <div className="document-copy">
+                    <div className="concept-icon">
+                      <FileText size={26} />
+                    </div>
+
+                    <p>
+                      {activeTabData.description}
+                    </p>
+
+                    {activeTabData.link && (
+                      <a
+                        href={activeTabData.link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="competition-resource-link"
+                      >
+                        {activeTabData.link.text}
+                        <ArrowRight size={17} />
+                      </a>
+                    )}
                   </div>
 
-                  <p>
-                    {activeTabData.description}
-                  </p>
-
-                  {activeTabData.link && (
-                    <a
-                      href={activeTabData.link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="competition-resource-link"
-                    >
-                      {activeTabData.link.text}
-                      <ArrowRight size={17} />
-                    </a>
+                  {activeTabData.image && (
+                    <img
+                      src={activeTabData.image}
+                      alt={activeTabData.imageAlt || `${activeTabData.label} preview`}
+                      className="document-image"
+                    />
                   )}
 
                 </div>
@@ -220,9 +237,13 @@ const CompetitionPage = ({ competition }) => {
               <div className="resources-content">
 
                 <div className="resources-intro">
-                  <p>
-                    {activeTabData.description}
-                  </p>
+                  {activeTabData.image && (
+                    <img
+                      src={activeTabData.image}
+                      alt={activeTabData.imageAlt || `${activeTabData.label} preview`}
+                      className="document-image"
+                    />
+                  )}
                 </div>
 
                 <div className="resources-grid">
@@ -460,111 +481,114 @@ const CompetitionPage = ({ competition }) => {
     COMPETITIONS
 ========================================================= */}
 
-{competition.competitions?.length > 0 && (
-  <section className="competition-list-section">
-    <div className="competition-list-container">
+        {competition.competitions?.length > 0 && (
+          <section className="competition-list-section">
+            <div className="competition-list-container">
 
-      {/* Section Heading */}
-      <div className="competition-section-heading centered">
-        <span>ROBOFEST {competition.year}</span>
+              {/* Section Heading */}
+              <div className="competition-section-heading centered">
+                <span>ROBOFEST {competition.year}</span>
 
-        <h2>Competitions</h2>
+                <h2>Competitions</h2>
 
-        <p className="competition-list-intro">
-          Explore the competitions across Robotics,
-          Programming, STEAM, and E-Gaming.
-        </p>
-      </div>
-
-
-      {/* Categories */}
-      <div className="competition-categories">
-
-        {competition.competitions.map((category, index) => {
-
-          const categoryName = category.category?.toLowerCase();
-
-          let CategoryIcon = Bot;
-          let categoryClass = "robotics";
-
-          if (categoryName?.includes("program")) {
-            CategoryIcon = Code2;
-            categoryClass = "programming";
-          } else if (
-            categoryName?.includes("steam") ||
-            categoryName?.includes("stem")
-          ) {
-            CategoryIcon = FlaskConical;
-            categoryClass = "steam";
-          } else if (
-            categoryName?.includes("gaming") ||
-            categoryName?.includes("e gaming") ||
-            categoryName?.includes("e-gaming")
-          ) {
-            CategoryIcon = Gamepad2;
-            categoryClass = "gaming";
-          }
-
-          return (
-            <div
-              className={`competition-category ${categoryClass}`}
-              key={category.category || index}
-            >
-
-              {/* Category Header */}
-              <div className="competition-category-header">
-
-                <div className="competition-category-icon">
-                  <CategoryIcon size={34} strokeWidth={1.8} />
-                </div>
-
-                <div className="competition-category-title">
-                  <span>
-                    CATEGORY {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  <h3>{category.category}</h3>
-
-                  <div className="competition-category-line">
-                    <span></span>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                  </div>
-                </div>
-
+                <p className="competition-list-intro">
+                  Explore the competitions across Robotics,
+                  Programming, STEAM, and E-Gaming.
+                </p>
               </div>
 
 
-              {/* Competition Names */}
-              <div className="competition-items">
+              {/* Categories */}
+              <div className="competition-categories">
 
-                {category.competitions?.map((item, itemIndex) => (
-                  <div
-                    className="competition-item"
-                    key={item.name || itemIndex}
-                  >
-                    <span className="competition-item-number">
-                      {String(itemIndex + 1).padStart(2, "0")}
-                    </span>
+                {competition.competitions.map((category, index) => {
 
-                    <span className="competition-item-name">
-                      {item.name}
-                    </span>
-                  </div>
-                ))}
+                  const categoryName = category.category?.toLowerCase();
+
+                  let categoryIcon = "/icons/robotics.png";
+                  let categoryClass = "robotics";
+
+                  if (categoryName?.includes("program")) {
+                    categoryIcon = "/icons/programming.png";
+                    categoryClass = "programming";
+                  } else if (
+                    categoryName?.includes("steam") ||
+                    categoryName?.includes("stem")
+                  ) {
+                    categoryIcon = "/icons/stem.png";
+                    categoryClass = "steam";
+                  } else if (
+                    categoryName?.includes("gaming") ||
+                    categoryName?.includes("e gaming") ||
+                    categoryName?.includes("e-gaming")
+                  ) {
+                    categoryIcon = "/icons/gaming.png";
+                    categoryClass = "gaming";
+                  }
+
+                  return (
+                    <div
+                      className={`competition-category ${categoryClass}`}
+                      key={category.category || index}
+                    >
+
+                      {/* Category Header */}
+                      <div className="competition-category-header">
+
+                        <div className="competition-category-icon">
+                          <img
+                            src={categoryIcon}
+                            alt={`${category.category} category`}
+                          />
+                        </div>
+
+                        <div className="competition-category-title">
+                          <span>
+                            CATEGORY {String(index + 1).padStart(2, "0")}
+                          </span>
+
+                          <h3>{category.category}</h3>
+
+                          <div className="competition-category-line">
+                            <span></span>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                          </div>
+                        </div>
+
+                      </div>
+
+
+                      {/* Competition Names */}
+                      <div className="competition-items">
+
+                        {category.competitions?.map((item, itemIndex) => (
+                          <div
+                            className="competition-item"
+                            key={item.name || itemIndex}
+                          >
+                            <span className="competition-item-number">
+                              {String(itemIndex + 1).padStart(2, "0")}
+                            </span>
+
+                            <span className="competition-item-name">
+                              {item.name}
+                            </span>
+                          </div>
+                        ))}
+
+                      </div>
+
+                    </div>
+                  );
+                })}
 
               </div>
 
             </div>
-          );
-        })}
-
-      </div>
-
-    </div>
-  </section>
-)}
+          </section>
+        )}
 
 
         {/* =========================================================
@@ -640,40 +664,38 @@ const CompetitionPage = ({ competition }) => {
         ========================================================= */}
 
         {competition.youtube && (
-          <section className="competition-video">
-
-            <div className="competition-section-heading centered">
-
-              <span>
-                EVENT HIGHLIGHTS
-              </span>
-
-              <h2>
-                RoboFest {competition.year} Glimpse
-              </h2>
-
-            </div>
-
-
-            <div className="youtube-wrapper">
-
-              <iframe
-                src={competition.youtube}
-                title={`RoboFest ${competition.year} Glimpse`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-
-            </div>
-
-          </section>
+          <CompetitionVideo
+            url={competition.youtube}
+            year={competition.year}
+            eyebrow="THIS YEAR'S HIGHLIGHTS"
+          />
         )}
 
-        
+
 
       </main>
 
     </div>
+  );
+};
+
+const CompetitionVideo = ({ url, year, eyebrow, variant = "" }) => {
+  return (
+    <section className={`competition-video ${variant}`.trim()}>
+      <div className="competition-section-heading centered">
+        <span>{eyebrow}</span>
+        <h2>RoboFest {year} Glimpse</h2>
+      </div>
+
+      <div className="youtube-wrapper">
+        <iframe
+          src={url}
+          title={`RoboFest ${year} Glimpse`}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@
 .hero-carousel {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   overflow: hidden;
   border-top: 5px solid rgb(51, 0, 255);
   border-bottom: 5px solid rgb(51, 0, 255);
@@ -263,13 +263,21 @@
 }
 
 /* =========================================================
-   CAROUSEL DOTS
-   ========================================================= */
+  CAROUSEL CONTROLS
+  ========================================================= */
 
-.carousel-dots {
+.carousel-controls {
   position: absolute;
 
   z-index: 10;
+
+  inset: 0;
+
+  pointer-events: none;
+}
+
+.carousel-dots {
+  position: absolute;
 
   bottom: 2rem;
 
@@ -282,6 +290,54 @@
   align-items: center;
 
   gap: 8px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+
+  display: grid;
+  place-items: center;
+
+  width: 2.25rem;
+  height: 2.25rem;
+
+  padding: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+
+  color: #fff;
+  background: rgba(8, 11, 16, 0.45);
+  cursor: pointer;
+  pointer-events: auto;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.carousel-arrow-previous {
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow-next {
+  right: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow:hover {
+  border-color: rgba(0, 210, 255, 0.8);
+  background: rgba(0, 210, 255, 0.2);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-arrow:focus-visible,
+.carousel-dot:focus-visible {
+  outline: 2px solid #00d2ff;
+  outline-offset: 4px;
 }
 
 .carousel-dot {
@@ -1116,7 +1172,7 @@
   left: 50%;
   transform: translateX(-50%);
   /* width: 50%; */
-height: 100px;
+  height: 100px;
   /* opacity: 0.5; */
   z-index: -1;
 }
@@ -1130,7 +1186,7 @@ height: 100px;
 
   min-height: 365px;
 
-  padding:50px 19px 18px 18px;
+  padding: 50px 19px 18px 18px;
 
   display: flex;
 
@@ -1375,7 +1431,6 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    ROBOFEST 2026 — FEATURED EVENT
    ========================================================= */
@@ -1405,7 +1460,6 @@ height: 100px;
     #06111f;
 }
 
-
 /* =========================================================
    BACKGROUND GRID
    ========================================================= */
@@ -1418,39 +1472,29 @@ height: 100px;
   opacity: 0.08;
 
   background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.12) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.12) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
 
   background-size: 55px 55px;
 
-  mask-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      black 20%,
-      black 80%,
-      transparent
-    );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 
-  -webkit-mask-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      black 20%,
-      black 80%,
-      transparent
-    );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 
   pointer-events: none;
 }
-
 
 /* =========================================================
    GLOWING ORBS
@@ -1473,12 +1517,7 @@ height: 100px;
   top: -180px;
   left: -120px;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(0, 210, 255, 0.18),
-      transparent 70%
-    );
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.18), transparent 70%);
 }
 
 .event-glow-two {
@@ -1488,14 +1527,12 @@ height: 100px;
   right: -220px;
   bottom: -250px;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(58, 123, 213, 0.22),
-      transparent 70%
-    );
+  background: radial-gradient(
+    circle,
+    rgba(58, 123, 213, 0.22),
+    transparent 70%
+  );
 }
-
 
 /* =========================================================
    CONTAINER
@@ -1513,7 +1550,6 @@ height: 100px;
   padding: 0 2rem;
 }
 
-
 /* =========================================================
    EVENT HEADER
    ========================================================= */
@@ -1525,7 +1561,6 @@ height: 100px;
 
   text-align: center;
 }
-
 
 /* =========================================================
    UPCOMING BADGE
@@ -1554,13 +1589,10 @@ height: 100px;
 
   border-radius: 999px;
 
-  background:
-    rgba(0, 210, 255, 0.07);
+  background: rgba(0, 210, 255, 0.07);
 
-  box-shadow:
-    0 0 25px rgba(0, 210, 255, 0.06);
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.06);
 }
-
 
 /* Pulsing dot */
 
@@ -1573,7 +1605,7 @@ height: 100px;
   background: #00d2ff;
 
   box-shadow:
-    0 0 0 4px rgba(0, 210, 255, 0.10),
+    0 0 0 4px rgba(0, 210, 255, 0.1),
     0 0 12px rgba(0, 210, 255, 0.8);
 
   animation: eventPulse 2s infinite;
@@ -1583,7 +1615,7 @@ height: 100px;
   0%,
   100% {
     box-shadow:
-      0 0 0 4px rgba(0, 210, 255, 0.10),
+      0 0 0 4px rgba(0, 210, 255, 0.1),
       0 0 12px rgba(0, 210, 255, 0.8);
   }
 
@@ -1669,7 +1701,6 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    YEAR
    ========================================================= */
@@ -1687,7 +1718,6 @@ height: 100px;
 
   letter-spacing: 0.22em;
 }
-
 
 /* =========================================================
    MAIN TITLE
@@ -1710,20 +1740,13 @@ height: 100px;
 .event-header h2 span {
   display: inline;
 
-  background:
-    linear-gradient(
-      100deg,
-      #ffffff 10%,
-      #00d2ff 55%,
-      #3a7bd5 100%
-    );
+  background: linear-gradient(100deg, #ffffff 10%, #00d2ff 55%, #3a7bd5 100%);
 
   -webkit-background-clip: text;
   background-clip: text;
 
   -webkit-text-fill-color: transparent;
 }
-
 
 /* =========================================================
    DIVIDER
@@ -1737,17 +1760,10 @@ height: 100px;
 
   border-radius: 999px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #00d2ff,
-      #3a7bd5
-    );
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 
-  box-shadow:
-    0 0 15px rgba(0, 210, 255, 0.45);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.45);
 }
-
 
 /* =========================================================
    TAGLINE
@@ -1765,7 +1781,6 @@ height: 100px;
   letter-spacing: -0.02em;
 }
 
-
 /* =========================================================
    DESCRIPTION
    ========================================================= */
@@ -1782,7 +1797,6 @@ height: 100px;
   line-height: 1.8;
 }
 
-
 /* =========================================================
    CATEGORY GRID
    ========================================================= */
@@ -1790,14 +1804,12 @@ height: 100px;
 .event-categories {
   display: grid;
 
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
   gap: 14px;
 
   margin-top: 65px;
 }
-
 
 /* =========================================================
    CATEGORY CARD
@@ -1818,17 +1830,15 @@ height: 100px;
 
   overflow: hidden;
 
-  border:
-    1px solid rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.09);
 
   border-radius: 16px;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.075),
-      rgba(255, 255, 255, 0.025)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.075),
+    rgba(255, 255, 255, 0.025)
+  );
 
   backdrop-filter: blur(12px);
 
@@ -1837,7 +1847,6 @@ height: 100px;
     border-color 0.35s ease,
     background 0.35s ease;
 }
-
 
 /* Top blue line */
 
@@ -1852,41 +1861,30 @@ height: 100px;
   width: 100%;
   height: 2px;
 
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      #00d2ff,
-      transparent
-    );
+  background: linear-gradient(90deg, transparent, #00d2ff, transparent);
 
   opacity: 0;
 
-  transition:
-    opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
-
 
 /* Hover */
 
 .event-category:hover {
   transform: translateY(-7px);
 
-  border-color:
-    rgba(0, 210, 255, 0.28);
+  border-color: rgba(0, 210, 255, 0.28);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(0, 210, 255, 0.10),
-      rgba(255, 255, 255, 0.035)
-    );
+  background: linear-gradient(
+    145deg,
+    rgba(0, 210, 255, 0.1),
+    rgba(255, 255, 255, 0.035)
+  );
 }
 
 .event-category:hover::before {
   opacity: 1;
 }
-
 
 /* =========================================================
    CATEGORY NUMBER
@@ -1902,38 +1900,26 @@ height: 100px;
   letter-spacing: 0.15em;
 }
 
-
 /* =========================================================
    CATEGORY ICON
    ========================================================= */
 
 .category-icon {
-  width: 52px;
-  height: 52px;
-
-  margin-bottom: auto;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  color: #00d2ff;
-
-  font-size: 1.35rem;
-
-  border:
-    1px solid rgba(0, 210, 255, 0.18);
-
-  border-radius: 13px;
-
-  background:
-    rgba(0, 210, 255, 0.06);
-
-  box-shadow:
-    inset 0 0 20px rgba(0, 210, 255, 0.03);
+  overflow: hidden;
+  text-align: left;
+  /* background: rgba(255, 255, 255, 0.05); */
+  width: fit-content;
 }
+.category-icon img {
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  /* opacity: .3; */
 
+  object-fit: contain;
+  display: block;
+  margin-bottom: 5px;
+}
 
 /* =========================================================
    CATEGORY TEXT
@@ -1963,7 +1949,6 @@ height: 100px;
   line-height: 1.6;
 }
 
-
 /* =========================================================
    CATEGORY ARROW
    ========================================================= */
@@ -1989,7 +1974,6 @@ height: 100px;
   transform: translate(3px, -3px);
 }
 
-
 /* =========================================================
    CTA
    ========================================================= */
@@ -2009,22 +1993,18 @@ height: 100px;
 
   gap: 25px;
 
-  border:
-    1px solid rgba(0, 210, 255, 0.18);
+  border: 1px solid rgba(0, 210, 255, 0.18);
 
   border-radius: 16px;
 
-  background:
-    linear-gradient(
-      100deg,
-      rgba(0, 210, 255, 0.09),
-      rgba(58, 123, 213, 0.06)
-    );
+  background: linear-gradient(
+    100deg,
+    rgba(0, 210, 255, 0.09),
+    rgba(58, 123, 213, 0.06)
+  );
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
-
 
 /* CTA text */
 
@@ -2049,7 +2029,6 @@ height: 100px;
 
   font-size: 0.82rem;
 }
-
 
 /* =========================================================
    REGISTER BUTTON
@@ -2078,15 +2057,9 @@ height: 100px;
 
   border-radius: 9px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #00bde8,
-      #3474d4
-    );
+  background: linear-gradient(135deg, #00bde8, #3474d4);
 
-  box-shadow:
-    0 8px 25px rgba(0, 174, 239, 0.20);
+  box-shadow: 0 8px 25px rgba(0, 174, 239, 0.2);
 
   transition:
     transform 0.25s ease,
@@ -2097,8 +2070,7 @@ height: 100px;
 .event-register-btn span {
   font-size: 1.15rem;
 
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .event-register-btn:hover {
@@ -2106,24 +2078,20 @@ height: 100px;
 
   filter: brightness(1.08);
 
-  box-shadow:
-    0 12px 30px rgba(0, 174, 239, 0.32);
+  box-shadow: 0 12px 30px rgba(0, 174, 239, 0.32);
 }
 
 .event-register-btn:hover span {
   transform: translateX(4px);
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
-
   .event-categories {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .event-category {
@@ -2131,13 +2099,11 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
-
   .robofest-event {
     padding: 85px 0;
   }
@@ -2181,7 +2147,6 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    NUMBERS / IMPACT SECTION
    ========================================================= */
@@ -2202,7 +2167,6 @@ height: 100px;
     #f8fafc;
 }
 
-
 /* =========================================================
    BACKGROUND GRID
    ========================================================= */
@@ -2217,39 +2181,29 @@ height: 100px;
   opacity: 0.35;
 
   background-image:
-    linear-gradient(
-      rgba(58, 123, 213, 0.045) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(58, 123, 213, 0.045) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(58, 123, 213, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 123, 213, 0.045) 1px, transparent 1px);
 
   background-size: 50px 50px;
 
-  mask-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      black 20%,
-      black 80%,
-      transparent
-    );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 
-  -webkit-mask-image:
-    linear-gradient(
-      to bottom,
-      transparent,
-      black 20%,
-      black 80%,
-      transparent
-    );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 
   pointer-events: none;
 }
-
 
 /* =========================================================
    CONTAINER
@@ -2267,7 +2221,6 @@ height: 100px;
   padding: 0 2rem;
 }
 
-
 /* =========================================================
    HEADER
    ========================================================= */
@@ -2279,7 +2232,6 @@ height: 100px;
 
   text-align: center;
 }
-
 
 /* Eyebrow */
 
@@ -2310,14 +2262,8 @@ height: 100px;
 
   border-radius: 999px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #00d2ff,
-      #3a7bd5
-    );
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 }
-
 
 /* Heading */
 
@@ -2336,19 +2282,13 @@ height: 100px;
 }
 
 .numbers-heading h2 span {
-  background:
-    linear-gradient(
-      90deg,
-      #00bce7,
-      #3a7bd5
-    );
+  background: linear-gradient(90deg, #00bce7, #3a7bd5);
 
   -webkit-background-clip: text;
   background-clip: text;
 
   -webkit-text-fill-color: transparent;
 }
-
 
 /* Description */
 
@@ -2364,7 +2304,6 @@ height: 100px;
   line-height: 1.75;
 }
 
-
 /* =========================================================
    STATS GRID
    ========================================================= */
@@ -2372,12 +2311,10 @@ height: 100px;
 .numbers-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
   gap: 16px;
 }
-
 
 /* =========================================================
    CARD
@@ -2396,16 +2333,13 @@ height: 100px;
 
   flex-direction: column;
 
-  background:
-    rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 
-  border:
-    1px solid #e3ebf5;
+  border: 1px solid #e3ebf5;
 
   border-radius: 17px;
 
-  box-shadow:
-    0 8px 30px rgba(30, 64, 175, 0.045);
+  box-shadow: 0 8px 30px rgba(30, 64, 175, 0.045);
 
   backdrop-filter: blur(10px);
 
@@ -2415,19 +2349,15 @@ height: 100px;
     border-color 0.35s ease;
 }
 
-
 /* Hover */
 
 .number-card:hover {
   transform: translateY(-7px);
 
-  border-color:
-    rgba(58, 123, 213, 0.22);
+  border-color: rgba(58, 123, 213, 0.22);
 
-  box-shadow:
-    0 20px 45px rgba(30, 64, 175, 0.11);
+  box-shadow: 0 20px 45px rgba(30, 64, 175, 0.11);
 }
-
 
 /* =========================================================
    CARD TOP
@@ -2443,7 +2373,6 @@ height: 100px;
   margin-bottom: 32px;
 }
 
-
 /* Index */
 
 .number-index {
@@ -2456,50 +2385,33 @@ height: 100px;
   letter-spacing: 0.12em;
 }
 
-
 /* =========================================================
    ICON
    ========================================================= */
 
 .number-icon {
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  color: #2874d8;
-
-  border:
-    1px solid rgba(0, 210, 255, 0.14);
-
-  border-radius: 11px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(0, 210, 255, 0.08),
-      rgba(58, 123, 213, 0.06)
-    );
-
+  /* width: 44px;
+  height: 44px; */
   transition:
     transform 0.3s ease,
     background 0.3s ease;
+}
+.number-icon img {
+  width: 100%;
+  height: auto;
+  max-height: 75px;
+  object-fit: contain;
 }
 
 .number-card:hover .number-icon {
   transform: translateY(-2px) scale(1.05);
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(0, 210, 255, 0.14),
-      rgba(58, 123, 213, 0.10)
-    );
+  /* background: linear-gradient(
+    135deg,
+    rgba(0, 210, 255, 0.14),
+    rgba(58, 123, 213, 0.1)
+  ); */
 }
-
 
 /* =========================================================
    NUMBER
@@ -2519,7 +2431,6 @@ height: 100px;
   letter-spacing: -0.05em;
 }
 
-
 /* =========================================================
    TITLE
    ========================================================= */
@@ -2536,7 +2447,6 @@ height: 100px;
   line-height: 1.4;
 }
 
-
 /* =========================================================
    DESCRIPTION
    ========================================================= */
@@ -2551,7 +2461,6 @@ height: 100px;
   line-height: 1.65;
 }
 
-
 /* =========================================================
    BOTTOM ACCENT
    ========================================================= */
@@ -2565,35 +2474,30 @@ height: 100px;
 
   height: 2px;
 
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      #00d2ff,
-      #3a7bd5,
-      transparent
-    );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00d2ff,
+    #3a7bd5,
+    transparent
+  );
 
   opacity: 0.15;
 
-  transition:
-    opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .number-card:hover .number-line {
   opacity: 0.7;
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 1050px) {
-
   .numbers-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .number-card {
@@ -2601,13 +2505,11 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
-
   .numbers-section {
     padding: 80px 0;
   }
@@ -2649,7 +2551,6 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    SHOWCASE SECTION
    ========================================================= */
@@ -2663,7 +2564,6 @@ height: 100px;
 
   overflow: hidden;
 }
-
 
 /* =========================================================
    BACKGROUND DECORATION
@@ -2682,12 +2582,11 @@ height: 100px;
 
   border-radius: 50%;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(0, 210, 255, 0.055),
-      transparent 70%
-    );
+  background: radial-gradient(
+    circle,
+    rgba(0, 210, 255, 0.055),
+    transparent 70%
+  );
 
   pointer-events: none;
 }
@@ -2705,16 +2604,14 @@ height: 100px;
 
   border-radius: 50%;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(58, 123, 213, 0.045),
-      transparent 70%
-    );
+  background: radial-gradient(
+    circle,
+    rgba(58, 123, 213, 0.045),
+    transparent 70%
+  );
 
   pointer-events: none;
 }
-
 
 /* =========================================================
    CONTAINER
@@ -2732,7 +2629,6 @@ height: 100px;
   padding: 0 2rem;
 }
 
-
 /* =========================================================
    HEADING
    ========================================================= */
@@ -2744,7 +2640,6 @@ height: 100px;
 
   text-align: center;
 }
-
 
 /* Eyebrow */
 
@@ -2775,14 +2670,8 @@ height: 100px;
 
   border-radius: 999px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #00d2ff,
-      #3a7bd5
-    );
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 }
-
 
 /* Heading */
 
@@ -2801,19 +2690,13 @@ height: 100px;
 }
 
 .showcase-heading h2 span {
-  background:
-    linear-gradient(
-      90deg,
-      #00bce7,
-      #3a7bd5
-    );
+  background: linear-gradient(90deg, #00bce7, #3a7bd5);
 
   -webkit-background-clip: text;
   background-clip: text;
 
   -webkit-text-fill-color: transparent;
 }
-
 
 /* Description */
 
@@ -2828,7 +2711,6 @@ height: 100px;
 
   line-height: 1.75;
 }
-
 
 /* =========================================================
    VIDEO
@@ -2845,18 +2727,15 @@ height: 100px;
 
   border-radius: 22px;
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(0, 210, 255, 0.35),
-      rgba(58, 123, 213, 0.15),
-      rgba(0, 210, 255, 0.25)
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(0, 210, 255, 0.35),
+    rgba(58, 123, 213, 0.15),
+    rgba(0, 210, 255, 0.25)
+  );
 
-  box-shadow:
-    0 25px 70px rgba(30, 64, 175, 0.12);
+  box-shadow: 0 25px 70px rgba(30, 64, 175, 0.12);
 }
-
 
 /* Video container */
 
@@ -2874,7 +2753,6 @@ height: 100px;
   background: #06111f;
 }
 
-
 /* YouTube */
 
 .showcase-video iframe {
@@ -2888,7 +2766,6 @@ height: 100px;
   border: 0;
 }
 
-
 /* =========================================================
    GALLERY
    ========================================================= */
@@ -2896,14 +2773,12 @@ height: 100px;
 .showcase-gallery {
   display: grid;
 
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
   grid-auto-rows: 190px;
 
   gap: 14px;
 }
-
 
 /* =========================================================
    IMAGE
@@ -2923,7 +2798,6 @@ height: 100px;
   cursor: pointer;
 }
 
-
 /* Image */
 
 .showcase-image img {
@@ -2934,10 +2808,8 @@ height: 100px;
 
   object-fit: cover;
 
-  transition:
-    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 
 /* =========================================================
    SPECIAL GRID POSITIONS
@@ -2951,13 +2823,11 @@ height: 100px;
   grid-row: span 2;
 }
 
-
 /* Large sixth image */
 
 .showcase-image-6 {
   grid-column: span 2;
 }
-
 
 /* =========================================================
    OVERLAY
@@ -2976,17 +2846,11 @@ height: 100px;
 
   padding: 15px;
 
-  background:
-    linear-gradient(
-      to top,
-      rgba(3, 15, 30, 0.45),
-      transparent 45%
-    );
+  background: linear-gradient(to top, rgba(3, 15, 30, 0.45), transparent 45%);
 
   opacity: 0;
 
-  transition:
-    opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .showcase-image-overlay span {
@@ -3004,17 +2868,14 @@ height: 100px;
 
   font-weight: 800;
 
-  border:
-    1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
   border-radius: 8px;
 
-  background:
-    rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 
   backdrop-filter: blur(8px);
 }
-
 
 /* Hover */
 
@@ -3026,16 +2887,13 @@ height: 100px;
   opacity: 1;
 }
 
-
 /* =========================================================
    TABLET
    ========================================================= */
 
 @media (max-width: 900px) {
-
   .showcase-gallery {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     grid-auto-rows: 220px;
   }
@@ -3050,13 +2908,11 @@ height: 100px;
   }
 }
 
-
 /* =========================================================
    MOBILE
    ========================================================= */
 
 @media (max-width: 600px) {
-
   .showcase-section {
     padding: 80px 0;
   }
@@ -3090,8 +2946,7 @@ height: 100px;
   }
 
   .showcase-gallery {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     grid-auto-rows: 150px;
 

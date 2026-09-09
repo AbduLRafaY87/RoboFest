@@ -7,6 +7,7 @@ import {
   Handshake,
 } from "lucide-react";
 import "./styles.css";
+import bannerImage from "../../assets/carousels/banner3.png";
 
 const opportunities = [
   {
@@ -80,7 +81,7 @@ const JoinPage = () => {
         {/* Add your banner image here */}
         <div className="join-hero-background">
           <img
-            src="/joinusbanner.png"
+            src={bannerImage}
             alt=""
             aria-hidden="true"
           />

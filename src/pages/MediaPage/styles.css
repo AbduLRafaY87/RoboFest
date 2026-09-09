@@ -334,6 +334,37 @@
   opacity: 1;
 }
 
+.media-view-more {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  width: fit-content;
+  margin: 38px auto 0;
+  padding: 13px 22px;
+
+  border: 1px solid #0879c9;
+  border-radius: 8px;
+
+  background: #0879c9;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.media-view-more:hover {
+  border-color: #005fa3;
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
 .media-card-overlay span {
   color: white;
 

@@ -83,6 +83,8 @@ const EventInfo = ({ eventInfo, year }) => {
 
       </div>
 
+      
+
     </section>
   );
 };

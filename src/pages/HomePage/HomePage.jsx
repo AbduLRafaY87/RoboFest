@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./styles.css";
 import banner1 from '../../assets/carousels/banner1.png'
 import banner2 from '../../assets/carousels/banner2.png'
@@ -89,7 +90,19 @@ const HomePage = () => {
           </div>
         ))}
 
-        {/* Carousel dots */}
+        <div className="carousel-controls">
+          <button
+            type="button"
+            className="carousel-arrow carousel-arrow-previous"
+            onClick={() =>
+              setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length)
+            }
+            aria-label="Go to previous slide"
+          >
+            <ChevronLeft size={24} aria-hidden="true" />
+          </button>
+
+          {/* Carousel dots */}
         <div className="carousel-dots">
           {banners.map((banner, index) => (
             <button
@@ -100,6 +113,16 @@ const HomePage = () => {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
+        </div>
+
+          <button
+            type="button"
+            className="carousel-arrow carousel-arrow-next"
+            onClick={() => setCurrentSlide((prev) => (prev + 1) % banners.length)}
+            aria-label="Go to next slide"
+          >
+            <ChevronRight size={24} aria-hidden="true" />
+          </button>
         </div>
       </section>
       <section className="about-robofest">
@@ -376,7 +399,7 @@ const HomePage = () => {
         <div className="category-number">01</div>
 
         <div className="category-icon">
-          🤖
+          <img src="/icons/robotics.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -394,7 +417,7 @@ const HomePage = () => {
         <div className="category-number">02</div>
 
         <div className="category-icon">
-          &lt;/&gt;
+          <img src="/icons/programming.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -412,13 +435,13 @@ const HomePage = () => {
         <div className="category-number">03</div>
 
         <div className="category-icon">
-          ⚙
+          <img src="/icons/stem.png" alt="Robotics Icon" />
         </div>
 
         <div>
           <h4>STEAM</h4>
           <p>
-            Science, Technology, Engineering & Mathematics
+            Science, Technology, Engineering, Arts & Mathematics
           </p>
         </div>
 
@@ -430,7 +453,7 @@ const HomePage = () => {
         <div className="category-number">04</div>
 
         <div className="category-icon">
-          ◈
+          <img src="/icons/gaming.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -457,7 +480,7 @@ const HomePage = () => {
       </div>
 
       <a
-        href="https://robofest.pk/competition_2026.php"
+        href="/competition/2026"
         className="event-register-btn"
       >
         Register Now

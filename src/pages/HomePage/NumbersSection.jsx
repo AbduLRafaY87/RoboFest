@@ -9,62 +9,64 @@ import {
   HeartHandshake,
 } from "lucide-react";
 
+
+
 const impactStats = [
   {
     number: "829",
     title: "Students Involved",
     description:
       "Passionate young minds shaping the future of robotics",
-    icon: Users,
+    icon: "/icons/number1.png",
   },
   {
     number: "2022",
     title: "Tournament Running Since",
     description:
       "Years of fostering innovation and excellence",
-    icon: CalendarDays,
+    icon: "./icons/number2.png",
   },
   {
     number: "21",
     title: "Schools Targeted",
     description:
       "Educational institutions participating in the event",
-    icon: School,
+    icon: "./icons/number3.png",
   },
   {
     number: "3",
     title: "Cities Involvement",
     description:
       "Expanding our reach across Pakistan",
-    icon: MapPin,
+    icon: "./icons/number4.png",
   },
   {
     number: "225",
     title: "Number of Teams",
     description:
       "Competing for excellence and innovation",
-    icon: Trophy,
+    icon: "./icons/number5.png",
   },
   {
     number: "10",
     title: "Number of Sponsors",
     description:
       "Supporting the future of robotics",
-    icon: Handshake,
+    icon: "./icons/number6.png",
   },
   {
     number: "5000+",
     title: "Total Attendees",
     description:
       "Witnessing innovation in action",
-    icon: UserRoundCheck,
+    icon: "./icons/number7.png",
   },
   {
     number: "45",
     title: "Volunteers",
     description:
       "Dedicated to making RoboFest a success",
-    icon: HeartHandshake,
+    icon: "./icons/number8.png",
   },
 ];
 
@@ -107,7 +109,7 @@ const NumbersSection = () => {
                   </span>
 
                   <div className="number-icon">
-                    <Icon size={21} strokeWidth={1.8} />
+                    <img src={stat.icon} alt={`${stat.title} Icon`} />
                   </div>
 
                 </div>

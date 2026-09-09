@@ -155,9 +155,185 @@ export const competitions = {
 
     tabs: [
       {
+        id: "organizers",
+        label: "Organizers",
+        type: "profiles",
+
+        description:
+          "Meet the people behind RoboFest 2026 who work together to bring the festival to life.",
+
+        sections: [
+          /*
+          |--------------------------------------------------------------------------
+          | LEADERSHIP
+          |--------------------------------------------------------------------------
+          */
+
+          {
+            title: "Leadership",
+
+            profiles: [
+              {
+                name: "Kamran Ali",
+                role: "Founder & CEO",
+                organization: "TechTics Club",
+
+                image:
+                  "https://robofest.pk/meet_the_team/images/kamran.jpeg",
+
+                social: {
+                  linkedin:
+                    "https://www.linkedin.com/in/theroboticguy/",
+
+                  github:
+                    "https://github.com/kamrankhowaja",
+
+                  instagram:
+                    "https://www.instagram.com/the_robotic_guy/",
+                },
+              },
+
+              {
+                name: "Asil Budhwani",
+                role: "Co-Founder & COO",
+                organization: "TechTics Club",
+
+                image:
+                  "https://robofest.pk/meet_the_team/images/asil.jpeg",
+
+                social: {
+                  linkedin:
+                    "https://www.linkedin.com/in/asilbudhwani/",
+
+                  github:
+                    "https://github.com/techticsclubpakistan",
+
+                  instagram:
+                    "https://www.instagram.com/asil_budhwani?igsh=cDdyZDhramZrMzBz",
+                },
+              },
+            ],
+          },
+
+          /*
+          |--------------------------------------------------------------------------
+          | TEAM ADMINISTRATION
+          |--------------------------------------------------------------------------
+          */
+
+          {
+            title: "Team Administration",
+
+            profiles: [
+              {
+                name: "Fazila Farooq",
+                role: "RoboFest Manager",
+                image:
+                  "https://robofest.pk/meet_the_team/images/fazila.jpeg",
+              },
+
+              {
+                name: "Rozina Naveed",
+                role: "Event Coordinator",
+                image:
+                  "https://robofest.pk/meet_the_team/images/rozina.jpeg",
+              },
+
+              {
+                name: "Amna Alwani",
+                role: "Registration Lead",
+                image:
+                  "https://robofest.pk/meet_the_team/images/amna.jpg",
+              },
+
+              {
+                name: "Munaf Bhanji",
+                role: "Graphic Designer",
+                image:
+                  "https://robofest.pk/meet_the_team/images/Munaf.png",
+              },
+            ],
+          },
+
+          /*
+          |--------------------------------------------------------------------------
+          | DOMAIN LEADS
+          |--------------------------------------------------------------------------
+          */
+
+          {
+            title: "Domain Leads",
+
+            profiles: [
+              {
+                name: "Mehdi Abidi",
+                role: "Robotics Lead",
+                domain: "Robotics",
+                image:
+                  "https://robofest.pk/meet_the_team/images/mehdi.jpeg",
+              },
+
+              {
+                name: "Rabia Tauseef",
+                role: "Robotics Lead",
+                domain: "Robotics",
+                image:
+                  "https://robofest.pk/meet_the_team/images/Rabia.jpg",
+              },
+
+              {
+                name: "Syeda Tabinda",
+                role: "Programming Lead",
+                domain: "Programming",
+                image:
+                  "https://robofest.pk/meet_the_team/images/tabinda.jpg",
+              },
+
+              {
+                name: "Talha Ali Akber",
+                role: "STEAM Lead",
+                domain: "STEAM",
+                image:
+                  "https://robofest.pk/meet_the_team/images/talha.jpeg",
+              },
+
+              {
+                name: "Aliyan Altaf",
+                role: "E-Gaming Lead",
+                domain: "E-Gaming",
+                image:
+                  "https://robofest.pk/meet_the_team/images/aliyan.jpeg",
+              },
+            ],
+          },
+
+          /*
+          |--------------------------------------------------------------------------
+          | SPECIAL GUESTS
+          |--------------------------------------------------------------------------
+          */
+
+          {
+            title: "Special Guests",
+
+            profiles: [
+              {
+                name: "TBD",
+                role: "TBD",
+                image:
+                  "https://robofest.pk/meet_the_team/images/Empty.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: "concept-note",
         label: "Concept Note",
         type: "concept",
+
+        image: "/2026/ConceptNote.png",
+        imageAlt: "RoboFest 2026 concept note",
 
         description:
           "RoboFest 2026 is an innovation-driven educational festival designed to promote inclusivity, collaboration, and equal opportunities in technology. Centered around Swarm Robotics, the event highlights how collective intelligence and teamwork—both in machines and people—can help bridge social and technological gaps. In RoboFest 2026, swarm robotics symbolizes collective empowerment, reinforcing the idea that collaboration and diversity lead to stronger solutions—directly supporting SDG 5 (Gender Equality) and SDG 10 (Reduced Inequalities) by encouraging participation from students of all backgrounds and abilities.",
@@ -198,6 +374,9 @@ export const competitions = {
         id: "rulebook",
         label: "RuleBook",
         type: "resources",
+
+        image: "/2026/RuleBook.png",
+        imageAlt: "RoboFest 2026 rulebook",
 
         description:
           "Access comprehensive resources to help you prepare for RoboFest 2026 competitions.",
@@ -646,179 +825,7 @@ export const competitions = {
       |--------------------------------------------------------------------------
       */
 
-      {
-        id: "organizers",
-        label: "Organizers",
-        type: "profiles",
-
-        description:
-          "Meet the people behind RoboFest 2026 who work together to bring the festival to life.",
-
-        sections: [
-          /*
-          |--------------------------------------------------------------------------
-          | LEADERSHIP
-          |--------------------------------------------------------------------------
-          */
-
-          {
-            title: "Leadership",
-
-            profiles: [
-              {
-                name: "Kamran Ali",
-                role: "Founder & CEO",
-                organization: "TechTics Club",
-
-                image:
-                  "https://robofest.pk/meet_the_team/images/kamran.jpeg",
-
-                social: {
-                  linkedin:
-                    "https://www.linkedin.com/in/theroboticguy/",
-
-                  github:
-                    "https://github.com/kamrankhowaja",
-
-                  instagram:
-                    "https://www.instagram.com/the_robotic_guy/",
-                },
-              },
-
-              {
-                name: "Asil Budhwani",
-                role: "Co-Founder & COO",
-                organization: "TechTics Club",
-
-                image:
-                  "https://robofest.pk/meet_the_team/images/asil.jpeg",
-
-                social: {
-                  linkedin:
-                    "https://www.linkedin.com/in/asilbudhwani/",
-
-                  github:
-                    "https://github.com/techticsclubpakistan",
-
-                  instagram:
-                    "https://www.instagram.com/asil_budhwani?igsh=cDdyZDhramZrMzBz",
-                },
-              },
-            ],
-          },
-
-          /*
-          |--------------------------------------------------------------------------
-          | TEAM ADMINISTRATION
-          |--------------------------------------------------------------------------
-          */
-
-          {
-            title: "Team Administration",
-
-            profiles: [
-              {
-                name: "Fazila Farooq",
-                role: "RoboFest Manager",
-                image:
-                  "https://robofest.pk/meet_the_team/images/fazila.jpeg",
-              },
-
-              {
-                name: "Rozina Naveed",
-                role: "Event Coordinator",
-                image:
-                  "https://robofest.pk/meet_the_team/images/rozina.jpeg",
-              },
-
-              {
-                name: "Amna Alwani",
-                role: "Registration Lead",
-                image:
-                  "https://robofest.pk/meet_the_team/images/amna.jpg",
-              },
-
-              {
-                name: "Munaf Bhanji",
-                role: "Graphic Designer",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Munaf.png",
-              },
-            ],
-          },
-
-          /*
-          |--------------------------------------------------------------------------
-          | DOMAIN LEADS
-          |--------------------------------------------------------------------------
-          */
-
-          {
-            title: "Domain Leads",
-
-            profiles: [
-              {
-                name: "Mehdi Abidi",
-                role: "Robotics Lead",
-                domain: "Robotics",
-                image:
-                  "https://robofest.pk/meet_the_team/images/mehdi.jpeg",
-              },
-
-              {
-                name: "Rabia Tauseef",
-                role: "Robotics Lead",
-                domain: "Robotics",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Rabia.jpg",
-              },
-
-              {
-                name: "Syeda Tabinda",
-                role: "Programming Lead",
-                domain: "Programming",
-                image:
-                  "https://robofest.pk/meet_the_team/images/tabinda.jpg",
-              },
-
-              {
-                name: "Talha Ali Akber",
-                role: "STEAM Lead",
-                domain: "STEAM",
-                image:
-                  "https://robofest.pk/meet_the_team/images/talha.jpeg",
-              },
-
-              {
-                name: "Aliyan Altaf",
-                role: "E-Gaming Lead",
-                domain: "E-Gaming",
-                image:
-                  "https://robofest.pk/meet_the_team/images/aliyan.jpeg",
-              },
-            ],
-          },
-
-          /*
-          |--------------------------------------------------------------------------
-          | SPECIAL GUESTS
-          |--------------------------------------------------------------------------
-          */
-
-          {
-            title: "Special Guests",
-
-            profiles: [
-              {
-                name: "TBD",
-                role: "TBD",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
-              },
-            ],
-          },
-        ],
-      },
+      
     ],
 
     /*
@@ -876,7 +883,10 @@ export const competitions = {
     |--------------------------------------------------------------------------
     */
 
-    youtube: "https://www.youtube.com/embed/oSLVSvj48E8",
+    previousYearYoutube: "https://www.youtube.com/embed/oSLVSvj48E8",
+
+    // Add the RoboFest 2026 YouTube embed URL here when it is available.
+    youtube: "",
 
     /*
     |--------------------------------------------------------------------------

@@ -4,6 +4,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Maximize2,
+  ExternalLink,
 } from "lucide-react";
 
 import "./styles.css";
@@ -11,42 +12,42 @@ import "./styles.css";
 const mediaItems = [
   {
     type: "image",
-    src: "/media/r1.png",
+    src: "/images/4.jpg",
     title: "RoboFest Highlights",
   },
   {
     type: "image",
-    src: "/media/r2.png",
+    src: "/images/9.jpg",
     title: "Robotics Competition",
   },
   {
     type: "image",
-    src: "/media/r3.png",
+    src: "/images/11.jpg",
     title: "Participants at RoboFest",
   },
   {
     type: "image",
-    src: "/media/r4.png",
+    src: "/images/12.jpg",
     title: "Innovation & Technology",
   },
   {
     type: "image",
-    src: "/media/r7.png",
+    src: "/images/17.jpg",
     title: "RoboFest Event",
   },
   {
     type: "image",
-    src: "/media/r6.png",
+    src: "/images/21.jpg",
     title: "Competition Highlights",
   },
   {
     type: "image",
-    src: "/media/r8.png",
+    src: "/images/31.jpg",
     title: "Competition Highlights",
   },
   {
     type: "image",
-    src: "/media/r9.png",
+    src: "/images/45.jpg",
     title: "Competition Highlights",
   },
 ];
@@ -233,6 +234,16 @@ const MediaPage = () => {
           ))}
 
         </div>
+
+        <a
+          className="media-view-more"
+          href="https://drive.google.com/drive/folders/10aXv4kCZGRK31dp-CAUFC0RVVrauEc6e"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View More
+          <ExternalLink size={17} />
+        </a>
 
       </main>
 
