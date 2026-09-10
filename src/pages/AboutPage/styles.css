@@ -1525,11 +1525,11 @@
   display: grid;
 
   grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+    repeat(4, minmax(0, 1fr));
 
   gap: 18px;
 
-  max-width: 900px;
+  max-width: 1100px;
 
   margin: 0 auto;
 }
@@ -1625,6 +1625,25 @@
   font-weight: 600;
 }
 
+.statistic-theme-sdg {
+  font-size: 1.7rem;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.statistic-theme-card .statistic-label {
+  min-height: 2.4em;
+  line-height: 1.4;
+}
+
+.statistic-theme-tagline {
+  margin: 12px 0 0;
+  color: #2874d8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 
 /* Year */
 
@@ -1688,7 +1707,7 @@
     max-width: 700px;
 
     grid-template-columns:
-      repeat(3, 1fr);
+      repeat(2, 1fr);
 
     gap: 12px;
   }

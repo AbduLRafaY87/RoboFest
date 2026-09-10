@@ -31,13 +31,20 @@ const eventStats = {
     students: 800,
     schools: 25,
     volunteers: 40,
-    "climate action theme introduced": "SDG 13",
+    theme: {
+      sdg: "SDG 13",
+      title: "Climate Action Theme Introduced",
+    },
   },
   2025: {
     students: 300,
     schools: 17,
     volunteers: 15,
-    "climate action theme introduced": "SDG 13",
+    theme: {
+      sdg: "SDGs 3 & 9",
+      title: "Robotics for a Better Tomorrow",
+      tagline: "Innovate • Protect • Sustain",
+    },
   },
 };
 
@@ -73,13 +80,13 @@ const committee = [
     name: "Kamran Ali",
     role: "CEO & Founder",
     organization: "TechTics Club",
-    image: "/Kamran.jpeg",
+    image: "/team/kamran.jpeg",
   },
   {
     name: "Asil",
     role: "COO & Co-Founder",
     organization: "TechTics Club",
-    image: "/Asil.jpeg",
+    image: "/team/asil.jpeg",
   },
 ];
 
@@ -552,6 +559,34 @@ const Association = () => {
               </span>
 
             </div>
+
+            {eventStats[activeYear].theme && (
+              <div className="statistic-card statistic-theme-card">
+
+                <div className="statistic-icon">
+                  <Lightbulb size={22} />
+                </div>
+
+                <div className="statistic-number statistic-theme-sdg">
+                  {eventStats[activeYear].theme.sdg}
+                </div>
+
+                <div className="statistic-label">
+                  {eventStats[activeYear].theme.title}
+                </div>
+
+                {eventStats[activeYear].theme.tagline && (
+                  <p className="statistic-theme-tagline">
+                    {eventStats[activeYear].theme.tagline}
+                  </p>
+                )}
+
+                <span className="statistic-year">
+                  ROBOFEST {activeYear}
+                </span>
+
+              </div>
+            )}
 
           </div>
 

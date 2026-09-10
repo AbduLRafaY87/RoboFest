@@ -9,6 +9,9 @@ import {
   ShieldCheck,
   ArrowRight,
   ExternalLink,
+  CalendarDays,
+  ClipboardList,
+  UserRound,
   // Linkedin,
   // Github,
   // Instagram,
@@ -76,6 +79,8 @@ const CompetitionPage = ({ competition }) => {
         eventInfo={competition.eventInfo}
         year={competition.year}
       />
+
+      
 
       {competition.previousYearYoutube && (
           <CompetitionVideo
@@ -590,6 +595,10 @@ const CompetitionPage = ({ competition }) => {
           </section>
         )}
 
+        {competition.registration && (
+        <RegistrationSection registration={competition.registration} />
+      )}
+
 
         {/* =========================================================
             PARTNERS & SPONSORS
@@ -694,6 +703,69 @@ const CompetitionVideo = ({ url, year, eyebrow, variant = "" }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+      </div>
+    </section>
+  );
+};
+
+const registrationIcons = {
+  users: Users,
+  age: UserRound,
+  document: ClipboardList,
+  calendar: CalendarDays,
+};
+
+const RegistrationSection = ({ registration }) => {
+  return (
+    <section className="registration-section">
+      <div className="registration-container">
+        <div className="registration-heading">
+          <h2>Registration Requirements &amp; Process</h2>
+          <p>{registration.intro}</p>
+        </div>
+
+        <div className="registration-grid">
+          <div className="registration-card">
+            <h3>Registration Steps</h3>
+            <ol className="registration-steps">
+              {registration.steps.map((step, index) => (
+                <li key={step.title}>
+                  <span className="registration-step-number">{index + 1}</span>
+                  <div>
+                    <strong>{step.title}</strong>
+                    <p>{step.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="registration-card">
+            <h3>Eligibility &amp; Requirements</h3>
+            <div className="registration-requirements">
+              {registration.requirements.map((requirement) => {
+                const Icon = registrationIcons[requirement.icon] || ClipboardList;
+
+                return (
+                  <div className="registration-requirement" key={requirement.title}>
+                    <Icon size={17} aria-hidden="true" />
+                    <div>
+                      <strong>{requirement.title}</strong>
+                      <p>{requirement.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="registration-actions">
+          <a href={registration.openTeamLink} target="_blank" rel="noopener noreferrer">
+            SignUp as Open Team
+          </a>
+          <a href={registration.registrationLink}>Register Here</a>
+        </div>
       </div>
     </section>
   );

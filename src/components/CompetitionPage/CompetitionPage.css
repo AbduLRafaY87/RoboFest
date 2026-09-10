@@ -562,13 +562,11 @@
 ========================================================= */
 
 .profiles-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
   justify-content: center;
-  /* grid-template-columns:
-    repeat(4, minmax(0, 1fr)); */
   align-items: center;
   text-align: center;
-  /* width:fit-content; */
   gap: 24px;
 }
 
@@ -580,6 +578,9 @@
 .profile-card {
   overflow: hidden;
 
+  width: 100%;
+  max-width: 350px;
+
   background: white;
 
   border: 1px solid #e3ebf5;
@@ -590,7 +591,9 @@
     transform 0.3s ease,
     box-shadow 0.3s ease,
     border-color 0.3s ease;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  justify-self: center;
 }
 
 .profile-card:hover {
@@ -1010,8 +1013,7 @@
 @media (max-width: 1100px) {
 
   .profiles-grid {
-    grid-template-columns:
-      repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
   }
 
   .judge-grid {
@@ -1047,8 +1049,7 @@
   }
 
   .profiles-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 300px));
   }
 
   .judge-grid {
@@ -1128,7 +1129,7 @@
   }
 
   .profiles-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 300px);
   }
 
   .judge-grid {
@@ -1221,6 +1222,160 @@
   font-size: 17px;
 
   line-height: 1.85;
+}
+
+/* =========================================================
+   REGISTRATION
+========================================================= */
+
+.registration-section {
+  background: #fbfcfe;
+  border-bottom: 1px solid #e4ebf4;
+}
+
+.registration-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 38px 30px 42px;
+}
+
+.registration-heading {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.registration-heading h2 {
+  margin: 0 0 8px;
+  color: #071b3a;
+  font-size: clamp(25px, 2.5vw, 34px);
+  line-height: 1.2;
+}
+
+.registration-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.registration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.registration-card {
+  padding: 16px;
+  background: white;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+  box-shadow: 0 7px 20px rgba(15, 61, 105, 0.06);
+}
+
+.registration-card h3 {
+  margin: 0 0 28px;
+  color: #101828;
+  font-size: 28px;
+}
+
+.registration-steps,
+.registration-requirements {
+  display: grid;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.registration-steps {
+  list-style: none;
+}
+
+.registration-steps li,
+.registration-requirement {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.registration-step-number {
+  display: grid;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #82a9eb;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.registration-steps strong,
+.registration-requirement strong {
+  display: block;
+  color: #071b3a;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.registration-steps p,
+.registration-requirement p {
+  margin: 3px 0 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.registration-requirement {
+  padding: 10px 8px;
+  border-radius: 7px;
+  background: #f7f8fa;
+}
+
+.registration-requirement > svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #82a9eb;
+}
+
+.registration-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.registration-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 95px;
+  padding: 5px 9px;
+  border-radius: 4px;
+  background: #a34aa2;
+  color: white;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.registration-actions a:hover {
+  background: #873987;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .registration-container {
+    padding: 34px 18px 38px;
+  }
+
+  .registration-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 

@@ -29,6 +29,60 @@ export const competitions = {
       venue: "BeaconHouse PECHS Campus",
     },
 
+    registration: {
+      intro:
+        "Join RoboFest 2026 and showcase your skills in robotics, programming, and STEAM competitions. Follow our simple registration process to secure your spot.",
+      steps: [
+        {
+          title: "Choose Your Category",
+          description:
+            "Select from School Team, Open Team, or Individual Participant",
+        },
+        {
+          title: "Complete Registration Form",
+          description: "Fill out the online registration form with team details",
+        },
+        {
+          title: "Submit Required Documents",
+          description:
+            "Upload necessary identification and verification documents",
+        },
+        {
+          title: "Make Payment",
+          description: "Complete the registration fee payment",
+        },
+        {
+          title: "Receive Confirmation",
+          description: "Get your team ID and event details via email",
+        },
+      ],
+      requirements: [
+        {
+          title: "Team Size",
+          description: "1-3 members per team (varies by competition)",
+          icon: "users",
+        },
+        {
+          title: "Age Groups",
+          description:
+            "Junior (3 - 4), Primary (5 - 6), Secondary (7 - 10), and Higher Secondary (11 - 12)",
+          icon: "age",
+        },
+        {
+          title: "Required Documents",
+          description: "School name, Team name, Email address and Contact number",
+          icon: "document",
+        },
+        {
+          title: "Registration Deadline",
+          description: "TBD",
+          icon: "calendar",
+        },
+      ],
+      openTeamLink: "https://tinyurl.com/RoboFest2026OpenTeam",
+      registrationLink: "https://robofest.pk/portal_rob/login.php",
+    },
+
     competitions: [
       {
         category: "Robotics",
@@ -179,7 +233,7 @@ export const competitions = {
                 organization: "TechTics Club",
 
                 image:
-                  "https://robofest.pk/meet_the_team/images/kamran.jpeg",
+                  "/team/kamran.jpeg",
 
                 social: {
                   linkedin:
@@ -199,7 +253,7 @@ export const competitions = {
                 organization: "TechTics Club",
 
                 image:
-                  "https://robofest.pk/meet_the_team/images/asil.jpeg",
+                  "/team/asil.jpeg",
 
                 social: {
                   linkedin:
@@ -229,28 +283,28 @@ export const competitions = {
                 name: "Fazila Farooq",
                 role: "RoboFest Manager",
                 image:
-                  "https://robofest.pk/meet_the_team/images/fazila.jpeg",
+                  "/team/fazila.jpeg",
               },
 
               {
                 name: "Rozina Naveed",
                 role: "Event Coordinator",
                 image:
-                  "https://robofest.pk/meet_the_team/images/rozina.jpeg",
+                  "/team/rozina.jpeg",
               },
 
               {
                 name: "Amna Alwani",
                 role: "Registration Lead",
                 image:
-                  "https://robofest.pk/meet_the_team/images/amna.jpg",
+                  "/team/amna.jpg",
               },
 
               {
                 name: "Munaf Bhanji",
                 role: "Graphic Designer",
                 image:
-                  "https://robofest.pk/meet_the_team/images/Munaf.png",
+                  "/team//Munaf.png",
               },
             ],
           },
@@ -270,7 +324,7 @@ export const competitions = {
                 role: "Robotics Lead",
                 domain: "Robotics",
                 image:
-                  "https://robofest.pk/meet_the_team/images/mehdi.jpeg",
+                  "/team/mehdi.jpeg",
               },
 
               {
@@ -278,7 +332,7 @@ export const competitions = {
                 role: "Robotics Lead",
                 domain: "Robotics",
                 image:
-                  "https://robofest.pk/meet_the_team/images/Rabia.jpg",
+                  "/team/Rabia.jpg",
               },
 
               {
@@ -286,7 +340,7 @@ export const competitions = {
                 role: "Programming Lead",
                 domain: "Programming",
                 image:
-                  "https://robofest.pk/meet_the_team/images/tabinda.jpg",
+                  "/team/tabinda.jpg",
               },
 
               {
@@ -294,7 +348,7 @@ export const competitions = {
                 role: "STEAM Lead",
                 domain: "STEAM",
                 image:
-                  "https://robofest.pk/meet_the_team/images/talha.jpeg",
+                  "/team/talha.jpeg",
               },
 
               {
@@ -302,7 +356,7 @@ export const competitions = {
                 role: "E-Gaming Lead",
                 domain: "E-Gaming",
                 image:
-                  "https://robofest.pk/meet_the_team/images/aliyan.jpeg",
+                  "/team/aliyan.jpeg",
               },
             ],
           },
@@ -321,7 +375,7 @@ export const competitions = {
                 name: "TBD",
                 role: "TBD",
                 image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
+                  "/team/Empty.png",
               },
             ],
           },
@@ -432,7 +486,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "IPD Garden",
             image:
-              "https://robofest.pk/meet_the_team/images/ipd.png",
+              "/team/ipd.png",
           },
 
           {
@@ -440,7 +494,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "Aga Khan School Garden",
             image:
-              "https://robofest.pk/meet_the_team/images/agakhangarden.png",
+              "/team/agakhangarden.png",
           },
 
           {
@@ -448,7 +502,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "CBS Alybad",
             image:
-              "https://robofest.pk/meet_the_team/images/Alyabad.jpeg",
+              "/team/Alyabad.jpeg",
           },
 
           {
@@ -456,7 +510,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "Army Public School Gulmohar Campus",
             image:
-              "https://robofest.pk/meet_the_team/images/APS.png",
+              "/team/APS.png",
           },
 
           {
@@ -464,7 +518,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "Kalimah Schooling System",
             image:
-              "https://robofest.pk/meet_the_team/images/Kalimah_schooling_system.jpg",
+              "/team/Kalimah_schooling_system.jpg",
           },
 
           {
@@ -472,7 +526,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "SMS — Morning",
             image:
-              "https://robofest.pk/meet_the_team/images/SMS_morning.jpg",
+              "/team/SMS_morning.jpg",
           },
 
           {
@@ -480,7 +534,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "SMS — Evening",
             image:
-              "https://robofest.pk/meet_the_team/images/SMS_evening.jpg",
+              "/team/SMS_evening.jpg",
           },
 
           {
@@ -488,7 +542,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "The Academy",
             image:
-              "https://robofest.pk/meet_the_team/images/The_Academy.jpg",
+              "/team/The_Academy.jpg",
           },
 
           {
@@ -496,7 +550,7 @@ export const competitions = {
             role: "Teacher & Student Ambassadors",
             organization: "NJV School",
             image:
-              "https://robofest.pk/meet_the_team/images/Njv.jpg",
+              "/team/Njv.jpg",
           },
         ],
       },
