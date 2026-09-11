@@ -26,7 +26,7 @@ const Footer = () => {
               <p>Address 1: Plot C 116, F.B Area Block 6, Gulberg Town, Karachi, 75950</p>
               <p>Address 2: Sindh Enterprise Incubation Centre, Block 15, Gulistan-e-Johar, Karachi</p>
             </div>
-            <a href="mailto:robofestpakistan@techticsclub.com" className="contact-btn">
+            <a href="mailto:info@robofest.pk" className="contact-btn">
               CONTACT US
             </a>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="grid-col">
             <h3 className="col-title">INFORMATION</h3>
             <ul className="footer-menu">
-              <li><a href="mailto:robofestpakistan@techticsclub.com">Contact</a></li>
+              <li><a href="mailto:info@robofest.pk">Contact</a></li>
               <li><Link to="/terms">Legal Disclosure</Link></li>
               <li><Link to="/privacy">Privacy Policy</Link></li>
             </ul>

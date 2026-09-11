@@ -483,7 +483,7 @@ export const competitions = {
         profiles: [
           {
             name: "IPD Garden",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "IPD Garden",
             image:
               "/team/ipd.png",
@@ -491,7 +491,7 @@ export const competitions = {
 
           {
             name: "Aga Khan School Garden",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "Aga Khan School Garden",
             image:
               "/team/agakhangarden.png",
@@ -499,7 +499,7 @@ export const competitions = {
 
           {
             name: "CBS Alybad",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "CBS Alybad",
             image:
               "/team/Alyabad.jpeg",
@@ -507,7 +507,7 @@ export const competitions = {
 
           {
             name: "Army Public School Gulmohar Campus",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "Army Public School Gulmohar Campus",
             image:
               "/team/APS.png",
@@ -515,7 +515,7 @@ export const competitions = {
 
           {
             name: "Kalimah Schooling System",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "Kalimah Schooling System",
             image:
               "/team/Kalimah_schooling_system.jpg",
@@ -523,7 +523,7 @@ export const competitions = {
 
           {
             name: "SMS (Morning)",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "SMS — Morning",
             image:
               "/team/SMS_morning.jpg",
@@ -531,7 +531,7 @@ export const competitions = {
 
           {
             name: "SMS (Evening)",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "SMS — Evening",
             image:
               "/team/SMS_evening.jpg",
@@ -539,7 +539,7 @@ export const competitions = {
 
           {
             name: "The Academy",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "The Academy",
             image:
               "/team/The_Academy.jpg",
@@ -547,7 +547,7 @@ export const competitions = {
 
           {
             name: "NJV School",
-            role: "Teacher & Student Ambassadors",
+            role: " ",
             organization: "NJV School",
             image:
               "/team/Njv.jpg",

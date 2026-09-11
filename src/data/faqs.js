@@ -118,6 +118,6 @@ export const generalFAQs = [
     question:
       "How do I contact the RoboFest team?",
     answer:
-      "For inquiries, email us at robofestpakistan@techticslub.com.",
+      "For inquiries, email us at info@robofest.pk.",
   },
 ];
