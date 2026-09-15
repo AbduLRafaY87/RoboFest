@@ -482,75 +482,130 @@ export const competitions = {
 
         profiles: [
           {
-            name: "IPD Garden",
-            role: " ",
-            organization: "IPD Garden",
-            image:
-              "/team/ipd.png",
+            name: "AKHSS",
+            role: "School Ambassador",
+            organization: "AKHSS",
+            image: "/Ambassador/AKHSS.png",
           },
-
           {
-            name: "Aga Khan School Garden",
-            role: " ",
-            organization: "Aga Khan School Garden",
-            image:
-              "/team/agakhangarden.png",
+            name: "DHACSS Phase VII Campus",
+            role: "School Ambassador",
+            organization: "DHACSS Phase VII Campus",
+            image: "/Ambassador/DHACSS PHASE VII CAMPUS.png",
           },
-
           {
-            name: "CBS Alybad",
-            role: " ",
-            organization: "CBS Alybad",
-            image:
-              "/team/Alyabad.jpeg",
+            name: "Discovery Centre - Beaconhouse School System",
+            role: "School Ambassador",
+            organization: "Discovery Centre - Beaconhouse School System",
+            image: "/Ambassador/Discovery Centre - Beaconhouse School System.png",
           },
-
           {
-            name: "Army Public School Gulmohar Campus",
-            role: " ",
-            organization: "Army Public School Gulmohar Campus",
-            image:
-              "/team/APS.png",
+            name: "Dr Abdul Qadeer Khan",
+            role: "School Ambassador",
+            organization: "Dr Abdul Qadeer Khan",
+            image: "/Ambassador/Dr Abdul Qadeer Khan.png",
           },
-
           {
-            name: "Kalimah Schooling System",
-            role: " ",
-            organization: "Kalimah Schooling System",
-            image:
-              "/team/Kalimah_schooling_system.jpg",
+            name: "Haque Academy",
+            role: "School Ambassador",
+            organization: "Haque Academy",
+            image: "/Ambassador/Haque Academy.png",
           },
-
           {
-            name: "SMS (Morning)",
-            role: " ",
-            organization: "SMS — Morning",
-            image:
-              "/team/SMS_morning.jpg",
+            name: "Hira Foundation",
+            role: "School Ambassador",
+            organization: "Hira Foundation",
+            image: "/Ambassador/Hira Foundation.png",
           },
-
           {
-            name: "SMS (Evening)",
-            role: " ",
-            organization: "SMS — Evening",
-            image:
-              "/team/SMS_evening.jpg",
+            name: "IISAR Foundation",
+            role: "School Ambassador",
+            organization: "IISAR Foundation",
+            image: "/Ambassador/IISAR Foundation.png",
           },
-
           {
-            name: "The Academy",
-            role: " ",
-            organization: "The Academy",
-            image:
-              "/team/The_Academy.jpg",
+            name: "IU School System Shahrah-e-Pakistan Campus",
+            role: "School Ambassador",
+            organization: "IU School System Shahrah-e-Pakistan Campus",
+            image: "/Ambassador/Iu School System Shahrah-e-Pakistan Campus.png",
           },
-
           {
-            name: "NJV School",
-            role: " ",
-            organization: "NJV School",
-            image:
-              "/team/Njv.jpg",
+            name: "IUSS Airport Campus",
+            role: "School Ambassador",
+            organization: "IUSS Airport Campus",
+            image: "/Ambassador/IUSS Airport Campus.png",
+          },
+          {
+            name: "IUSS Block J",
+            role: "School Ambassador",
+            organization: "IUSS Block J",
+            image: "/Ambassador/IUSS Block J.png",
+          },
+          {
+            name: "IUSS Gulshan Campus",
+            role: "School Ambassador",
+            organization: "IUSS Gulshan Campus",
+            image: "/Ambassador/IUSS Gulshan Campus.png",
+          },
+          {
+            name: "IUSS Safoora Campus",
+            role: "School Ambassador",
+            organization: "IUSS Safoora Campus",
+            image: "/Ambassador/IUSS Safoora Campus.png",
+          },
+          {
+            name: "Jaffar Public School",
+            role: "School Ambassador",
+            organization: "Jaffar Public School",
+            image: "/Ambassador/Jaffar Public School.png",
+          },
+          {
+            name: "Kaalimah Schooling System",
+            role: "School Ambassador",
+            organization: "Kaalimah Schooling System",
+            image: "/Ambassador/Kaalimah Schooling System.png",
+          },
+          {
+            name: "Karachi Public School",
+            role: "School Ambassador",
+            organization: "Karachi Public School",
+            image: "/Ambassador/Karachi Public School.png",
+          },
+          {
+            name: "KPS Malir",
+            role: "School Ambassador",
+            organization: "KPS Malir",
+            image: "/Ambassador/KPS Malir.png",
+          },
+          {
+            name: "NJV",
+            role: "School Ambassador",
+            organization: "NJV",
+            image: "/Ambassador/NJV.png",
+          },
+          {
+            name: "SMS Aga Khan School Karimabad",
+            role: "School Ambassador",
+            organization: "SMS Aga Khan School Karimabad",
+            image: "/Ambassador/SMS Aga Khan School Karimabad.png",
+          },
+          {
+            name: "SMS AKS Secondary Section",
+            role: "School Ambassador",
+            organization: "SMS AKS Secondary Section",
+            image: "/Ambassador/SMS AKS Secondary Section.png",
+          },
+          {
+            name: "Sultan Mohamed Shah Aga Khan School, Primary Section",
+            role: "School Ambassador",
+            organization: "Sultan Mohamed Shah Aga Khan School, Primary Section",
+            image: "/Ambassador/Sultan Mohamed Shah Aga Khan School, Primary Section.png",
+          },
+          {
+            name: "The Intellect School",
+            role: "School Ambassador",
+            organization: "The Intellect School",
+            image: "/Ambassador/The intellect school.png",
           },
         ],
       },
@@ -562,221 +617,349 @@ export const competitions = {
       */
 
       {
-        id: "volunteers",
-        label: "Volunteers Profile",
+        id: "team-leads",
+        label: "Team Leads",
         type: "profiles",
 
         description:
-          "Meet the volunteers who contribute their time, skills, and energy to making RoboFest 2026 a successful experience for every participant.",
+          "Meet the team leads guiding each RoboFest 2026 category and keeping the event experience focused, collaborative, and inspiring.",
 
-        /*
-         * Volunteer information has not been provided yet.
-         *
-         * Add volunteers in this format:
-         *
-         * {
-         *   name: "Volunteer Name",
-         *   role: "Profession / Role",
-         *   organization: "Organization Name",
-         *   image: "/competitions/2026/team/volunteer.jpg"
-         * }
-         */
+        sections: [
+          
+          {
+            title: "Management",
+            profiles: [
+              {
+                name: "Alina Lakhani",
+                role: "Management Lead",
+                domain: "Management",
+                image: "/Team Leads/Management Lead/Alina Lakhani.jpg",
+              },
+              {
+                name: "Amna Mustafa",
+                role: "Management Lead",
+                domain: "Management",
+                image: "/Team Leads/Management Lead/Amna Mustafa.jpg",
+              },
+              {
+                name: "Kashish Budhwani",
+                role: "Management Lead",
+                domain: "Management",
+                image: "/Team Leads/Management Lead/Kashish Budhwani.jpg",
+              },
+            ],
+          },
 
-        profiles: [
           {
-            name: "Abdul Rafay",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/1.png",
+            title: "Programming",
+            profiles: [
+              {
+                name: "Tabinda",
+                role: "Programming Lead",
+                domain: "Programming",
+                image: "/Team Leads/Programming Lead/Tabinda.jpg",
+              },
+            ],
           },
           {
-            name: "Dania",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/2.jpeg",
+            title: "Robotics",
+            profiles: [
+              {
+                name: "Mehdi Abidi",
+                role: "Robotics Lead",
+                domain: "Robotics",
+                image: "/Team Leads/Robotics Lead/Mehdi Abidi.jpg",
+              },
+              {
+                name: "Rabia Tauseef",
+                role: "Robotics Lead",
+                domain: "Robotics",
+                image: "/Team Leads/Robotics Lead/Rabia Tauseef.jpg",
+              },
+            ],
           },
           {
-            name: "Rizwan Shah",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/4.png",
+            title: "STEAM",
+            profiles: [
+              {
+                name: "Rizwan Ali",
+                role: "STEAM Lead",
+                domain: "STEAM",
+                image: "/Team Leads/STEAM Lead/Rizwan Ali.jpg",
+              },
+              {
+                name: "Talha Ali Akbar",
+                role: "STEAM Lead",
+                domain: "STEAM",
+                image: "/Team Leads/STEAM Lead/Talha Ali Akbar.jpg",
+              },
+            ],
           },
           {
-            name: "Muhammad Zayan",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/32.jpg",
+            title: "E-Gaming",
+            profiles: [
+              {
+                name: "Aliyan Altaf",
+                role: "E-Gaming Lead",
+                domain: "E-Gaming",
+                image: "/Team Leads/Egaming Lead/Aliyan Altaf.jpg",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: "interns",
+        label: "Interns",
+        type: "profiles",
+
+        description:
+          "Meet the interns supporting RoboFest across event management, technology, and creative domains.",
+
+        sections: [
+          {
+            title: "Management",
+            profiles: [
+              {
+                name: "Abdul Rafay",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Abdul Rafay.png",
+              },
+              {
+                name: "Anara Amir",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Anara Amir.png",
+              },
+              {
+                name: "Furqan Khatti",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Furqan Khatti.jpg",
+              },
+              {
+                name: "Habiba Khizer",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Habiba Khizer.jpg",
+              },
+              {
+                name: "Hooria Sajjad",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Hooria Sajjad_.png",
+              },
+              {
+                name: "Kamil Kamran",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Kamil Kamran.jpg",
+              },
+              {
+                name: "Mahad Abbasi",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Mahad Abbasi.jpg",
+              },
+              {
+                name: "Moiz Hussain",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Moiz Hussain.jpg",
+              },
+              {
+                name: "Rayan Ali Rahim",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Rayan Ali Rahim.jpg",
+              },
+              {
+                name: "Rizwan Shah",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Rizwan Shah_.png",
+              },
+              {
+                name: "Rizwana Alam",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Rizwana Alam.jpg",
+              },
+              {
+                name: "Sanaan Saleem",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Sanaan Saleem.png",
+              },
+              {
+                name: "Tabish Khalani",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Tabish Khalani_.jpg",
+              },
+              {
+                name: "Yasir Karim",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Yasir Karim.png",
+              },
+              {
+                name: "Zunair Sohail",
+                role: "Management Intern",
+                domain: "Management",
+                image: "/Interns/Management/Zunair Sohail.png",
+              },
+            ],
           },
           {
-            name: "Aliza Tharwani",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/5.jpeg",
-          },
+            title: "Robotics",
+            profiles: [
+              {
+                name: "Fatima Malik",
+                role: "Robotics Intern",
+                domain: "Robotics",
+                image: "/Interns/Robotics/Fatima Malik.png",
+              },
+              {
+                name: "Israr Hussain",
+                role: "Robotics Intern",
+                domain: "Robotics",
+                image: "/Interns/Robotics/Israr Hussain.png",
+              },
+              {
+                name: "Maham Ali",
+                role: "Robotics Intern",
+                domain: "Robotics",
+                image: "/Interns/Robotics/Maham Ali.png",
+              },
+              {
+                name: "Mahnoor Pervaiz",
+                role: "Robotics Intern",
+                domain: "Robotics",
+                image: "/Interns/Robotics/Mahnoor Pervaiz_.png",
+              },
+              {
+                name: "Neva Kumari",
+                role: "Robotics Intern",
+                domain: "Robotics",
+                image: "/Interns/Robotics/Neva Kumari.png",
+              },
+            ],
+          },                   
           {
-            name: "Neva Kumari",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/6.jpg",
-          },
-          {
-            name: "Sanaan",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/7.jpg",
-          },
-          {
-            name: "Noman Akhter",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/8.jpg",
-          },
-          {
-            name: "Maryam Asif",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/9.png",
-          },
-          {
-            name: "Ayaan Anees",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/3.jpg",
-          },
-          {
-            name: "Uzair Hussain",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/10.jpg",
-          },
-          {
-            name: "Asma Khan",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/11.jpeg",
-          },
-          {
-            name: "Mohsin Salman",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/12.jpeg",
-          },
-          {
-            name: "Anara",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/13.jpg",
-          },
-          {
-            name: "Mohsin Haseeb",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/14.jpg",
-          },
-          {
-            name: "Ayaad Rupani",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/15.JPG",
-          },
-          {
-            name: "Umer Syed",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/16.png",
-          },
-          {
-            name: "Syeda Hadia",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/17.jpg",
-          },
-          {
-            name: "Osailah Atif",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/18.jpg",
-          },
-          {
-            name: "Rizwana Alam",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/19.png",
-          },
-          {
-            name: "Taha Ahmed",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/20.jpeg",
-          },
-          {
-            name: "Sohaib Kamran",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/21.jpg",
-          },
-          {
-            name: "Kamil",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/22.jpg",
-          },
-          {
-            name: "Furqan Khatti",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/23.jpg",
-          },
-          {
-            name: "Usman Ali",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/24.jpg",
-          },
-          {
-            name: "Kabir Karim",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/25.jpg",
-          },
-          {
-            name: "Shagufta Zafar",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/26.jpg",
-          },
-          {
-            name: "Syed Hannan",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/27.jpg",
-          },
-          {
-            name: "Muhammad Salik",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/28.jpg",
-          },
-          {
-            name: "Yasir Karim",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/30.jpeg",
-          },
-          {
-            name: "Yabish Charania",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/31.jpg",
-          },
-          {
-            name: "Zunair",
-            role: "Student",
-            organization: "Organization Name",
-            image: "/volunteers/33.jpg",
+            title: "Programming",
+            profiles: [
+              {
+                name: "Aayan M Anis",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Aayan M Anis.jpg",
+              },
+              {
+                name: "Aliza Tharwani",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Aliza Tharwani.png",
+              },
+              {
+                name: "Eisha Nasir",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Copy of file_000000001dd8820b9e2e0d09cef4875c - Eisha Nasir.png",
+              },
+              {
+                name: "Areesha Naz",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Copy of IMG_20260913_154905_136 - Areesha Naz.jpg",
+              },
+              {
+                name: "Muhammad Zayan",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Muhammad Zayan.jpg",
+              },
+              {
+                name: "Syeda Hadia Fatima",
+                role: "Programming Intern",
+                domain: "Programming",
+                image: "/Interns/Programming/Syeda Hadia Fatima.jpg",
+              },
+            ],
           },
           
-          
+          {
+            title: "STEAM",
+            profiles: [
+              {
+                name: "Muhammad Salik",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Muhammad Salik_.png",
+              },
+              {
+                name: "Muhammad Taha",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Muhammad Taha.png",
+              },
+              {
+                name: "Muhammad Umer Syed",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Muhammad Umer Syed.png",
+              },
+              {
+                name: "Noman Akhtar",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Noman Akhtar_.png",
+              },
+              {
+                name: "Usman Ali",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Usman Ali.jpg",
+              },
+              {
+                name: "Uzair Hussain",
+                role: "STEAM Intern",
+                domain: "STEAM",
+                image: "/Interns/STEAM/Uzair Hussain_.png",
+              },
+            ],
+          },
+          {
+            title: "E-Gaming",
+            profiles: [
+              {
+                name: "Adnan ur Rehman",
+                role: "E-Gaming Intern",
+                domain: "E-Gaming",
+                image: "/Interns/Egaming/Adnan ur Rehman.webp",
+              },
+              {
+                name: "Muhammad Mujeeb Khan",
+                role: "E-Gaming Intern",
+                domain: "E-Gaming",
+                image: "/Interns/Egaming/MUHAMMAD MUJEEB KHAN.jpg",
+              },
+              {
+                name: "Syed Abdul Hannan",
+                role: "E-Gaming Intern",
+                domain: "E-Gaming",
+                image: "/Interns/Egaming/Syed Abdul hannan.png",
+              },
+              {
+                name: "Yabish Charania",
+                role: "E-Gaming Intern",
+                domain: "E-Gaming",
+                image: "/Interns/Egaming/Yabish_.jpg",
+              },
+            ],
+          },
         ],
       },
 
@@ -800,16 +983,15 @@ export const competitions = {
 
             category: "Robotics",
 
-            competition: "TBD",
+            competition: "Robotics",
 
             profiles: [
               {
-                name: "TBD",
+                name: "Sohaib Shree",
                 role: "Robotics Judge",
                 category: "Robotics",
-                competition: "TBD",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
+                competition: "Robotics",
+                image: "/Judges/Robotics/Sohaib Shree.jpg",
               },
             ],
           },
@@ -819,16 +1001,36 @@ export const competitions = {
 
             category: "Programming",
 
-            competition: "TBD",
+            competition: "Programming",
 
             profiles: [
               {
-                name: "TBD",
+                name: "Ayesha Khan",
                 role: "Programming Judge",
                 category: "Programming",
-                competition: "TBD",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
+                competition: "Programming",
+                image: "/Judges/Programming/Ayesha_Khan.png",
+              },
+              {
+                name: "Mohsin Salman",
+                role: "Programming Judge",
+                category: "Programming",
+                competition: "Programming",
+                image: "/Judges/Programming/Mohsin Salman.jpg",
+              },
+              {
+                name: "Muhammad Saad",
+                role: "Programming Judge",
+                category: "Programming",
+                competition: "Programming",
+                image: "/Judges/Programming/Muhammad Saad.jpg",
+              },
+              {
+                name: "Muhammad Sohaib Kamran",
+                role: "Programming Judge",
+                category: "Programming",
+                competition: "Programming",
+                image: "/Judges/Programming/Muhammad Sohaib Kamran.jpg",
               },
             ],
           },
@@ -838,16 +1040,43 @@ export const competitions = {
 
             category: "STEAM",
 
-            competition: "TBD",
+            competition: "STEAM",
 
             profiles: [
               {
-                name: "TBD",
+                name: "Dania Shoaib",
                 role: "STEAM Judge",
                 category: "STEAM",
-                competition: "TBD",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
+                competition: "STEAM",
+                image: "/Judges/STEAM/Dania Shoaib.png",
+              },
+              {
+                name: "Faiqua Erum Arshad",
+                role: "STEAM Judge",
+                category: "STEAM",
+                competition: "STEAM",
+                image: "/Judges/STEAM/Faiqua_Erum_Arshad.png",
+              },
+              {
+                name: "Hina Karim",
+                role: "STEAM Judge",
+                category: "STEAM",
+                competition: "STEAM",
+                image: "/Judges/STEAM/Hina_Karim.png",
+              },
+              {
+                name: "Narmeen",
+                role: "STEAM Judge",
+                category: "STEAM",
+                competition: "STEAM",
+                image: "/Judges/STEAM/Narmeen.jpg",
+              },
+              {
+                name: "Osailah Atif",
+                role: "STEAM Judge",
+                category: "STEAM",
+                competition: "STEAM",
+                image: "/Judges/STEAM/Osailah Atif.png",
               },
             ],
           },
@@ -857,18 +1086,9 @@ export const competitions = {
 
             category: "E-Gaming",
 
-            competition: "TBD",
+            competition: "E-Gaming",
 
-            profiles: [
-              {
-                name: "TBD",
-                role: "E-Gaming Judge",
-                category: "E-Gaming",
-                competition: "TBD",
-                image:
-                  "https://robofest.pk/meet_the_team/images/Empty.png",
-              },
-            ],
+            profiles: [],
           },
         ],
       },

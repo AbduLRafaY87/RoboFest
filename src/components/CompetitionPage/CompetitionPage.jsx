@@ -26,7 +26,8 @@ const iconMap = {
   "Sponsor Note": Handshake,
   RuleBook: BookOpen,
   "Ambassadors Profile": UserCheck,
-  "Volunteers Profile": Users,
+  "Team Leads": Users,
+  "Interns": BriefcaseBusiness,
   Judges: Gavel,
   Organizers: ShieldCheck,
 };
