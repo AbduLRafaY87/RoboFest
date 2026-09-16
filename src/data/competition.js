@@ -367,18 +367,18 @@ export const competitions = {
           |--------------------------------------------------------------------------
           */
 
-          {
-            title: "Special Guests",
+          // {
+          //   title: "Special Guests",
 
-            profiles: [
-              {
-                name: "TBD",
-                role: "TBD",
-                image:
-                  "/team/Empty.png",
-              },
-            ],
-          },
+          //   profiles: [
+          //     {
+          //       name: "TBD",
+          //       role: "TBD",
+          //       image:
+          //         "/team/Empty.png",
+          //     },
+          //   ],
+          // },
         ],
       },
       {
@@ -1091,6 +1091,14 @@ export const competitions = {
             profiles: [],
           },
         ],
+      },
+
+      {
+        id: "leaderboard",
+        label: "Leaderboard",
+        type: "announcement",
+        description:
+          "RoboFest 2026 results and competition standings will be announced here after the event.",
       },
 
       /*

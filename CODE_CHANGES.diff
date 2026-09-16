@@ -1,0 +1,30 @@
+diff --git a/src/pages/HomePage/HomePage.jsx b/src/pages/HomePage/HomePage.jsx
+index 5e1633b..275c82c 100644
+--- a/src/pages/HomePage/HomePage.jsx
++++ b/src/pages/HomePage/HomePage.jsx
+@@ -1,9 +1,9 @@
+ import React, { useEffect, useState } from "react";
+ import { ChevronLeft, ChevronRight } from "lucide-react";
+ import "./styles.css";
+-import banner1 from '../../assets/carousels/banner1.png'
+-import banner2 from '../../assets/carousels/banner2.png'
+-import banner3 from '../../assets/carousels/banner3.png'
++import banner1 from '../../assets/carousels/banner1.jpg'
++import banner2 from '../../assets/carousels/banner2.jpg'
++import banner3 from '../../assets/carousels/banner3.jpg'
+ import About from '../../assets/About.jpg'
+ import aboutOne from '/standout1.png'
+ import aboutTwo from '/standout2.png'
+diff --git a/src/pages/JoinPage/JoinPage.jsx b/src/pages/JoinPage/JoinPage.jsx
+index fb053ef..a9d8693 100644
+--- a/src/pages/JoinPage/JoinPage.jsx
++++ b/src/pages/JoinPage/JoinPage.jsx
+@@ -7,7 +7,7 @@ import {
+   Handshake,
+ } from "lucide-react";
+ import "./styles.css";
+-import bannerImage from "../../assets/carousels/banner3.png";
++import bannerImage from "../../assets/carousels/banner3.jpg";
+ 
+ const opportunities = [
+   {

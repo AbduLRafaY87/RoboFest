@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./styles.css";
-import banner1 from '../../assets/carousels/banner1.png'
-import banner2 from '../../assets/carousels/banner2.png'
-import banner3 from '../../assets/carousels/banner3.png'
+import banner1 from '../../assets/carousels/banner1.jpg'
+import banner2 from '../../assets/carousels/banner2.jpg'
+import banner3 from '../../assets/carousels/banner3.jpg'
 import About from '../../assets/About.jpg'
 import aboutOne from '/standout1.png'
 import aboutTwo from '/standout2.png'

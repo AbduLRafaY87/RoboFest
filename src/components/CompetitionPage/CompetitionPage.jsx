@@ -12,6 +12,7 @@ import {
   CalendarDays,
   ClipboardList,
   UserRound,
+  Trophy,
   // Linkedin,
   // Github,
   // Instagram,
@@ -30,6 +31,7 @@ const iconMap = {
   "Interns": BriefcaseBusiness,
   Judges: Gavel,
   Organizers: ShieldCheck,
+  Leaderboard: Trophy,
 };
 
 const CompetitionPage = ({ competition }) => {
@@ -303,7 +305,11 @@ const CompetitionPage = ({ competition }) => {
             ===================================================== */}
 
             {activeTabData.type === "profiles" && (
-              <div className="profile-sections">
+              <div
+                className={`profile-sections ${
+                  activeTabData.id === "ambassadors" ? "ambassadors-profiles" : ""
+                }`}
+              >
 
                 {activeTabData.description && (
                   <p className="profile-intro">
@@ -477,6 +483,17 @@ const CompetitionPage = ({ competition }) => {
 
                 </div>
 
+              </div>
+            )}
+
+            {activeTabData.type === "announcement" && (
+              <div className="leaderboard-announcement">
+                <div className="leaderboard-announcement-icon">
+                  <Trophy size={34} aria-hidden="true" />
+                </div>
+
+                <h3>Results Coming Soon</h3>
+                <p>{activeTabData.description}</p>
               </div>
             )}
 
