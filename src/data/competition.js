@@ -494,6 +494,12 @@ export const competitions = {
             image: "/Ambassador/DHACSS PHASE VII CAMPUS.png",
           },
           {
+            name: "DHACSS PH 8",
+            role: "School Ambassador",
+            organization: "DHACSS PH 8",
+            image: "/Ambassador/DHACSS PH 8.png",
+          },
+          {
             name: "Discovery Centre - Beaconhouse School System",
             role: "School Ambassador",
             organization: "Discovery Centre - Beaconhouse School System",
@@ -504,6 +510,18 @@ export const competitions = {
             role: "School Ambassador",
             organization: "Dr Abdul Qadeer Khan",
             image: "/Ambassador/Dr Abdul Qadeer Khan.png",
+          },
+          {
+            name: "Fajr Academy",
+            role: "School Ambassador",
+            organization: "Fajr Academy",
+            image: "/Ambassador/Fajr Academy.png",
+          },
+          {
+            name: "Fatiha Academy",
+            role: "School Ambassador",
+            organization: "Fatiha Academy",
+            image: "/Ambassador/Fatiha Academy.png",
           },
           {
             name: "Haque Academy",
@@ -606,6 +624,12 @@ export const competitions = {
             role: "School Ambassador",
             organization: "The Intellect School",
             image: "/Ambassador/The intellect school.png",
+          },
+          {
+            name: "The Vantage British Curriculum",
+            role: "School Ambassador",
+            organization: "The Vantage British Curriculum",
+            image: "/Ambassador/The Vantage British  Curriculum.png",
           },
         ],
       },
@@ -1096,9 +1120,166 @@ export const competitions = {
       {
         id: "leaderboard",
         label: "Leaderboard",
-        type: "announcement",
-        description:
-          "RoboFest 2026 results and competition standings will be announced here after the event.",
+        type: "leaderboard",
+        intro:
+          "Final results will be published after the event. The structure below is ready for the official ranking data.",
+        topSchools: [
+          {
+            place: "1st Place",
+            name: "TBD",
+            total: "TBD",
+            school: "School Name TBD",
+            accent: "gold",
+          },
+          {
+            place: "2nd Place",
+            name: "TBD",
+            total: "TBD",
+            school: "School Name TBD",
+            accent: "silver",
+          },
+          {
+            place: "3rd Place",
+            name: "TBD",
+            total: "TBD",
+            school: "School Name TBD",
+            accent: "bronze",
+          },
+        ],
+        categories: [
+          {
+            title: "Robotics",
+            competitions: [
+              {
+                name: "Hunt the Block Junior",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Hunt the Block Senior",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "RoboLFR",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Robo Football League 1 vs 1",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Rescue Line",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Remote Control Package Delivery",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "RoboSumo",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Robo Race",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+            ],
+          },
+          {
+            title: "Programming",
+            competitions: [
+              {
+                name: "TinkerCad",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Scratch Programming",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Python Beginners",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Web Dev Using AI",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+            ],
+          },
+          {
+            title: "STEAM",
+            competitions: [
+              {
+                name: "TBD Competition",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+            ],
+          },
+          {
+            title: "E-Gaming",
+            competitions: [
+              {
+                name: "TBD Competition",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+            ],
+          },
+        ],
       },
 
       /*

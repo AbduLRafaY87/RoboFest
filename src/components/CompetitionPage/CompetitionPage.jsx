@@ -486,6 +486,68 @@ const CompetitionPage = ({ competition }) => {
               </div>
             )}
 
+            {activeTabData.type === "leaderboard" && (
+              <div className="leaderboard-content">
+                {/* <div className="leaderboard-intro">
+                  <div className="leaderboard-announcement-icon">
+                    <Trophy size={34} aria-hidden="true" />
+                  </div>
+                  <h3>Results Coming Soon</h3>
+                  <p>{activeTabData.intro}</p>
+                </div> */}
+
+                <div className="leaderboard-top-schools">
+                  {activeTabData.topSchools?.map((school) => (
+                    <article
+                      className={`leaderboard-top-card ${school.accent || "gold"}`}
+                      key={`${school.place}-${school.school}`}
+                    >
+                      <div className="leaderboard-logo-box">
+                        <span>{school.name || "TBD"}</span>
+                      </div>
+
+                      <h4>{school.place}</h4>
+
+                      <p className="leaderboard-school-name">
+                        {school.school}
+                      </p>
+
+                      <p className="leaderboard-school-total">
+                        Total Points: {school.total}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+
+                <div className="leaderboard-category-list">
+                  {activeTabData.categories?.map((category) => (
+                    <div
+                      className="leaderboard-category-block"
+                      key={category.title}
+                    >
+                      <h3>{category.title}</h3>
+
+                      <div className="leaderboard-category-grid">
+                        {category.competitions?.map((item) => (
+                          <article
+                            key={`${category.title}-${item.name}`}
+                            className="leaderboard-competition-card"
+                          >
+                            <h4>{item.name}</h4>
+                            <ul>
+                              {item.results?.map((result, idx) => (
+                                <li key={`${item.name}-${idx}`}>{result}</li>
+                              ))}
+                            </ul>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {activeTabData.type === "announcement" && (
               <div className="leaderboard-announcement">
                 <div className="leaderboard-announcement-icon">
