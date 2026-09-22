@@ -35,9 +35,9 @@ const Footer = () => {
           <div className="grid-col">
             <h3 className="col-title">COMPETITION</h3>
             <ul className="footer-menu">
-              <li><Link to="/competition">Overview Categories</Link></li>
-              <li><Link to="/competition#2026">2026 Season</Link></li>
-              <li><Link to="/competition#faq">FAQ about Rules</Link></li>
+              {/* <li><Link to="/competition">Overview Categories</Link></li> */}
+              <li><Link to="/competition/2026">2026 Season</Link></li>
+              <li><Link to="/competition/faq">FAQ about Rules</Link></li>
             </ul>
           </div>
 
@@ -45,8 +45,8 @@ const Footer = () => {
           <div className="grid-col">
             <h3 className="col-title">ASSOCIATION</h3>
             <ul className="footer-menu">
-              <li><Link to="/about#association">Introduction</Link></li>
-              <li><Link to="/about#partner">Partners & Members</Link></li>
+              <li><Link to="/association">Introduction</Link></li>
+              <li><Link to="/join">Join Us</Link></li>
             </ul>
           </div>
 
@@ -55,8 +55,9 @@ const Footer = () => {
             <h3 className="col-title">INFORMATION</h3>
             <ul className="footer-menu">
               <li><a href="mailto:info@robofest.pk">Contact</a></li>
-              <li><Link to="/terms">Legal Disclosure</Link></li>
-              <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><a href="newsroom/story">Robofest Story</a></li>
+              {/* <li><Link to="/terms">Legal Disclosure</Link></li> */}
+              {/* <li><Link to="/privacy">Privacy Policy</Link></li> */}
             </ul>
           </div>
 
