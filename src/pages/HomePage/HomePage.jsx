@@ -409,7 +409,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <span className="category-arrow">↗</span>
+        {/* <span className="category-arrow">↗</span> */}
       </article>
 
 
@@ -427,7 +427,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <span className="category-arrow">↗</span>
+        {/* <span className="category-arrow">↗</span> */}
       </article>
 
 
@@ -445,7 +445,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <span className="category-arrow">↗</span>
+        {/* <span className="category-arrow">↗</span> */}
       </article>
 
 
@@ -463,7 +463,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <span className="category-arrow">↗</span>
+        {/* <span className="category-arrow">↗</span> */}
       </article>
 
     </div>
