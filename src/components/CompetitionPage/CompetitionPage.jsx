@@ -545,6 +545,30 @@ const CompetitionPage = ({ competition }) => {
                     </div>
                   ))}
                 </div>
+
+                <section className="leaderboard-extra-section">
+                  <h3>Special Awards</h3>
+                  <div className="leaderboard-extra-grid leaderboard-awards-grid">
+                    {activeTabData.specialAwards?.map((award) => (
+                      <article className="leaderboard-extra-card" key={award.title}>
+                        <h4>{award.title}</h4>
+                        <p>{award.text}</p>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="leaderboard-extra-section">
+                  <h3>Qualified Teams for Final Rounds</h3>
+                  <div className="leaderboard-extra-grid leaderboard-finalists-grid">
+                    {activeTabData.qualifiedTeams?.map((team) => (
+                      <article className="leaderboard-extra-card" key={team.title}>
+                        <h4>{team.title}</h4>
+                        <p>{team.text}</p>
+                      </article>
+                    ))}
+                  </div>
+                </section>
               </div>
             )}
 
