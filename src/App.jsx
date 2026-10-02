@@ -20,6 +20,7 @@ import Stories from './pages/StoriesPage/Stories'
 import Competition2022 from './pages/PastEventsPage/Competition2022'
 import Competition2023 from './pages/PastEventsPage/Competition2023'
 import Competition2024 from './pages/PastEventsPage/Competition2024'
+import ScienceExhibitionVoting from './pages/ScienceExhibitionVoting/ScienceExhibitionVoting'
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/join" element={<JoinPage />} />
           <Route path="/past-events" element={<PastEventsPage />} />
           <Route path="/competition/2026" element={<Competition2026/>} />
+          <Route path="/science-exhibition-voting" element={<ScienceExhibitionVoting />} />
           <Route path="/events/2025" element={<Competition2025/>} />
           <Route path="/events/2024" element={<Competition2024/>} />
           <Route path="/events/2023" element={<Competition2023/>} />
