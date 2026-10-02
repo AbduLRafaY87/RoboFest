@@ -3,27 +3,35 @@ import { ArrowRight, CheckCircle2, LockKeyhole } from 'lucide-react'
 import './styles.css'
 
 const PAGE_PASSWORD = '1570'
+const criteria = ['Swarm Robotics', 'AI', 'SDG5', 'SDG10']
 
 const teams = [
   {
-    id: 'sample-team-01',
-    name: 'Sample Team 01',
-    members: ['Member One', 'Member Two'],
-    school: 'School Name',
+    id: '01',
+    name: 'ACS Tech team 1',
+    members: ['Anabiya', 'Mahwish', 'Rida'],
+    school: 'Alyabad community school',
     image: '/images/Sampleimage.jfif',
   },
   {
-    id: 'sample-team-02',
-    name: 'Sample Team 02',
-    members: ['Member One', 'Member Two'],
-    school: 'School Name',
+    id: '02',
+    name: 'IUSS Safoora Campus Team',
+    members: ['Dhrushyl', 'M.Haider'],
+    school: 'Iuss Safoora Campus ',
     image: '/images/Sampleimage.jfif',
   },
   {
-    id: 'sample-team-03',
-    name: 'Sample Team 03',
-    members: ['Member One', 'Member Two'],
-    school: 'School Name',
+    id: '03',
+    name: 'IUSS Safoora Campus Team',
+    members: ['Hassan Raza', 'Mayash', 'Shadman Raza'],
+    school: 'Iuss Safoora Campus ',
+    image: '/images/Sampleimage.jfif',
+  },
+  {
+    id: '04',
+    name: 'RoboNova',
+    members: ['Aleena', 'Fazila', 'Shabana'],
+    school: 'Sultanabad Community School ',
     image: '/images/Sampleimage.jfif',
   },
 ]
@@ -34,6 +42,19 @@ const ScienceExhibitionVoting = () => {
   const [passwordError, setPasswordError] = useState('')
   const [ratings, setRatings] = useState({})
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const totalRatings = teams.length * criteria.length
+  const completedRatings = teams.reduce(
+    (total, team) => total + criteria.filter((criterion) => ratings[team.id]?.[criterion] !== undefined).length,
+    0,
+  )
+  const allRatingsComplete = completedRatings === totalRatings
+
+  const setRating = (teamId, criterion, score) => {
+    setRatings((current) => ({
+      ...current,
+      [teamId]: { ...current[teamId], [criterion]: score },
+    }))
+  }
 
   const handleUnlock = (event) => {
     event.preventDefault()
@@ -49,6 +70,8 @@ const ScienceExhibitionVoting = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    if (!allRatingsComplete) return
+
     setIsSubmitted(true)
     window.setTimeout(() => window.location.reload(), 1200)
   }
@@ -82,9 +105,9 @@ const ScienceExhibitionVoting = () => {
       ) : (
         <div className="voting-content">
           <header className="voting-header">
-            <p className="voting-eyebrow">RoboFest 2026 · Judges&apos; ballot</p>
+            <p className="voting-eyebrow">Robot meet culture</p>
             <h1>Science Exhibition Voting</h1>
-            <p>Rate every team from 1 to 5, with 5 as the highest score.</p>
+            <p>Score each team from 1 to 5 across four criteria.</p>
           </header>
 
           <form className="team-list" onSubmit={handleSubmit}>
@@ -106,34 +129,48 @@ const ScienceExhibitionVoting = () => {
                   </dl>
                 </div>
                 <fieldset className="rating-fieldset">
-                  <legend>Score this team</legend>
-                  <div className="rating-scale">
-                    {[1, 2, 3, 4, 5].map((score) => (
-                      <label className="rating-option" key={score}>
-                        <input
-                          type="radio"
-                          name={`rating-${team.id}`}
-                          value={score}
-                          checked={ratings[team.id] === score}
-                          onChange={() => setRatings((current) => ({ ...current, [team.id]: score }))}
-                          required
-                        />
-                        <span>{score}</span>
-                      </label>
-                    ))}
+                  <legend>Score each criterion</legend>
+                  <div className="criterion-list">
+                    {criteria.map((criterion) => {
+                      const score = ratings[team.id]?.[criterion] ?? 1
+
+                      return (
+                        <label className="criterion-row" key={criterion}>
+                          <span>{criterion}</span>
+                          <input
+                            type="range"
+                            min="1"
+                            max="5"
+                            step="1"
+                            value={score}
+                            aria-label={`${criterion} score for ${team.name}`}
+                            aria-valuetext={`${score} out of 5`}
+                            onPointerDown={(event) => setRating(team.id, criterion, Number(event.currentTarget.value))}
+                            onKeyDown={(event) => {
+                              if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End', 'PageUp', 'PageDown'].includes(event.key)) {
+                                setRating(team.id, criterion, Number(event.currentTarget.value))
+                              }
+                            }}
+                            onChange={(event) => setRating(team.id, criterion, Number(event.target.value))}
+                          />
+                          <output>{score}</output>
+                        </label>
+                      )
+                    })}
                   </div>
-                  <div className="scale-labels"><span>Low</span><span>High</span></div>
                 </fieldset>
               </article>
             ))}
 
             <div className="submit-row">
-              <p className="submit-note">Your ballot includes {teams.length} teams.</p>
-              <button className="voting-button submit-button" type="submit" disabled={isSubmitted}>
+              <p className="submit-note" aria-live="polite">
+                {allRatingsComplete ? `All ${totalRatings} scores are set.` : `${totalRatings - completedRatings} scores remaining.`}
+              </p>
+              <button className="voting-button submit-button" type="submit" disabled={isSubmitted || !allRatingsComplete}>
                 {isSubmitted ? <><CheckCircle2 size={18} /> Submitted</> : 'Submit votes'}
               </button>
             </div>
-            {isSubmitted && <p className="submit-confirmation" role="status">Thank you. Refreshing your ballot…</p>}
+            {isSubmitted && <p className="submit-confirmation" role="status">Thank you. Refreshing your page :&bracket;</p>}
           </form>
         </div>
       )}
