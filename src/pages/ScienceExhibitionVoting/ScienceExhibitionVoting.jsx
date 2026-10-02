@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, LockKeyhole } from 'lucide-react'
 import './styles.css'
 
 const PAGE_PASSWORD = '1570'
+const VOTING_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx7FlKdwgsVLbBBM1TfIoF_DlXI86MPzGLi3AKnABi-Go58YM28eVNOSpc-NmMv9kOWiA/exec'
 const criteria = ['Swarm Robotics', 'AI', 'SDG5', 'SDG10']
 
 const teams = [
@@ -39,9 +40,12 @@ const teams = [
 const ScienceExhibitionVoting = () => {
   const [isUnlocked, setIsUnlocked] = useState(false)
   const [password, setPassword] = useState('')
-  const [passwordError, setPasswordError] = useState('')
+  const [voterId, setVoterId] = useState('')
+  const [gateError, setGateError] = useState('')
   const [ratings, setRatings] = useState({})
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
   const totalRatings = teams.length * criteria.length
   const completedRatings = teams.reduce(
     (total, team) => total + criteria.filter((criterion) => ratings[team.id]?.[criterion] !== undefined).length,
@@ -59,21 +63,50 @@ const ScienceExhibitionVoting = () => {
   const handleUnlock = (event) => {
     event.preventDefault()
 
+    if (!voterId.trim()) {
+      setGateError('Enter your voter ID.')
+      return
+    }
+
     if (password !== PAGE_PASSWORD) {
-      setPasswordError('That password is not correct. Please try again.')
+      setGateError('That password is not correct. Please try again.')
       return
     }
 
     setIsUnlocked(true)
-    setPasswordError('')
+    setGateError('')
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    if (!allRatingsComplete) return
+    if (!allRatingsComplete || isSubmitting || isSubmitted) return
 
-    setIsSubmitted(true)
-    window.setTimeout(() => window.location.reload(), 1200)
+    setIsSubmitting(true)
+    setSubmitError('')
+
+    const votes = teams.map((team) => ({
+      voterId: voterId.trim(),
+      teamId: team.id,
+      teamName: team.name,
+      swarmRobotics: ratings[team.id]['Swarm Robotics'],
+      ai: ratings[team.id].AI,
+      sdg5: ratings[team.id].SDG5,
+      sdg10: ratings[team.id].SDG10,
+    }))
+
+    try {
+      await fetch(VOTING_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify(votes),
+      })
+      setIsSubmitted(true)
+    } catch {
+      setSubmitError('Unable to send your votes. Check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -83,8 +116,18 @@ const ScienceExhibitionVoting = () => {
           <div className="gate-icon" aria-hidden="true"><LockKeyhole size={22} /></div>
           <p className="voting-eyebrow">RoboFest 2026</p>
           <h1 id="voting-gate-title">Science Exhibition Voting</h1>
-          <p className="gate-copy">Enter the voting password to continue.</p>
+          <p className="gate-copy">Enter your voter ID and voting password to continue.</p>
           <form className="gate-form" onSubmit={handleUnlock}>
+            <label htmlFor="voter-id">Voter ID</label>
+            <input
+              id="voter-id"
+              type="text"
+              autoComplete="off"
+              value={voterId}
+              onChange={(event) => setVoterId(event.target.value)}
+              aria-describedby={gateError ? 'gate-error' : undefined}
+              required
+            />
             <label htmlFor="voting-password">Voting password</label>
             <input
               id="voting-password"
@@ -93,10 +136,10 @@ const ScienceExhibitionVoting = () => {
               autoComplete="current-password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              aria-describedby={passwordError ? 'password-error' : undefined}
+              aria-describedby={gateError ? 'gate-error' : undefined}
               required
             />
-            {passwordError && <p className="form-error" id="password-error" role="alert">{passwordError}</p>}
+            {gateError && <p className="form-error" id="gate-error" role="alert">{gateError}</p>}
             <button className="voting-button" type="submit">
               Continue <ArrowRight size={17} aria-hidden="true" />
             </button>
@@ -166,11 +209,12 @@ const ScienceExhibitionVoting = () => {
               <p className="submit-note" aria-live="polite">
                 {allRatingsComplete ? `All ${totalRatings} scores are set.` : `${totalRatings - completedRatings} scores remaining.`}
               </p>
-              <button className="voting-button submit-button" type="submit" disabled={isSubmitted || !allRatingsComplete}>
-                {isSubmitted ? <><CheckCircle2 size={18} /> Submitted</> : 'Submit votes'}
+              <button className="voting-button submit-button" type="submit" disabled={isSubmitted || isSubmitting || !allRatingsComplete}>
+                {isSubmitted ? <><CheckCircle2 size={18} /> Sent</> : isSubmitting ? 'Sending…' : 'Submit votes'}
               </button>
             </div>
-            {isSubmitted && <p className="submit-confirmation" role="status">Thank you. Refreshing your page :&bracket;</p>}
+            {submitError && <p className="form-error" role="alert">{submitError}</p>}
+            {isSubmitted && <p className="submit-confirmation" role="status">Vote request sent. Please confirm the rows appeared in the Google Sheet.</p>}
           </form>
         </div>
       )}
