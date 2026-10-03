@@ -12,29 +12,43 @@ const teams = [
     name: 'ACS Tech team 1',
     members: ['Anabiya', 'Mahwish', 'Rida'],
     school: 'Alyabad community school',
-    image: '/images/Sampleimage.jfif',
+    image: '/Team01.jpeg',
   },
   {
     id: '02',
     name: 'IUSS Safoora Campus Team',
     members: ['Dhrushyl', 'M.Haider'],
     school: 'Iuss Safoora Campus ',
-    image: '/images/Sampleimage.jfif',
+    image: 'Team02.jpeg',
   },
   {
     id: '03',
     name: 'IUSS Safoora Campus Team',
     members: ['Hassan Raza', 'Mayash', 'Shadman Raza'],
     school: 'Iuss Safoora Campus ',
-    image: '/images/Sampleimage.jfif',
+    image: 'Team03.jpeg',
   },
   {
     id: '04',
     name: 'RoboNova',
-    members: ['Aleena', 'Fazila', 'Shabana'],
+    members: ['Aleena', 'Khusbakht', 'Dua'],
     school: 'Sultanabad Community School ',
-    image: '/images/Sampleimage.jfif',
+    image: 'Team05.jpeg',
   },
+  {
+    id: '05',
+    name: 'ILM Predators',
+    members: ['Mustafa', 'Umaima', 'Faizan'],
+    school: 'Institute of Learning and Mentorship',
+    image: 'team04.jpeg',
+  },
+  // {
+  //   id: '06',
+  //   name: 'SuperNova',
+  //   members: ['Shanzay Sajid', 'Khushi Linjara'],
+  //   school: 'BCP Jubilee Campus',
+  //   image: '/images/Sampleimage.jfif',
+  // },
 ]
 
 const ScienceExhibitionVoting = () => {
