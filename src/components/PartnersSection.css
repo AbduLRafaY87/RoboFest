@@ -1,0 +1,372 @@
+/* =========================================================
+   PARTNERS SECTION
+   ========================================================= */
+
+.partners-section {
+  position: relative;
+
+  padding: 100px 0;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SUBTLE BACKGROUND
+   ========================================================= */
+
+.partners-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 210, 255, 0.045),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.partners-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 2rem;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.partners-heading {
+  max-width: 680px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+/* Eyebrow */
+
+.partners-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  color: #2774d8;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+.partners-eyebrow::before,
+.partners-eyebrow::after {
+  content: "";
+
+  width: 22px;
+  height: 2px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00d2ff,
+      #3a7bd5
+    );
+}
+
+
+/* Heading */
+
+.partners-heading h2 {
+  margin: 0;
+
+  color: #101828;
+
+  font-size: clamp(2.4rem, 4vw, 3.7rem);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -0.045em;
+}
+
+.partners-heading h2 span {
+  background:
+    linear-gradient(
+      90deg,
+      #00bce7,
+      #3a7bd5
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Description */
+
+.partners-heading p {
+  max-width: 570px;
+
+  margin: 17px auto 0;
+
+  color: #64748b;
+
+  font-size: 0.92rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   PARTNERS GRID
+   ========================================================= */
+
+.partners-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   LOGO BOX
+   ========================================================= */
+
+.partner-logo {
+  height: 150px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7edf5;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 7px 25px rgba(30, 64, 175, 0.035);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* Logo */
+
+.partner-logo img {
+  max-width: 170px;
+
+  max-height: 70px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  /* filter: grayscale(100%); */
+
+  /* opacity: 0.62; */
+
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.partner-logo:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(58, 123, 213, 0.2);
+
+  box-shadow:
+    0 15px 35px rgba(30, 64, 175, 0.09);
+}
+
+.partner-logo:hover img {
+  /* filter: grayscale(0%); */
+
+  opacity: 1;
+
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+   ========================================================= */
+
+.partners-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 42px;
+}
+
+.partners-bottom span {
+  width: 45px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #cbd5e1
+    );
+}
+
+.partners-bottom span:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      #cbd5e1,
+      transparent
+    );
+}
+
+.partners-bottom p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 0.72rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .partners-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-logo {
+    height: 135px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+  .partners-section {
+    padding: 75px 0;
+  }
+
+  .partners-container {
+    padding: 0 1.25rem;
+  }
+
+  .partners-heading {
+    margin-bottom: 40px;
+  }
+
+  .partners-heading h2 {
+    font-size: 2.45rem;
+  }
+
+  .partners-heading p {
+    font-size: 0.85rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .partner-logo {
+    height: 115px;
+
+    padding: 18px;
+  }
+
+  .partner-logo img {
+    max-width: 120px;
+
+    max-height: 55px;
+  }
+
+  .partners-bottom {
+    gap: 10px;
+  }
+
+  .partners-bottom span {
+    width: 20px;
+  }
+
+  .partners-bottom p {
+    font-size: 0.62rem;
+
+    text-align: center;
+  }
+}

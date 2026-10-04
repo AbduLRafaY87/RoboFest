@@ -1,0 +1,570 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.faqs-page {
+  background: #f7faff;
+  color: #101828;
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   FAQ HERO
+========================================================= */
+
+.faqs-hero {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #06152f;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.faqs-hero-background {
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+}
+
+.faqs-hero-background img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   BLUE / DARK OVERLAY
+========================================================= */
+
+.faqs-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 13, 35, 0.94) 0%,
+      rgba(5, 23, 55, 0.82) 45%,
+      rgba(5, 23, 55, 0.48) 100%
+    );
+}
+
+
+/* =========================================================
+   TECHNICAL GRID
+========================================================= */
+
+.faqs-hero-grid {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  opacity: 0.12;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 210, 255, 0.25) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 210, 255, 0.25) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.faqs-container {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding: 0 30px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.faqs-hero-content {
+  max-width: 800px;
+
+  padding: 100px 0;
+}
+
+
+.faqs-hero-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #00d2ff;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+
+.faqs-hero h1 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(
+    42px,
+    6vw,
+    72px
+  );
+
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+
+.faqs-hero p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #c8d9ec;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+.faqs-hero h1 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(
+    42px,
+    6vw,
+    72px
+  );
+
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+.faqs-hero p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #c8d9ec;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FAQ CONTENT
+========================================================= */
+
+.faqs-content {
+  max-width: 1050px;
+
+  margin: auto;
+
+  padding: 100px 30px 120px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.faqs-heading {
+  margin-bottom: 55px;
+
+  text-align: center;
+}
+
+.faqs-heading > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #0879c9;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.faqs-heading h2 {
+  margin: 0 0 18px;
+
+  color: #071b3a;
+
+  font-size: clamp(
+    34px,
+    4vw,
+    50px
+  );
+
+  line-height: 1.12;
+
+  font-weight: 800;
+}
+
+.faqs-heading p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FAQ LIST
+========================================================= */
+
+.faqs-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   FAQ ITEM
+========================================================= */
+
+.faq-item {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e1eaf4;
+
+  border-radius: 16px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #c7dff2;
+
+  box-shadow:
+    0 12px 35px rgba(
+      14,
+      73,
+      130,
+      0.06
+    );
+}
+
+.faq-item.open {
+  border-color: #9edcf5;
+
+  box-shadow:
+    0 15px 40px rgba(
+      14,
+      73,
+      130,
+      0.09
+    );
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.faq-question {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 23px 25px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #071b3a;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.faq-question-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  min-width: 0;
+}
+
+
+/* NUMBER */
+
+.faq-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #edf8ff;
+
+  color: #0879c9;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.faq-item.open .faq-number {
+  background:
+    linear-gradient(
+      135deg,
+      #00cfff,
+      #3a7bd5
+    );
+
+  color: #ffffff;
+}
+
+
+/* QUESTION TEXT */
+
+.faq-question-text {
+  color: #071b3a;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.faq-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #f3f7fb;
+
+  color: #53657a;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq-item.open .faq-icon {
+  background: #e3f7ff;
+
+  color: #0879c9;
+
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   ANSWER
+========================================================= */
+
+.faq-answer-wrapper {
+  display: grid;
+
+  grid-template-rows: 0fr;
+
+  transition:
+    grid-template-rows 0.35s ease;
+}
+
+.faq-item.open .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer {
+  overflow: hidden;
+}
+
+.faq-answer p {
+  margin: 0;
+
+  padding:
+    0 80px 25px;
+
+  color: #667085;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .faqs-hero {
+    min-height: 360px;
+  }
+
+  .faqs-hero-content {
+    padding: 80px 20px;
+  }
+
+  .faqs-hero h1 {
+    font-size: 42px;
+  }
+
+  .faqs-hero p {
+    font-size: 16px;
+  }
+
+  .faqs-content {
+    padding:
+      70px 18px
+      80px;
+  }
+
+  .faqs-heading {
+    margin-bottom: 40px;
+  }
+
+  .faqs-heading h2 {
+    font-size: 34px;
+  }
+
+  .faq-question {
+    padding: 18px;
+  }
+
+  .faq-question-left {
+    gap: 12px;
+  }
+
+  .faq-number {
+    width: 34px;
+    height: 34px;
+  }
+
+  .faq-question-text {
+    font-size: 14px;
+  }
+
+  .faq-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .faq-answer p {
+    padding:
+      0 18px 20px
+      64px;
+    
+    font-size: 14px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .faq-question-left {
+    align-items: flex-start;
+  }
+
+  .faq-question-text {
+    line-height: 1.45;
+  }
+
+  .faq-answer p {
+    padding:
+      0 18px 20px
+      18px;
+  }
+
+}
