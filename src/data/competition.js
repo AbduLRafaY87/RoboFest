@@ -1257,7 +1257,39 @@ export const competitions = {
             title: "STEAM",
             competitions: [
               {
-                name: "TBD Competition",
+                name: "Science Exhibition",
+                results: [
+                  "1st: Alyabad Community School — Anabiya M. Ali, Mahwish Mansoob, Rida",
+                  "2nd: Sultanabad Community School — See attached winner sheet",
+                  "3rd: ALM Institute of Learning and Mentorship — Umaima, Faizan",
+                ],
+              },
+              {
+                name: "Air Modeling Workshop Senior",
+                results: [
+                  "1st: Aga Khan School Garden — Arfa, Adeem and Afia",
+                  "2nd: NJ-Iqra — Mehak and Sandhiya",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Air Modeling Workshop Junior",
+                results: [
+                  "1st: Haq Academy — Ibrahim Fahim, Bilal Imran and Ammar Muzammil",
+                  "2nd: SMS Karimabad — Ibrahim Shirq, Hamza Farooq and Muhammad Gulam Mustafa",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Mathematical Hunt",
+                results: [
+                  "1st: TBD",
+                  "2nd: TBD",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "Art and Craft",
                 results: [
                   "1st: TBD",
                   "2nd: TBD",
@@ -1270,10 +1302,27 @@ export const competitions = {
             title: "E-Gaming",
             competitions: [
               {
-                name: "TBD Competition",
+                name: "Tekken 8",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
+                  "1st: M.Hassan — BSS (PCECHS Campus)",
+                  "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
+                  "3rd: TBD",
+                ],
+              },
+              {
+                name: "FIFA",
+                results: [
+                  TBD
+                  // "1st: M.Hassan — BSS (PCECHS Campus)",
+                  // "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
+                  // "3rd: TBD",
+                ],
+              },
+              {
+                name: "Mortal Kombat",
+                results: [
+                  "1st: M.Hassan — BSS (PCECHS Campus)",
+                  "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
                   "3rd: TBD",
                 ],
               },
@@ -1292,16 +1341,49 @@ export const competitions = {
           { title: "Best Robot Design", text: "TBD" },
         ],
         qualifiedTeams: [
-          { title: "TinkerCad Finalists", text: "TBD" },
+          {
+            title: "TinkerCad Finalists",
+            text: "Army Public School — M.Shaheer And Syed M. Bilal; Discovery Center BSS — Ayat Farooq and Zayama Imran; Discovery Center BSS — Habiba Mohsin and Haya Junaid; Hira Foundation — M.Hadi; Isar Foundation — Ghulam Mustafa and Mustafa Haroon; Isar Foundation — Abdul Samad and Shareeb Bin Danish; Isar Foundation — Rayyan Khan and Shah Rohail; Isar Foundation — Amna Amjad and Zawar Hussain",
+          },
           { title: "Robo Race", text: "TBD" },
-          { title: "Scratch Programming Finalists", text: "TBD" },
-          { title: "RoboFootball Qualified Teams", text: "TBD" },
-          { title: "Python Beginners Finalists", text: "TBD" },
-          { title: "Web Dev Using AI Finalists", text: "TBD" },
-          { title: "Mathematical Hunt Finalists", text: "TBD" },
+          {
+            title: "Scratch Programming Finalists",
+            text: "Aga Khan School Garden — Ezan Ali Altaf and Ruhain Ali Altaf; Army Public School — Abdullah Kashif and Sheikh Ayan; Army Public School — Abdullah Nabi and Qasim; DHACSS Phase 8 — Asma and Zunair; Discovery Center BSS — Hoorain Batool and Rameen; Discovery Center BSS — Mahnoor Faisal and Zraish Arshad; Discovery Center BSS — Nouri Alin and Zimal Arshad; Dr. Abdul Qadeer Khan School — Muzamil and Bazil; Dr. Abdul Qadeer Khan School — Dipika and Masooma Solangi; Dr. Abdul Qadeer Khan School — Pakeeza and Ansa; HMS Fast track school — Humza Waqas and Muqbil Sohail; HMS Fast track school — Anum and Hiba Saad; IISAR Foundation — Bareeza Fatima and Muhammad Zuraio; IUSS Airport campus — Syeda Dania Zehra and Bakhtawar; IUSS Airport campus — Muhammad Moiz kamran and Hur Abbas; IUSS Gulshan campus — Syed Ali Akbar and Syed Ali Azghar; Korangi Academy — Imam Bux and Ubaid Ullah Asher; Korangi Academy — Muavia and Yahya; SMS Aga Khan school — Musharaf Muneer ul Hassan and Rayyan Uz Zaman",
+          },
+          {
+            title: "RoboFootball Qualified Teams",
+            text: "IUSS Gulshan Campus — Rush 11; JPS — JPS D; KPS 11 — Fire Strikers; IUSS Gulshan Campus — M. Mubeen; JPS — Dr. O; IUSS Gulshan Campus — Delta; Hira Foundation — Hira Foundation; Aga Khan School Garden — Team 2; The Intellect School — The Intellect School; Habib Girls School — HGS; IUSS Gulshan Campus — Warrior FC; AKHSS — AKHSS",
+          },
+          {
+            title: "Python With Copilot Finalists",
+            text: "AKHSS — M. Ismail Shakir; Aga Khan School Garden — M. Ueed Zubair and Shayan Shaukat; Dr. Abdul Qadeer Khan School — Ali Faroqui and Jalees; Dr. Abdul Qadeer Khan School — Disha Kumari and Dua Jannat; SMS Aga Khan School — Hadia Sohail and Wania Tajamul; BSS Jubilee — Fawaz Faisal and Rayyan Akhtar",
+          },
+          {
+            title: "Web Dev Using AI Finalists",
+            text: "AKHSS — Bilal Ahmed Khan and Shaikh M.Hamza; AKHSS — Muhammad Mueeb; Aga Khan School Garden — Ahmed Raza and Salman; Habib Girls School — Ajab Ali and Meezab e Rahmat; Habib Girls School — Aliza Abdul Rauf and Madina Sakina; Hira foundation school — Amina Sohail and Zobiya Tariq; IUSS Airport campus — Angelina Ali and Uzma Rehan and Muhammad Hussain; IUSS Safora campus — Ammar Ilahi and Mustafa Hassan; NJV Gvt — Ammar Sham and Kashif Ali; NJV Gvt — Haseeb Ur Rehman and Muzammil Hussain; Habib Girl — Marwah Rameez and Safa Rameez; SMS Aga Khan School — Asad Ullah Khan and Emaan khan; SMS Aga Khan School — Aariz Karim and M.mukarram; The Intellect School — Muhammad Sualeh",
+          },
+          {
+            title: "Spaghetti LFR",
+            text: "Habib Girls School — Robo Racers — Rehbar; HMS — HMS — Abdullah Alam; Hira Foundation — Robo Racers — Malihah; Fajar Academy — Ayesha Saad — Ayesha Saad; Fajar Academy — Fatima — Fatima; Tajar Academy — Musab — Musab; Hira Foundation — Team Titan — Areeba; Hira Foundation — Path Predator — Amna",
+          },
+          {
+            title: "RoboSumo",
+            text: "HMS Fast Track School — HMS Sumobots; Kalima Schooling System — Kalima Schooling System Team SUMO; IISAR Foundation — IISAR Obsidian Vortex",
+          },
+          {
+            title: "Mathematical Hunt Finalists",
+            text: "IUSS Gulshan Campus — M. Umer Farooq; NJV Govt. HSSK — Qasim Abbas Raza; IUSS Gulshan Campus — Muneeb; SMS Aga Khan School — S. Zainab; NJV Govt. HSSK — Areeba Rao; Aga Khan School Garden — Hunain; IUSS Airport Campus — Mahnoor; IUSS Gulshan Campus — Rayyan; Aga Khan School Garden — Shazi Zeeshan; IUSS Airport Campus — M. Aziz M Faisal; IUSS Airport Campus — S. Hadi Ahmed; IUSS Airport Campus — Hasnain Jabbar; Aga Khan School Garden — Ayaan Amin; IUSS Airport Campus — Abu Zar Saqib; Alyabad Community School — Arham Imran; IUSS Gulshan Campus — M. Mubeen; Army Public School — S. Anaya; IUSS Airport Campus — Lamiya; IUSS Gulshan Campus — Usaid Rabbani; Army Public School — Meer Baloch; IUSS Airport Campus — Abdul Hadi",
+          },
           { title: "Rescue Line", text: "TBD" },
           { title: "Street Fighter", text: "TBD" },
-          { title: "Tekken 8", text: "TBD" },
+          {
+            title: "Graphic Designing",
+            text: "Aga Khan School Garden — Ahyan Sohail and Mountaha Junaid; Aga Khan School Garden — Kiritika Kumari and Syeda Mahna Shakir; Hira Foundation — Syesha Immad and Muzaina Mustan; Habib Girls — Ayesha Tauseef Nimra Siddiqui; Hira Foundation — Mayamin Khan and Urme Eman; NJV Gvt — M.Saad and Obaid Ullah",
+          },
+          {
+            title: "Tekken 8",
+            text: "JPS — Ibrahim Khan; IUSS Shahrah-e-Pakistan Campus — Wamiq Baig; IUSS Gulshan Campus — Aariz; SMS — Uzair; Dr. Abdul Qadir Khan School — Abdul Moiz; KPS 11 — Abdul Rafi; IUSS Gulshan Campus — Ahmed Ali",
+          },
           { title: "Fifa 25", text: "TBD" },
         ],
       },
