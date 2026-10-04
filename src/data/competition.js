@@ -1312,7 +1312,7 @@ export const competitions = {
               {
                 name: "FIFA",
                 results: [
-                  TBD
+                  'TBD'
                   // "1st: M.Hassan — BSS (PCECHS Campus)",
                   // "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
                   // "3rd: TBD",
