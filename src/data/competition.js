@@ -1122,27 +1122,37 @@ export const competitions = {
         label: "Leaderboard",
         type: "leaderboard",
         intro:
-          "Final results will be published after the event. The structure below is ready for the official ranking data.",
+          "Official results and rankings from RoboFest 2026.",
+        presentationLinks: [
+          {
+            label: "2026 Opening Presentation",
+            url: "https://canva.link/5kzguuc6nyfs372",
+          },
+          {
+            label: "2026 Closing Presentation",
+            url: "https://canva.link/jo7tsdg9xlvel02",
+          },
+        ],
         topSchools: [
           {
-            place: "1st Place",
-            name: "TBD",
-            total: "TBD",
-            school: "School Name TBD",
+            place: "Winner",
+            name: "IISAR Foundation",
+            total: "Winner",
+            school: "IISAR Foundation",
             accent: "gold",
           },
           {
-            place: "2nd Place",
-            name: "TBD",
-            total: "TBD",
-            school: "School Name TBD",
+            place: "1st Runner Up",
+            name: "Aga Khan School Garden",
+            total: "1st Runner Up",
+            school: "Aga Khan School Garden",
             accent: "silver",
           },
           {
-            place: "3rd Place",
-            name: "TBD",
-            total: "TBD",
-            school: "School Name TBD",
+            place: "2nd Runner up",
+            name: "Habib Girls & IU School",
+            total: "2nd Runner Up",
+            school: "Habib Girls School\nIU School System Gulshan Campus",
             accent: "bronze",
           },
         ],
@@ -1151,67 +1161,51 @@ export const competitions = {
             title: "Robotics",
             competitions: [
               {
-                name: "Hunt the Block Junior",
+                name: "Spaghetti LFR",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Fatima — Fajr Academy",
+                  "2nd: Ayesha Saad — Fajr Academy",
+                  "3rd: Rehab Rahman and Sufia Asif — Habib Girls",
                 ],
               },
               {
-                name: "Hunt the Block Senior",
+                name: "Lego LFR",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Syeda Aaiza Batool & Tehreem Fatima — Habib Girls",
+                  "2nd: Fareed Maya & Nafey Mudassar",
+                  "3rd: Barrirah & Sara Binte Yaseen — Fatiha Academy",
                 ],
               },
               {
-                name: "RoboLFR",
+                name: "RoboSoccer 2 vs 2",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Hamdan & Aliyan Elahi — DHACSS Phase 8",
+                  "2nd: ISSAR Foundation",
+                  "3rd: Arshaman — ISSAR Foundation",
                 ],
               },
               {
-                name: "Robo Football League 1 vs 1",
+                name: "Robo Ludo X2",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
-                ],
-              },
-              {
-                name: "Rescue Line",
-                results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
-                ],
-              },
-              {
-                name: "Remote Control Package Delivery",
-                results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Sufiyaan Khan and Syed Ayaan Ali — DHACSS Phase 8",
+                  "2nd: Abdullah Masood, Abdullah Ubaid and Ali Mohsin — APS Malir",
+                  "3rd: Hanell Austin, Inamullah and M. Shariq — DHACSS Phase 7",
                 ],
               },
               {
                 name: "RoboSumo",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Abdul Hadi Salman, Abdul Hadi Yasir, Muhammad Usman, Abdul Nafay, Mahad Ali, Muhammad Mahad — Kalima Schooling System",
+                  "2nd: HMS Fast Track School",
+                  "3rd: Jasir Misbah, Musab Rehan, Yousuf Abid — IISAR Foundation",
                 ],
               },
               {
-                name: "Robo Race",
+                name: "Wall Follower",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Ahmed Shah and Hashir — APS Malir Cantt",
+                  "2nd: Shachal Saleem and Taha — NJV Govt",
+                  "3rd: Dua Zahid and Rajveer — NJV Govt",
                 ],
               },
             ],
@@ -1222,33 +1216,41 @@ export const competitions = {
               {
                 name: "TinkerCad",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Ghulam Mustafa and Mustafa Haroon — IISAR Foundation",
+                  "2nd: Habiba Mohsin and Haya Junaid — Discovery Center BSS",
+                  "3rd: Amna Amjad and Zawwar Hussain — IISAR Foundation",
                 ],
               },
               {
                 name: "Scratch Programming",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Ezzan Ali Altaf and Rohan Ali Altaf — Aga Khan School Garden",
+                  "2nd: Noor ul Ain and Zimal Arshad — Discovery Center BSS",
+                  "3rd: Dipika and Masooma — Dr. Abdul Qadir Khan School",
                 ],
               },
               {
-                name: "Python Beginners",
+                name: "MIT App Inventor",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Abrish Faisal & Shah Rameez — IISAR Foundation",
+                  "2nd: Hassan Salman & S. Shafay Bin Danish — IISAR Foundation",
+                  "3rd: Haeeda & Umme Zunaisha — Army Public School",
                 ],
               },
               {
-                name: "Web Dev Using AI",
+                name: "Python With Copilot",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Mohammad Ismail Shakir — AKHSS",
+                  "2nd: Ali Farooqui and Jalees — Dr. Abdul Qadeer Khan School",
+                  "3rd: Mohammed Mueed Zubair — Aga Khan School Garden",
+                ],
+              },
+              {
+                name: "Web Dev with AI",
+                results: [
+                  "1st: M. Mohib — AKHSS",
+                  "2nd: Ammar Sham and Kashif Ali — NJV Govt High School",
+                  "3rd: M. Sualeh — The Intellect School",
                 ],
               },
             ],
@@ -1259,41 +1261,57 @@ export const competitions = {
               {
                 name: "Science Exhibition",
                 results: [
-                  "1st: Alyabad Community School — Anabiya M. Ali, Mahwish Mansoob, Rida",
-                  "2nd: Sultanabad Community School — See attached winner sheet",
-                  "3rd: ALM Institute of Learning and Mentorship — Umaima, Faizan",
+                  "1st: Anabiya M. Ali, Mahwish Mansoor, Rida — Aliyabad Community School",
+                  "2nd: Alina Sadir, Fazila, Shahna Rustum — Sultanabad Community School",
+                  "3rd: Mustafa, Umaima, Faizan — ILM Institute of Learning and Mentorship",
                 ],
               },
               {
                 name: "Air Modeling Workshop Senior",
                 results: [
-                  "1st: Aga Khan School Garden — Arfa, Adeem and Afia",
-                  "2nd: NJ-Iqra — Mehak and Sandhiya",
-                  "3rd: TBD",
+                  "1st: Arfa, Adeem and Afia — Aga Khan School Garden",
+                  "2nd: Iqra, Mehak and Sandhiya — NJV",
+                  "3rd: Basim, Meraj Uddin, Sahil Ahmed — Sultanabad Community School",
                 ],
               },
               {
                 name: "Air Modeling Workshop Junior",
                 results: [
-                  "1st: Haq Academy — Ibrahim Fahim, Bilal Imran and Ammar Muzammil",
-                  "2nd: SMS Karimabad — Ibrahim Shirq, Hamza Farooq and Muhammad Gulam Mustafa",
-                  "3rd: TBD",
+                  "1st: Ibrahim Fahim, Bilal Imran, Ammar Muzammil — Haq Academy",
+                  "2nd: Ibrahim Shirz, Hamza Farooq, Muhammad Ghulam Mustafa — SMS Karimabad",
+                  "3rd: Abaan Imran, Zohaan Shmas, Hadi Riaz — CBS Aliyabad",
+                ],
+              },
+              {
+                name: "Arts and Crafts",
+                results: [
+                  "1st: Fatima & Retaj — Discovery Center (Monster High)",
+                  "2nd: Maha and Zaina — ED Innovators Institute Of Learning",
+                  "3rd: Hashir and Maryam — IUSS Gulshan",
                 ],
               },
               {
                 name: "Mathematical Hunt",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Mubin Kamran — IUSS Gulshan Campus",
+                  "2nd: Qasim Abbas — IUSS Gulshan Campus",
+                  "3rd: Shazil Zeeshan — Aga Khan Garden",
                 ],
               },
               {
-                name: "Art and Craft",
+                name: "Graphic Designing using Figma",
                 results: [
-                  "1st: TBD",
-                  "2nd: TBD",
-                  "3rd: TBD",
+                  "1st: Ayesha Imad and Muzena Mustan — Hira Foundation",
+                  "2nd: Ayesha Tauseef and Nimra Siddiqui — Habib Girls",
+                  "3rd: Kritika Kumari and Syeda Manha Shakir — Aga Khan School Garden",
+                ],
+              },
+              {
+                name: "Digital Hackathon",
+                results: [
+                  "1st: Salik Ridwan, Rayan Ridwan and M. Rayan — Beaconhouse Johar",
+                  "2nd: Minahil, Zunaira and Marzia — Habib Girls",
+                  "3rd: Naveed, Areesha Ali and M. Rayan — SMS Aga Khan Karimabad",
                 ],
               },
             ],
@@ -1302,50 +1320,46 @@ export const competitions = {
             title: "E-Gaming",
             competitions: [
               {
+                name: "FIFA 2026",
+                results: [
+                  "1st: Esmaeel — SMS School Karimabad",
+                  "2nd: Ghazi — AKS Garden",
+                  "3rd: Ashad Ali — AKS Garden",
+                ],
+              },
+              {
+                name: "Mortal Kombat 1",
+                results: [
+                  "1st: M. Hassan — BSS (PECHS Campus)",
+                  "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
+                  "3rd: M. Hassan — BSS PECHS",
+                ],
+              },
+              {
                 name: "Tekken 8",
                 results: [
-                  "1st: M.Hassan — BSS (PCECHS Campus)",
-                  "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
-                  "3rd: TBD",
-                ],
-              },
-              {
-                name: "FIFA",
-                results: [
-                  'TBD'
-                  // "1st: M.Hassan — BSS (PCECHS Campus)",
-                  // "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
-                  // "3rd: TBD",
-                ],
-              },
-              {
-                name: "Mortal Kombat",
-                results: [
-                  "1st: M.Hassan — BSS (PCECHS Campus)",
-                  "2nd: Ali Shah — IUSS Shahrah-e-Pakistan",
-                  "3rd: TBD",
+                  "1st: Uzair — Dr. Abdul Qadir Khan School",
+                  "2nd: Wamiq Baig — IUSS Gulshan Campus",
+                  "3rd: Ahmed — Dr. Abdul Qadir Khan School",
                 ],
               },
             ],
           },
         ],
         specialAwards: [
-          { title: "Best Student Ambassador", text: "TBD" },
-          { title: "Best Teacher Ambassador", text: "TBD" },
-          { title: "Best Volunteer", text: "TBD" },
-          { title: "School With Most Participation Award", text: "TBD" },
-          { title: "Best One Minute Pitch", text: "TBD" },
-          { title: "Most Patient Centric Award", text: "TBD" },
-          { title: "Youngest Coder (Junior)", text: "TBD" },
-          { title: "Youngest Coder (Senior)", text: "TBD" },
-          { title: "Best Robot Design", text: "TBD" },
+          { title: "Best Student Ambassador", text: "Sakeena Fatema — Habib Girls" },
+          { title: "Best Teacher Ambassador", text: "Miss Sadaf Shakil — APS" },
+          { title: "Best Intern", text: "Laiba and Ismail" },
+          { title: "School With Most Participation Award", text: "SMS Aga Khan School Karimabad" },
+          { title: "Best One Minute Pitch", text: "Ali Ammar, Burhanuddin and M. Rayyan (JPS Team)" },
+          { title: "Youngest Coder", text: "M. Hussain — IUSS Airport Campus" },
+          { title: "Best Robot Design", text: "IISAR Foundation" },
         ],
         qualifiedTeams: [
           {
             title: "TinkerCad Finalists",
             text: "Army Public School — M.Shaheer And Syed M. Bilal; Discovery Center BSS — Ayat Farooq and Zayama Imran; Discovery Center BSS — Habiba Mohsin and Haya Junaid; Hira Foundation — M.Hadi; Isar Foundation — Ghulam Mustafa and Mustafa Haroon; Isar Foundation — Abdul Samad and Shareeb Bin Danish; Isar Foundation — Rayyan Khan and Shah Rohail; Isar Foundation — Amna Amjad and Zawar Hussain",
           },
-          { title: "Robo Race", text: "TBD" },
           {
             title: "Scratch Programming Finalists",
             text: "Aga Khan School Garden — Ezan Ali Altaf and Ruhain Ali Altaf; Army Public School — Abdullah Kashif and Sheikh Ayan; Army Public School — Abdullah Nabi and Qasim; DHACSS Phase 8 — Asma and Zunair; Discovery Center BSS — Hoorain Batool and Rameen; Discovery Center BSS — Mahnoor Faisal and Zraish Arshad; Discovery Center BSS — Nouri Alin and Zimal Arshad; Dr. Abdul Qadeer Khan School — Muzamil and Bazil; Dr. Abdul Qadeer Khan School — Dipika and Masooma Solangi; Dr. Abdul Qadeer Khan School — Pakeeza and Ansa; HMS Fast track school — Humza Waqas and Muqbil Sohail; HMS Fast track school — Anum and Hiba Saad; IISAR Foundation — Bareeza Fatima and Muhammad Zuraio; IUSS Airport campus — Syeda Dania Zehra and Bakhtawar; IUSS Airport campus — Muhammad Moiz kamran and Hur Abbas; IUSS Gulshan campus — Syed Ali Akbar and Syed Ali Azghar; Korangi Academy — Imam Bux and Ubaid Ullah Asher; Korangi Academy — Muavia and Yahya; SMS Aga Khan school — Musharaf Muneer ul Hassan and Rayyan Uz Zaman",
@@ -1374,8 +1388,6 @@ export const competitions = {
             title: "Mathematical Hunt Finalists",
             text: "IUSS Gulshan Campus — M. Umer Farooq; NJV Govt. HSSK — Qasim Abbas Raza; IUSS Gulshan Campus — Muneeb; SMS Aga Khan School — S. Zainab; NJV Govt. HSSK — Areeba Rao; Aga Khan School Garden — Hunain; IUSS Airport Campus — Mahnoor; IUSS Gulshan Campus — Rayyan; Aga Khan School Garden — Shazi Zeeshan; IUSS Airport Campus — M. Aziz M Faisal; IUSS Airport Campus — S. Hadi Ahmed; IUSS Airport Campus — Hasnain Jabbar; Aga Khan School Garden — Ayaan Amin; IUSS Airport Campus — Abu Zar Saqib; Alyabad Community School — Arham Imran; IUSS Gulshan Campus — M. Mubeen; Army Public School — S. Anaya; IUSS Airport Campus — Lamiya; IUSS Gulshan Campus — Usaid Rabbani; Army Public School — Meer Baloch; IUSS Airport Campus — Abdul Hadi",
           },
-          { title: "Rescue Line", text: "TBD" },
-          { title: "Street Fighter", text: "TBD" },
           {
             title: "Graphic Designing",
             text: "Aga Khan School Garden — Ahyan Sohail and Mountaha Junaid; Aga Khan School Garden — Kiritika Kumari and Syeda Mahna Shakir; Hira Foundation — Syesha Immad and Muzaina Mustan; Habib Girls — Ayesha Tauseef Nimra Siddiqui; Hira Foundation — Mayamin Khan and Urme Eman; NJV Gvt — M.Saad and Obaid Ullah",
@@ -1384,7 +1396,6 @@ export const competitions = {
             title: "Tekken 8",
             text: "JPS — Ibrahim Khan; IUSS Shahrah-e-Pakistan Campus — Wamiq Baig; IUSS Gulshan Campus — Aariz; SMS — Uzair; Dr. Abdul Qadir Khan School — Abdul Moiz; KPS 11 — Abdul Rafi; IUSS Gulshan Campus — Ahmed Ali",
           },
-          { title: "Fifa 25", text: "TBD" },
         ],
       },
 

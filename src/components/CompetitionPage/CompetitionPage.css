@@ -925,6 +925,36 @@
   line-height: 1.8;
 }
 
+.leaderboard-presentation-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 0 30px;
+}
+
+.leaderboard-presentation-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0d2349, #214c8c);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 10px 24px rgba(13, 35, 73, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leaderboard-presentation-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(13, 35, 73, 0.22);
+}
+
 .leaderboard-top-schools {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -986,8 +1016,10 @@
 .leaderboard-school-name {
   margin: 0;
   color: #071b3a;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 1.45;
+  white-space: pre-line;
 }
 
 .leaderboard-school-total {

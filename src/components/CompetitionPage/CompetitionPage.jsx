@@ -496,6 +496,22 @@ const CompetitionPage = ({ competition }) => {
                   <p>{activeTabData.intro}</p>
                 </div> */}
 
+                {activeTabData.presentationLinks?.length > 0 && (
+                  <div className="leaderboard-presentation-links">
+                    {activeTabData.presentationLinks.map((link) => (
+                      <a
+                        key={link.label}
+                        className="leaderboard-presentation-link"
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+
                 <div className="leaderboard-top-schools">
                   {activeTabData.topSchools?.map((school) => (
                     <article
