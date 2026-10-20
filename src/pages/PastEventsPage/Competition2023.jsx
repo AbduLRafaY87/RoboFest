@@ -1,12 +1,10 @@
 import React from "react";
-import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
+import CompetitionPage from "../../components/CompetitionPage/CompetitionPage";
+import { competitions } from "../../data/competition";
 
 const Competition2023 = () => {
   return (
-    <UnderConstruction
-      title="Past Events Coming Soon"
-      description="We're currently preparing the RoboFest event archive. You'll soon be able to explore our previous events."
-    />
+    <CompetitionPage competition={competitions[2023]} />
   );
 };
 

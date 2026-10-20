@@ -96,6 +96,7 @@ const Navbar = () => {
               Past Events <span className="arrow">▾</span>
             </a>
             <ul className="dropdown-menu">
+              <li><a className={pathname === '/events/2026'? 'active' : ''} href="/events/2026">Season 2026</a></li>
               <li><a className={pathname === '/events/2025' ? 'active' : ''} href="/events/2025">Season 2025</a></li>
               <li><a className={pathname === '/events/2024' ? 'active' : ''} href="/events/2024">Season 2024</a></li>
               <li><a className={pathname === '/events/2023' ? 'active' : ''} href="/events/2023">Season 2023</a></li>
@@ -117,7 +118,7 @@ const Navbar = () => {
               Competition <span className="arrow">▾</span>
             </a>
             <ul className="dropdown-menu">
-              <li><a className={pathname === '/competition/2026' ? 'active' : ''} href="/competition/2026">Season 2026</a></li>
+              <li><a className={pathname === '/competition/2027' ? 'active' : ''} href="/competition/2027">Season 2027</a></li>
               <li><a className={pathname === '/competition/faq' ? 'active' : ''} href="/competition/faq">Questions and Answers</a></li>
             </ul>
           </li>

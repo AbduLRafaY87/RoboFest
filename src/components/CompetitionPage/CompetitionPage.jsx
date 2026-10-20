@@ -63,11 +63,13 @@ const CompetitionPage = ({ competition }) => {
 
       <section className="competition-hero">
 
-        <img
-          src={competition.heroImage}
-          alt={`RoboFest ${competition.year}`}
-          className="competition-hero-image"
-        />
+        {competition.heroImage && (
+          <img
+            src={competition.heroImage}
+            alt={`RoboFest ${competition.year}`}
+            className="competition-hero-image"
+          />
+        )}
 
         <div className="competition-hero-overlay"></div>
 
@@ -171,7 +173,7 @@ const CompetitionPage = ({ competition }) => {
                       {activeTabData.description}
                     </p>
 
-                    {activeTabData.link && (
+                    {activeTabData.link?.url && (
                       <a
                         href={activeTabData.link.url}
                         target="_blank"
@@ -219,7 +221,7 @@ const CompetitionPage = ({ competition }) => {
                     {activeTabData.description}
                   </p>
 
-                  {activeTabData.link && (
+                  {activeTabData.link?.url && (
                     <a
                       href={activeTabData.link.url}
                       target="_blank"
@@ -881,10 +883,14 @@ const RegistrationSection = ({ registration }) => {
         </div>
 
         <div className="registration-actions">
-          <a href={registration.openTeamLink} target="_blank" rel="noopener noreferrer">
-            SignUp as Open Team
-          </a>
-          <a href={registration.registrationLink}>Register Here</a>
+          {registration.openTeamLink && (
+            <a href={registration.openTeamLink} target="_blank" rel="noopener noreferrer">
+              SignUp as Open Team
+            </a>
+          )}
+          {registration.registrationLink && (
+            <a href={registration.registrationLink}>Register Here</a>
+          )}
         </div>
       </div>
     </section>

@@ -73,7 +73,7 @@ const EventInfo = ({ eventInfo, year }) => {
             <div>
               <span>THEME</span>
               <strong>
-                Swarm Robotics
+                {eventInfo.theme ?? "Swarm Robotics"}
               </strong>
             </div>
 
