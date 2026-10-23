@@ -982,14 +982,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   margin-bottom: 22px;
+  padding: 16px;
+  box-sizing: border-box;
   background: linear-gradient(135deg, #f3f7f7, #edf3ef);
   border: 2px solid #d8e7ee;
   border-radius: 18px;
-  color: #0d2349;
-  font-size: clamp(24px, 2vw, 38px);
-  font-weight: 800;
-  letter-spacing: 1px;
+}
+
+.leaderboard-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.leaderboard-logo-box.has-multiple-logos img {
+  max-width: calc(50% - 5px);
 }
 
 .leaderboard-top-card.gold .leaderboard-logo-box {
@@ -1011,15 +1020,6 @@
   margin: 0 0 10px;
   color: #0d2349;
   font-size: clamp(24px, 2vw, 34px);
-}
-
-.leaderboard-school-name {
-  margin: 0;
-  color: #071b3a;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.45;
-  white-space: pre-line;
 }
 
 .leaderboard-school-total {

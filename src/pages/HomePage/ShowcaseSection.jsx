@@ -2,45 +2,53 @@ import React from "react";
 
 const showcaseImages = [
   {
-    src: "/media/r1.png",
+    src: "/media/3.jpg",
     alt: "RoboFest showcase 1",
   },
   {
-    src: "/media/r8.png",
+    src: "/media/2.jpg",
     alt: "RoboFest showcase 2",
   },
   {
-    src: "/media/r7.png",
-    alt: "RoboFest showcase 3",
+    src: "/media/3.jpg",
+    alt: "RoboFest showcase 1",
   },
   {
-    src: "/media/r6.png",
+    src: "/media/4.jpg",
     alt: "RoboFest showcase 4",
   },
   {
-    src: "/media/r9.png",
+    src: "/media/5.jpg",
     alt: "RoboFest showcase 5",
   },
   {
-    src: "/media/r2.png",
+    src: "/media/6.jpg",
     alt: "RoboFest showcase 6",
   },
   {
-    src: "/media/r1.png",
+    src: "/media/7.jpg",
     alt: "RoboFest showcase 7",
   },
   {
-    src: "/media/r3.png",
+    src: "/media/8.jpg",
     alt: "RoboFest showcase 8",
   },
-//   {
-//     src: "/media/r1.png",
-//     alt: "RoboFest showcase 9",
-//   },
-//   {
-//     src: "/media/r1.png",
-//     alt: "RoboFest showcase 10",
-//   },
+  {
+    src: "/media/9.jpg",
+    alt: "RoboFest showcase 9",
+  },
+  {
+    src: "/media/10.jpg",
+    alt: "RoboFest showcase 10",
+  },
+  {
+    src: "/media/11.jpg",
+    alt: "RoboFest showcase 11",
+  },
+  {
+    src: "/media/12.jpg",
+    alt: "RoboFest showcase 12",
+  },
 ];
 
 const ShowcaseSection = () => {
@@ -55,7 +63,7 @@ const ShowcaseSection = () => {
           </span>
 
           <h2>
-            Our Latest Projects <span>and Showcase</span>
+            Our Latest Event <span>and Showcase</span>
           </h2>
 
           <p>
@@ -69,8 +77,8 @@ const ShowcaseSection = () => {
         <div className="showcase-video-wrapper">
           <div className="showcase-video">
             <iframe
-              src="https://www.youtube.com/embed/oSLVSvj48E8"
-              title="RoboFest 2025 🚀: Shaping a Smarter Tomorrow!"
+              src="https://www.youtube.com/embed/ENnr4G1W43w?si=y-K99le772-AUTi5"
+              title="RoboFest 2026 🚀: SWARM ROBOTICS"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"

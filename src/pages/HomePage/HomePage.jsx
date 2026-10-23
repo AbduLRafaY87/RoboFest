@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./styles.css";
-import banner1 from '../../assets/carousels/banner1.jpg'
-import banner2 from '../../assets/carousels/banner2.jpg'
-import banner3 from '../../assets/carousels/banner3.jpg'
-import About from '../../assets/About.jpg'
+import banner4 from '../../assets/carousels/banner4.jpg'
+import banner5 from '../../assets/carousels/banner5.jpg'
+import banner6 from '../../assets/carousels/banner6.jpg'
+import About from '../../assets/about5.jpg'
 import aboutOne from '/standout1.png'
 import aboutTwo from '/standout2.png'
 import aboutThree from '/standout3.png'
@@ -20,7 +20,7 @@ const banners = [
     title: "Build. Compete. Innovate.",
     description:
       "Push the limits of robotics, engineering, and creativity. Compete with the best and turn your ideas into reality.",
-    image: banner1,
+    image: banner4,
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const banners = [
     title: "Where Ideas Become Machines.",
     description:
       "Design intelligent robots, solve complex challenges, and experience the future of engineering through hands-on competition.",
-    image: banner2,
+    image: banner5,
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const banners = [
     title: "Challenge Yourself.",
     description:
       "Join a community of young innovators, engineers, and problem solvers shaping the future of robotics.",
-    image: banner3,
+    image: banner6,
   },
 ];
 
@@ -46,7 +46,7 @@ const HomePage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % banners.length);
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, []);

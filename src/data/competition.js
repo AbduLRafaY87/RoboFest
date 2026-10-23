@@ -1136,23 +1136,39 @@ export const competitions = {
         topSchools: [
           {
             place: "Winner",
-            name: "IISAR Foundation",
+            logos: [
+              {
+                src: "/2026/iisar logo.png",
+                alt: "IISAR Foundation logo",
+              },
+            ],
             total: "Winner",
-            school: "IISAR Foundation",
             accent: "gold",
           },
           {
             place: "1st Runner Up",
-            name: "Aga Khan School Garden",
+            logos: [
+              {
+                src: "/2026/aga khan logo.png",
+                alt: "Aga Khan School Garden logo",
+              },
+            ],
             total: "1st Runner Up",
-            school: "Aga Khan School Garden",
             accent: "silver",
           },
           {
             place: "2nd Runner up",
-            name: "Habib Girls & IU School",
+            logos: [
+              {
+                src: "/2026/habib.jpg",
+                alt: "Habib Girls School logo",
+              },
+              {
+                src: "/2026/iu school.jpg",
+                alt: "IU School System Gulshan Campus logo",
+              },
+            ],
             total: "2nd Runner Up",
-            school: "Habib Girls School\nIU School System Gulshan Campus",
             accent: "bronze",
           },
         ],

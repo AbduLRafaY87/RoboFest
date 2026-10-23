@@ -518,17 +518,21 @@ const CompetitionPage = ({ competition }) => {
                   {activeTabData.topSchools?.map((school) => (
                     <article
                       className={`leaderboard-top-card ${school.accent || "gold"}`}
-                      key={`${school.place}-${school.school}`}
+                      key={school.place}
                     >
-                      <div className="leaderboard-logo-box">
-                        <span>{school.name || "TBD"}</span>
+                      <div
+                        className={`leaderboard-logo-box${school.logos.length > 1 ? " has-multiple-logos" : ""}`}
+                      >
+                        {school.logos.map((logo) => (
+                          <img
+                            key={logo.src}
+                            src={logo.src}
+                            alt={logo.alt}
+                          />
+                        ))}
                       </div>
 
                       <h4>{school.place}</h4>
-
-                      <p className="leaderboard-school-name">
-                        {school.school}
-                      </p>
 
                       <p className="leaderboard-school-total">
                         Total Points: {school.total}

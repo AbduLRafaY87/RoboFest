@@ -7,7 +7,7 @@ import {
   Handshake,
 } from "lucide-react";
 import "./styles.css";
-import bannerImage from "../../assets/carousels/banner3.jpg";
+import bannerImage from "../../assets/carousels/banner6.jpg";
 
 const opportunities = [
   {

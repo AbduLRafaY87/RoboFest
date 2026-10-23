@@ -12,42 +12,42 @@ import "./styles.css";
 const mediaItems = [
   {
     type: "image",
-    src: "/images/4.jpg",
+    src: "/images/1.jpg",
     title: "RoboFest Highlights",
   },
   {
     type: "image",
-    src: "/images/9.jpg",
+    src: "/images/2.jpg",
     title: "Robotics Competition",
   },
   {
     type: "image",
-    src: "/images/11.jpg",
+    src: "/images/3.jpg",
     title: "Participants at RoboFest",
   },
   {
     type: "image",
-    src: "/images/12.jpg",
+    src: "/images/4.jpg",
     title: "Innovation & Technology",
   },
   {
     type: "image",
-    src: "/images/17.jpg",
+    src: "/images/5.jpg",
     title: "RoboFest Event",
   },
   {
     type: "image",
-    src: "/images/21.jpg",
+    src: "/images/6.jpg",
     title: "Competition Highlights",
   },
   {
     type: "image",
-    src: "/images/31.jpg",
+    src: "/images/7.jpg",
     title: "Competition Highlights",
   },
   {
     type: "image",
-    src: "/images/45.jpg",
+    src: "/images/8.jpg",
     title: "Competition Highlights",
   },
 ];
