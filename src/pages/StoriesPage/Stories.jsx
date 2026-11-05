@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
 import "./styles.css";
@@ -53,7 +52,12 @@ const stories = [
   },
 ];
 
-const storiesLink = "https://www.youtube.com/@techticsclub8516/shorts";
+const reels = [
+  "IE8vmvfluVU",
+  "y3OQvYHECqg",
+  "u7RFpCFL4Zo",
+  "Tjs3zcSgDQA",
+];
 
 const Stories = () => {
   return (
@@ -97,6 +101,29 @@ const Stories = () => {
                   <ArrowUpRight size={17} />
                 </a>
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="reels-section" aria-labelledby="reels-heading">
+        <div className="reels-heading">
+          <span>WATCH ROBOFEST</span>
+          <h2 id="reels-heading">RoboFest Reels</h2>
+          <p>Quick highlights and moments from the RoboFest community.</p>
+        </div>
+
+        <div className="reels-grid">
+          {reels.map((videoId, index) => (
+            <article className="reel-card" key={videoId}>
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title={`RoboFest Reel ${index + 1}`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </article>
           ))}
         </div>

@@ -480,7 +480,7 @@ const HomePage = () => {
       </div>
 
       <a
-        href="/competition/2026"
+        href="/events/2026"
         className="event-register-btn"
       >
         Register Now

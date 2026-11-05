@@ -13,7 +13,7 @@ import {
 
 const impactStats = [
   {
-    number: "829",
+    number: "1400+",
     title: "Students Involved",
     description:
       "Passionate young minds shaping the future of robotics",
@@ -27,7 +27,7 @@ const impactStats = [
     icon: "./icons/number2.png",
   },
   {
-    number: "21",
+    number: "41",
     title: "Schools Targeted",
     description:
       "Educational institutions participating in the event",
@@ -41,7 +41,7 @@ const impactStats = [
     icon: "./icons/number4.png",
   },
   {
-    number: "225",
+    number: "600",
     title: "Number of Teams",
     description:
       "Competing for excellence and innovation",
@@ -78,7 +78,7 @@ const NumbersSection = () => {
         {/* Section Header */}
         <div className="numbers-heading">
           <span className="numbers-eyebrow">
-            NUMBERS 2024
+            SINCE 2022
           </span>
 
           <h2>

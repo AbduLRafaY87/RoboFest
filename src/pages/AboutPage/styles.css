@@ -832,14 +832,14 @@
 
 
 .committee-grid {
-  max-width: 650px;
+  max-width: 950px;
 
   margin: 0 auto;
 
   display: grid;
 
   grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+    repeat(3, minmax(0, 1fr));
 
   gap: 20px;
 }
@@ -3074,6 +3074,7 @@
 
 
 .vision-cta-button {
+  margin-top: 20px;
   display: inline-flex;
 
   align-items: center;

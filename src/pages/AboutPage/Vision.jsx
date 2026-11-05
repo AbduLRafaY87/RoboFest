@@ -372,7 +372,7 @@ const Vision = () => {
 
                         <div className="techtics-visual">
                             <div className="techtics-visual-card">
-                                <img src="./visionabout.jpg" alt="Background Image"></img>
+                                <img src="./aboutTechtics.jpg" alt="Background Image"></img>
 
                                 {/* <BookOpen
                   size={60}
@@ -443,6 +443,16 @@ const Vision = () => {
                             robotics products, and training educators to develop
                             a strong network of robotics experts.
                         </p>
+
+                        <a
+                            href="https://techticsclub.com"
+                            className="vision-cta-button"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Visit website
+                            <ArrowRight size={17} />
+                        </a>
 
                     </div>
 

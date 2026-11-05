@@ -3,6 +3,7 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
   Maximize2,
   ExternalLink,
 } from "lucide-react";
@@ -52,8 +53,11 @@ const mediaItems = [
   },
 ];
 
+const mediaYears = [2022, 2023, 2024, 2025, 2026];
+
 const MediaPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [openYear, setOpenYear] = useState(2026);
 
   const openImage = (index) => {
     setSelectedImage(index);
@@ -200,39 +204,68 @@ const MediaPage = () => {
         </div>
 
 
-        <div className="media-grid">
+        <div className="media-years">
+          {mediaYears.map((year) => {
+            const isOpen = openYear === year;
+            const panelId = `media-year-panel-${year}`;
 
-          {mediaItems.map((item, index) => (
+            return (
+              <section className="media-year" key={year}>
+                <h3 className="media-year-heading">
+                  <button
+                    className="media-year-toggle"
+                    type="button"
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    onClick={() => setOpenYear(isOpen ? null : year)}
+                  >
+                    <span>{year}</span>
+                    <ChevronDown
+                      className={isOpen ? "media-year-chevron is-open" : "media-year-chevron"}
+                      size={22}
+                      aria-hidden="true"
+                    />
+                  </button>
+                </h3>
 
-            <button
-              key={item.src}
-              className="media-card"
-              onClick={() => openImage(index)}
-              aria-label={`Open ${item.title}`}
-            >
+                <div
+                  className="media-year-panel"
+                  id={panelId}
+                  hidden={!isOpen}
+                >
+                  {year === 2026 ? (
+                    <div className="media-grid">
+                      {mediaItems.map((item, index) => (
+                        <button
+                          key={item.src}
+                          className="media-card"
+                          onClick={() => openImage(index)}
+                          aria-label={`Open ${item.title}`}
+                        >
+                          <img
+                            src={item.src}
+                            alt={item.title}
+                            className="media-image"
+                          />
 
-              <img
-                src={item.src}
-                alt={item.title}
-                className="media-image"
-              />
-
-              <div className="media-card-overlay">
-
-                <div className="media-card-icon">
-                  <Maximize2 size={20} />
+                          <div className="media-card-overlay">
+                            <div className="media-card-icon">
+                              <Maximize2 size={20} />
+                            </div>
+                            <span>{item.title}</span>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="media-year-placeholder">
+                      Photos for {year} will be added soon.
+                    </p>
+                  )}
                 </div>
-
-                <span>
-                  {item.title}
-                </span>
-
-              </div>
-
-            </button>
-
-          ))}
-
+              </section>
+            );
+          })}
         </div>
 
         <a

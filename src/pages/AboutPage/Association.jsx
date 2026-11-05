@@ -46,6 +46,16 @@ const eventStats = {
       tagline: "Innovate • Protect • Sustain",
     },
   },
+  2026: {
+    students: "1k+",
+    schools: 17,
+    volunteers: 35,
+    theme: {
+      sdg: "SDGs 3 & 9",
+      title: "Robotics for a Better Tomorrow",
+      tagline: "Innovate • Protect • Sustain",
+    },
+  },
 };
 
 const coreValues = [
@@ -77,16 +87,22 @@ const coreValues = [
 
 const committee = [
   {
-    name: "Kamran Ali",
+    name: "Kamran Ali Qurban Ali",
     role: "CEO & Founder",
     organization: "TechTics Club",
     image: "/team/kamran.jpeg",
   },
   {
-    name: "Asil",
+    name: "Asil Budhwani",
     role: "COO & Co-Founder",
     organization: "TechTics Club",
     image: "/team/asil.jpeg",
+  },
+  {
+    name: "Fazila Farooq",
+    role: "Robofest Manager (2026)",
+    organization: "TechTics Club",
+    image: "/team/fazila.jpeg",
   },
 ];
 
