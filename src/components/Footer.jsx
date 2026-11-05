@@ -23,8 +23,8 @@ const Footer = () => {
             <h3 className="col-title">CONTACT</h3>
             <div className="address-block">
               {/* <p>RoboFest Pakistan</p> */}
-              <p>Address 1: Plot C 116, F.B Area Block 6, Gulberg Town, Karachi, 75950</p>
-              <p>Address 2: Sindh Enterprise Incubation Centre, Block 15, Gulistan-e-Johar, Karachi</p>
+              <p>BANGLOW  NO 8 PLOT 105 GULSHANE E KARIM GARDEN EAST KARACHI</p>
+              {/* <p>Address 2: Sindh Enterprise Incubation Centre, Block 15, Gulistan-e-Johar, Karachi</p> */}
             </div>
             <a href="mailto:info@robofest.pk" className="contact-btn">
               CONTACT US
