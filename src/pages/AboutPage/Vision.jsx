@@ -1,45 +1,43 @@
-import React from "react";
 import {
     Target,
     Eye,
     HeartHandshake,
-    Lightbulb,
-    Users,
-    GraduationCap,
-    Cpu,
-    Rocket,
-    BookOpen,
     ArrowRight,
 } from "lucide-react";
 import "./styles.css"
 
 const objectives = [
     {
-        icon: GraduationCap,
+        image: "/Team01.jpeg",
+        imageAlt: "Students presenting a robotics project",
         title: "Encourage STEM Education",
         description:
             "To promote the importance of Science, Technology, Engineering, and Mathematics (STEM) education among students across Pakistan.",
     },
     {
-        icon: Lightbulb,
+        image: "/media/5.jpg",
+        imageAlt: "",
         title: "Foster Innovation and Creativity",
         description:
             "To provide students with the tools and opportunities to think outside the box, solve complex problems, and develop creative solutions.",
     },
     {
-        icon: Users,
+        image: "/media/6.jpg",
+        imageAlt: "",
         title: "Build Collaboration and Teamwork",
         description:
             "To create a collaborative environment where students work together to build, program, and compete, developing teamwork and leadership skills.",
     },
     {
-        icon: Rocket,
+        image: "/media/7.jpg",
+        imageAlt: "",
         title: "Develop Future Leaders",
         description:
             "To empower students with the skills, knowledge, and confidence to pursue careers in robotics, programming, and engineering.",
     },
     {
-        icon: Cpu,
+        image: "/media/8.jpg",
+        imageAlt: "",
         title: "Support Technological Advancements",
         description:
             "To create a platform where students can engage with the latest technologies, stay updated on trends, and prepare for future challenges in the tech world.",
@@ -269,34 +267,28 @@ const Vision = () => {
                     <div className="objectives-grid">
 
                         {objectives.map((objective, index) => {
-
-                            const Icon = objective.icon;
-
                             return (
                                 <article
                                     className={`objective-card objective-card-${index + 1}`}
                                     key={objective.title}
                                 >
+                                    <span className="objective-number">
+                                        0{index + 1}
+                                    </span>
 
-                                    <div className="objective-top">
-
-                                        <span className="objective-number">
-                                            0{index + 1}
-                                        </span>
-
-                                        <div className="objective-icon">
-                                            <Icon size={22} />
-                                        </div>
-
+                                    <div className="objective-image">
+                                        <img src={objective.image} alt={objective.imageAlt} />
                                     </div>
 
-                                    <h3>
-                                        {objective.title}
-                                    </h3>
+                                    <div className="objective-card-content">
+                                        <h3>
+                                            {objective.title}
+                                        </h3>
 
-                                    <p>
-                                        {objective.description}
-                                    </p>
+                                        <p>
+                                            {objective.description}
+                                        </p>
+                                    </div>
 
                                 </article>
                             );
@@ -372,7 +364,7 @@ const Vision = () => {
 
                         <div className="techtics-visual">
                             <div className="techtics-visual-card">
-                                <img src="./aboutTechtics.jpg" alt="Background Image"></img>
+                                <img src="/media/aboutus_pic.jpeg" alt="Background Image"></img>
 
                                 {/* <BookOpen
                   size={60}

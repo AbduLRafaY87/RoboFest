@@ -343,23 +343,23 @@ const MediaPage = () => {
                       Photos for {year} will be added soon.
                     </p>
                   )}
+
+                  {isOpen && mediaDriveFolders[year] && (
+                    <a
+                      className="media-view-more"
+                      href={mediaDriveFolders[year]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View More
+                      <ExternalLink size={17} />
+                    </a>
+                  )}
                 </div>
               </section>
             );
           })}
         </div>
-
-        {openYear !== null && mediaDriveFolders[openYear] && (
-          <a
-            className="media-view-more"
-            href={mediaDriveFolders[openYear]}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View More
-            <ExternalLink size={17} />
-          </a>
-        )}
 
       </main>
 

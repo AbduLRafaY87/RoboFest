@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import {
-  Handshake,
   Lightbulb,
-  Rocket,
   Code2,
   Trophy,
   ArrowRight,
@@ -30,16 +28,17 @@ const eventStats = {
   2024: {
     students: 800,
     schools: 25,
-    volunteers: 40,
+    volunteers: 30,
     theme: {
       sdg: "SDG 13",
-      title: "Climate Action Theme Introduced",
+      title: "Climate Action",
+      tagline:""
     },
   },
   2025: {
-    students: 300,
-    schools: 17,
-    volunteers: 15,
+    students: 1200,
+    schools: 35,
+    volunteers: 30,
     theme: {
       sdg: "SDGs 3 & 9",
       title: "Robotics for a Better Tomorrow",
@@ -60,25 +59,25 @@ const eventStats = {
 
 const coreValues = [
   {
-    icon: Users,
+    image: "/media/1.jpg",
     title: "Diversity",
     description:
       "RoboFest is open to all students, regardless of background, providing equal opportunities for everyone to participate and shine.",
   },
   {
-    icon: Handshake,
+    image: "/media/2.jpg",
     title: "Teamwork",
     description:
       "We believe in the power of collaboration, where participants build strong teams, develop friendships, and grow through shared experiences.",
   },
   {
-    icon: Lightbulb,
+    image: "/media/3.jpg",
     title: "Innovation",
     description:
       "Our competitions and workshops explore the latest technologies, encouraging participants to discover new possibilities in robotics, programming, and STEM.",
   },
   {
-    icon: Rocket,
+    image: "/media/4.jpg",
     title: "Empowerment",
     description:
       "RoboFest empowers students to become the next generation of innovators, creators, and engineers by giving them a platform to showcase their ideas.",
@@ -108,7 +107,7 @@ const committee = [
 
 const Association = () => {
 
-  const [activeYear, setActiveYear] = useState("2022");
+  const [activeYear, setActiveYear] = useState("2026");
 
   return (
     <main className="association-page">
@@ -264,27 +263,20 @@ const Association = () => {
 
           <div className="values-grid">
 
-            {coreValues.map((value, index) => {
-              const Icon = value.icon;
+            {coreValues.map((value, index) => (
+              <article
+                className="value-card"
+                key={value.title}
+              >
+                <span className="value-number">
+                  0{index + 1}
+                </span>
 
-              return (
-                <article
-                  className="value-card"
-                  key={value.title}
-                >
+                <div className="value-icon">
+                  <img src={value.image} alt="" />
+                </div>
 
-                  <div className="value-card-top">
-
-                    <span className="value-number">
-                      0{index + 1}
-                    </span>
-
-                    <div className="value-icon">
-                      <Icon size={22} strokeWidth={1.8} />
-                    </div>
-
-                  </div>
-
+                <div className="value-card-content">
                   <h3>
                     {value.title}
                   </h3>
@@ -292,12 +284,11 @@ const Association = () => {
                   <p>
                     {value.description}
                   </p>
+                </div>
 
-                  <div className="value-line"></div>
-
-                </article>
-              );
-            })}
+                <div className="value-line"></div>
+              </article>
+            ))}
 
           </div>
 
