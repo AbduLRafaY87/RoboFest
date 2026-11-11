@@ -22,6 +22,7 @@ import Competition2023 from './pages/PastEventsPage/Competition2023'
 import Competition2024 from './pages/PastEventsPage/Competition2024'
 import ScienceExhibitionVoting from './pages/ScienceExhibitionVoting/ScienceExhibitionVoting'
 import Competition2027 from './pages/PastEventsPage/Competition2027'
+import Partner from './pages/AboutPage/Partner'
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/association" element={<Association/>} />
           <Route path="/vision" element={<Vision/>} />
+          <Route path="/partner" element={<Partner/>} />
           <Route path="/join" element={<JoinPage />} />
           <Route path="/past-events" element={<PastEventsPage />} />
           <Route path="/events/2026" element={<Competition2026/>} />
@@ -45,6 +47,7 @@ const App = () => {
           <Route path="/competition/faq" element={<FAQsPage/>} />
           <Route path="/newsroom/archive" element={<MediaPage/>} />
           <Route path="/newsroom/story" element={<Stories/>} />
+          <Route path="/newsroom/story/:storyId" element={<Stories/>} />
           <Route path="/*" element={<NotFound/>} />
         </Routes>
       </main>

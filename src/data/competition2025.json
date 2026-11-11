@@ -1,0 +1,1640 @@
+{
+  "year": "2025",
+  "title": "Sustain. Innovate. Protect.",
+  "theme": "Sustain | Innovate | Protect",
+  "description": "Robotics for a better tomorrow.",
+  "heroImage": "/2025/heroBg.png",
+  "date": "27th-28th September 2025",
+  "venue": "Beaconhouse PECHS Campus",
+  "eventInfo": {
+    "themeTitle": "Sustain. Innovate. Protect.",
+    "themeDescription": "Robotics for a better tomorrow.",
+    "date": "27th-28th September 2025",
+    "venue": "Beaconhouse PECHS Campus",
+    "theme": "Sustain | Innovate | Protect"
+  },
+  "competitions": [
+    {
+      "category": "Robotics",
+      "competitions": [
+        {
+          "name": "Hunt the Block Junior"
+        },
+        {
+          "name": "Hunt the Block Senior"
+        },
+        {
+          "name": "RoboLFR"
+        },
+        {
+          "name": "Robo Football League 1 vs 1"
+        },
+        {
+          "name": "Rescue Line"
+        },
+        {
+          "name": "Remote Control Package Delivery"
+        },
+        {
+          "name": "Maze Solver"
+        },
+        {
+          "name": "RoboSumo"
+        },
+        {
+          "name": "Robo Race"
+        },
+        {
+          "name": "RoboSoccer"
+        }
+      ]
+    },
+    {
+      "category": "Programming",
+      "competitions": [
+        {
+          "name": "TinkerCad"
+        },
+        {
+          "name": "Scratch Programming"
+        },
+        {
+          "name": "Python Beginners"
+        },
+        {
+          "name": "Web Dev Using AI"
+        }
+      ]
+    },
+    {
+      "category": "STEM",
+      "competitions": [
+        {
+          "name": "Science Exhibition"
+        },
+        {
+          "name": "Air Modeling Workshop"
+        },
+        {
+          "name": "Mathematical Hunt"
+        },
+        {
+          "name": "Health Education Campaign"
+        }
+      ]
+    },
+    {
+      "category": "E-Gaming",
+      "competitions": [
+        {
+          "name": "FIFA 25"
+        },
+        {
+          "name": "Tekken 8"
+        },
+        {
+          "name": "Street Fighter"
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    {
+      "id": "highlights",
+      "label": "Event Highlights",
+      "type": "highlights",
+      "description": "Explore workshops, sessions, and partner activities from RoboFest 2025.",
+      "events": [
+        {
+          "title": "ROS2 Humble Workshop",
+          "image": "/2025/highlights/ROS2_poster.png",
+          "imageAlt": "ROS2 Workshop Poster",
+          "paragraphs": [
+            "Join the exciting \"Robots in Action with ROS2\" workshop, part of RoboFest 2025, organized by TechTics Club to take your robotics knowledge beyond just coding! | 📍 Venue: Beaconhouse PECHS Campus | 📅 Dates: 27–28 September | 🎯 Format: Live Session",
+            "What You'll Learn: | - ROS 2 Humble – The latest version of the Robot Operating System | - Edge AI – Learn how AI works on the edge | - Embedded Systems – Merge software with hardware | - Simulators – Test and develop robotics virtually | - Bio-Inspired Swarm Robots – Design intelligent cooperative systems",
+            "Led by Team Brainswarm Robotics, this hands-on workshop is designed to empower young minds with practical skills and insights that go far beyond programming. Dive into real-world robotics and experience the fusion of innovation and automation.",
+            "Register now by scanning the QR code on the poster or visit RoboFest 2025 Workshop Registeration. | 📞 Contact: 0325-8988646",
+            "Don’t miss this opportunity to witness the future of robotics!"
+          ],
+          "links": [
+            {
+              "label": "RoboFest 2025 Workshop Registeration",
+              "url": "https://tinyurl.com/RoboFestWorkshopRegistration"
+            }
+          ]
+        },
+        {
+          "title": "Imagine Cup Awareness Session",
+          "image": "/2025/highlights/mlsc_session.png",
+          "imageAlt": "Imagine Cup Awareness Session",
+          "paragraphs": [
+            "Get a chance to learn about Imagine Cup from the MLSC DHA Sufa Student Ambassador team. | This session will give you insights into the Imagine Cup, a global tech startup competition, and the | opportunities it opens for students worldwide. | 📍 Venue: Beaconhouse PECHS Campus | 📅 Dates: 28th September | 🎯 Format: Live Session",
+            "Join us to explore how you can unlock networking opportunities, global recognition, and expert coaching. | Prepare yourself for the Imagine Cup 2026 and get ready to share your ideas and bring your startup to life!",
+            "📞 Contact: 0325-8988646",
+            "Don’t miss the chance to kickstart your tech journey!",
+            "Register now by scanning the QR code on the poster or visit Imagine Cup Registration."
+          ],
+          "links": [
+            {
+              "label": "Imagine Cup Registration",
+              "url": "https://tinyurl.com/RoboFestWorkshopRegistration"
+            }
+          ]
+        },
+        {
+          "title": "SSFH x Algorithmics at RoboFest",
+          "image": "/2025/highlights/ssfh_stall.png",
+          "imageAlt": "SSFH x Algorithmics Booth",
+          "paragraphs": [
+            "Explore the world of tech with SSFH & Algorithmics at RoboFest 2025! | 🔹 Take part in a Tech + Islamic Quiz | 🔹 Join the TinkerCad Challenge | 🔹 Try our Python Puzzle Race | 🔹 Watch Algorithmic LMS Live in action | 🔹 Build circuits in our hands-on mini challenge | 🔹 Snap photos with techy props | 🎁 Win cool giveaways & trial sessions! | 📍 Venue: Beaconhouse PECHS Campus | 📅 Date: 27 September | 🔗 techticsclub.com"
+          ],
+          "links": [
+            {
+              "label": "techticsclub.com",
+              "url": "https://www.techticsclub.com"
+            }
+          ]
+        },
+        {
+          "title": "SSFH x Algorithmics at RoboFest",
+          "image": "/2025/highlights/ssfh_stall_2.png",
+          "imageAlt": "SSFH x Algorithmics at RoboFest",
+          "paragraphs": [
+            "Join us for exciting activities at RoboFest 2025 with SSFH and Algorithmics! | 📍 Venue: Beaconhouse PECHS Campus | 📅 Date: 28 September | 🎯 Format: Live Sessions",
+            "What You'll Learn: | - Build your first app using MIT App Inventor | - Compete in our Math & Logic Relay | - Solve Snap Coding Sprints | - Explore cool AI & Web Dev projects | - Quiz on Tech & Sunnah | - Discover Algorithmic student creations | - Grab giveaways & win a free trial class!"
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "organizers",
+      "label": "Organizers",
+      "type": "profiles",
+      "description": "Meet the organizers and domain leads who brought RoboFest 2025 to life.",
+      "sections": [
+        {
+          "title": "Founders",
+          "profiles": [
+            {
+              "name": "Kamran Ali",
+              "image": "/2025/organizers/Kamran_ali.png",
+              "imageAlt": "Kamran Ali",
+              "role": "Founder & CEO"
+            },
+            {
+              "name": "Asil Budhwani",
+              "image": "/2025/organizers/Asil.jpeg",
+              "imageAlt": "Asil Budhwani",
+              "role": "Co-Founder & COO"
+            }
+          ]
+        },
+        {
+          "title": "Team Administration",
+          "profiles": [
+            {
+              "name": "Alina Lakhani",
+              "image": "/2025/organizers/alina.png",
+              "imageAlt": "Alina Lakhani",
+              "role": "General Secretary"
+            },
+            {
+              "name": "Rozina Naveed",
+              "image": "/2025/organizers/rozina.jpeg",
+              "imageAlt": "Rozina Naveed",
+              "role": "Event Coordinator"
+            },
+            {
+              "name": "Amna Alwani",
+              "image": "/2025/organizers/amna.png",
+              "imageAlt": "Amna Alwani",
+              "role": "Registration Lead"
+            },
+            {
+              "name": "Munaf Bhanji",
+              "image": "/2025/organizers/Munaf.png",
+              "imageAlt": "Munaf Bhanji",
+              "role": "Graphic Designer"
+            }
+          ]
+        },
+        {
+          "title": "Domain Leads",
+          "profiles": [
+            {
+              "name": "Saran Khaliq",
+              "image": "/2025/organizers/swarm_Saran_Khaliq.jpeg",
+              "imageAlt": "Saran Khaliq",
+              "domain": "Robotics",
+              "role": "Robotics Lead"
+            },
+            {
+              "name": "Amsal Raja Rizwan",
+              "image": "/2025/organizers/amsal.jpeg",
+              "imageAlt": "Amsal Raja Rizwan",
+              "domain": "Robotics",
+              "role": "Robotics Lead"
+            },
+            {
+              "name": "Shah Fahad",
+              "image": "/2025/organizers/Shah_fahad.jpeg",
+              "imageAlt": "Shah Fahad",
+              "domain": "Robotics",
+              "role": "Robotics Lead"
+            },
+            {
+              "name": "Syed Sohaib Shere",
+              "image": "/2025/organizers/Syed%20Sohaib.jpeg",
+              "imageAlt": "Syed Sohaib Shere",
+              "domain": "Robotics",
+              "role": "Robotics Lead"
+            },
+            {
+              "name": "Sanika Sajwani",
+              "image": "/2025/organizers/sanika.png",
+              "imageAlt": "Sanika Sajwani",
+              "domain": "Programming",
+              "role": "Programming Lead"
+            },
+            {
+              "name": "Sohaib Kamran",
+              "image": "/2025/organizers/Sohaib_Kamran_MLSC.jpeg",
+              "imageAlt": "Sohaib Kamran",
+              "domain": "Programming",
+              "role": "Programming Lead"
+            },
+            {
+              "name": "Sheikh Zeeshan",
+              "image": "/2025/organizers/Sheikh_Zeeshan_Javed.jpg",
+              "imageAlt": "Sheikh Zeeshan",
+              "domain": "STEM",
+              "role": "STEM Lead"
+            },
+            {
+              "name": "Kehkashan Saher",
+              "image": "/2025/organizers/Kehkashan_Saher.jpg",
+              "imageAlt": "Kehkashan Saher",
+              "domain": "STEM",
+              "role": "STEM Lead"
+            },
+            {
+              "name": "Muhammad Ahsan Aziz",
+              "image": "/2025/organizers/M_Ahsan_Aziz_egaming.jpeg",
+              "imageAlt": "Muhammad Ahsan Aziz",
+              "domain": "E-Gaming",
+              "role": "E-Gaming Lead"
+            }
+          ]
+        },
+        {
+          "title": "Special Guests",
+          "profiles": [
+            {
+              "name": "Shiraz Ali",
+              "image": "/2025/organizers/Shiraz_Ali.jpeg",
+              "imageAlt": "Shiraz Ali",
+              "role": "Manager CSR, Indigo"
+            },
+            {
+              "name": "Aftab Ahmed",
+              "image": "/2025/organizers/aftab.jpg",
+              "imageAlt": "Aftab Ahmed",
+              "role": "AM Content and Comms, Indigo"
+            },
+            {
+              "name": "Adeel Arshad",
+              "image": "/2025/organizers/adeel.JPG",
+              "imageAlt": "Adeel Arshad",
+              "role": "Senior Graphic Designer, Indigo"
+            },
+            {
+              "name": "Kishman Shareef",
+              "image": "/2025/organizers/Kishman.jpg",
+              "imageAlt": "Kishman Shareef",
+              "role": "Comms and Social Impact, Indigo"
+            },
+            {
+              "name": "M. Rameel",
+              "image": "/2025/organizers/Rameel.jpeg",
+              "imageAlt": "M. Rameel",
+              "role": "Media Associate, Indigo"
+            },
+            {
+              "name": "Sidrah Siddeiqye",
+              "image": "/2025/organizers/SSFH_Sidrah%20Siddeiqye.jpg",
+              "imageAlt": "Sidrah Siddeiqye",
+              "role": "Member, SSFH"
+            },
+            {
+              "name": "Muqaddas Ali",
+              "image": "/2025/organizers/Muqaddas_Ali.jpg",
+              "imageAlt": "Muqaddas Ali",
+              "role": "Member, SSFH"
+            },
+            {
+              "name": "Abdullah Baig",
+              "image": "/2025/organizers/SSFH_Abdullah_Baig.jpg",
+              "imageAlt": "Abdullah Baig",
+              "role": "Member, SSFH"
+            },
+            {
+              "name": "Fizza Faheem",
+              "image": "/2025/organizers/SSFH_Fizza_Faheem.jpg",
+              "imageAlt": "Fizza Faheem",
+              "role": "Member, SSFH"
+            },
+            {
+              "name": "Behroz Noorani",
+              "image": "/2025/organizers/Behroz_Noorani_Chief_Guest_Align.jpeg",
+              "imageAlt": "Behroz Noorani",
+              "role": "CEO, Align Stem Club"
+            },
+            {
+              "name": "Shaikh Talha",
+              "image": "/2025/organizers/Shaikh%20Talha-Director_Align.jpeg",
+              "imageAlt": "Shaikh Talha",
+              "role": "Director, Align Stem Club"
+            },
+            {
+              "name": "Yunus Fakhruddin",
+              "image": "/2025/organizers/Yunus%20Fakhruddin-%20Event%20Manger_Resource%20Manger.jpg",
+              "imageAlt": "Yunus Fakhruddin",
+              "role": "Event Manager, Align Stem Club"
+            },
+            {
+              "name": "Maha Tariq",
+              "image": "/2025/organizers/Maha%20Tariq-Operantions%20Manager_Align.jpeg",
+              "imageAlt": "Maha Tariq",
+              "role": "Operation Manager, Align Stem Club"
+            },
+            {
+              "name": "Sardar Mohsin",
+              "image": "/2025/organizers/Sardar%20Mohsin%20-%20STEM%20Engineer_Align.jpeg",
+              "imageAlt": "Sardar Mohsin",
+              "role": "STEM Engineer, Align Stem Club"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "judges",
+      "label": "Judges",
+      "type": "judge-sections",
+      "description": "Meet the judges who evaluated RoboFest 2025 competitions.",
+      "sections": [
+        {
+          "title": "Robotics Judges",
+          "category": "Competition Judges",
+          "profiles": [
+            {
+              "name": "Auj Haseeb",
+              "image": "/2025/judges/Auj_Haseeb_Hunt_the_Block_Junior.jpg",
+              "imageAlt": "Auj Haseeb",
+              "category": "Robotics",
+              "competition": "Hunt The Block (Jr)"
+            },
+            {
+              "name": "Haider Yousuf",
+              "image": "/2025/judges/haider_ali_Align.jpeg",
+              "imageAlt": "Haider Yousuf",
+              "category": "Robotics",
+              "competition": "Hunt The Block (Jr)"
+            },
+            {
+              "name": "Tooba Ahmed",
+              "image": "/2025/judges/Tooba_Ahmed_Hunt_the_Block_Senior.jpg",
+              "imageAlt": "Tooba Ahmed",
+              "category": "Robotics",
+              "competition": "Hunt The Block(Sr)"
+            },
+            {
+              "name": "Talha Ajaz",
+              "image": "/2025/judges/Talha_Aijaz.jpg",
+              "imageAlt": "Talha Ajaz",
+              "category": "Robotics",
+              "competition": "LFR Lego"
+            },
+            {
+              "name": "M Noman Siddique",
+              "image": "/2025/judges/Muhammad_Noman%20Siddique_RoboLFR.jpg",
+              "imageAlt": "M Noman Siddique",
+              "category": "Robotics",
+              "competition": "LFR Lego"
+            },
+            {
+              "name": "Abbas Quaid",
+              "image": "/2025/judges/Abbas_RoboLFR.jpg",
+              "imageAlt": "Abbas Quaid",
+              "category": "Robotics",
+              "competition": "LFR Lego"
+            },
+            {
+              "name": "Areesha Fahad",
+              "image": "/2025/judges/Soccer_Areesha.jpg",
+              "imageAlt": "Areesha Fahad",
+              "category": "Robotics",
+              "competition": "RoboSoccer"
+            },
+            {
+              "name": "Laraib Rasheed",
+              "image": "/2025/judges/Soccer_laraib_rasheed.jpeg",
+              "imageAlt": "Laraib Rasheed",
+              "category": "Robotics",
+              "competition": "RoboSoccer"
+            },
+            {
+              "name": "Fatema Rangwala",
+              "image": "/2025/judges/Fatima.jpeg",
+              "imageAlt": "Fatema Rangwala",
+              "category": "Robotics",
+              "competition": "LFR Indigenious"
+            },
+            {
+              "name": "Ibraheem Muhammad",
+              "image": "/2025/judges/swarm_ibrahim.jpeg",
+              "imageAlt": "Ibraheem Muhammad",
+              "category": "Robotics",
+              "competition": "RC Package Delivery"
+            },
+            {
+              "name": "Muneeb ur Rehman",
+              "image": "/2025/judges/swarm_muneeburrehman.jpeg",
+              "imageAlt": "Muneeb ur Rehman",
+              "category": "Robotics",
+              "competition": "Maze Solver"
+            },
+            {
+              "name": "Saran Khaliq",
+              "image": "/2025/judges/swarm_Saran_Khaliq.jpeg",
+              "imageAlt": "Saran Khaliq",
+              "category": "Robotics",
+              "competition": "RoboSumo"
+            },
+            {
+              "name": "Hassan Ahmed",
+              "image": "/2025/judges/roborace_hassan.jpg",
+              "imageAlt": "Hassan Ahmed",
+              "category": "Robotics",
+              "competition": "RoboRace"
+            }
+          ]
+        },
+        {
+          "title": "Programming Judges",
+          "category": "Competition Judges",
+          "profiles": [
+            {
+              "name": "Hadia Mushtaq",
+              "image": "/2025/judges/Hadia_Mushtaq.jpg",
+              "imageAlt": "Hadia Mushtaq",
+              "category": "Programming",
+              "competition": "TinkerCad"
+            },
+            {
+              "name": "Ayesha",
+              "image": "/2025/judges/Ayesha_Khan_Judge.jpg",
+              "imageAlt": "Ayesha",
+              "category": "Programming",
+              "competition": "Scratch Programming"
+            },
+            {
+              "name": "Mariam Fatima",
+              "image": "/2025/judges/Mariam_Fatima_MLSC.jpg",
+              "imageAlt": "Mariam Fatima",
+              "category": "Programming",
+              "competition": "Python Basics"
+            },
+            {
+              "name": "Khoula Abdul Rehman",
+              "image": "/2025/judges/Khoula_Abdul%20Rehman_%20MLSC.jpg",
+              "imageAlt": "Khoula Abdul Rehman",
+              "category": "Programming",
+              "competition": "Python Basics"
+            },
+            {
+              "name": "Mohsin Salman",
+              "image": "/2025/judges/Mohsin_Salman_MLSC.jpeg",
+              "imageAlt": "Mohsin Salman",
+              "category": "Programming",
+              "competition": "Web Dev with AI"
+            }
+          ]
+        },
+        {
+          "title": "STEM Judges",
+          "category": "Competition Judges",
+          "profiles": [
+            {
+              "name": "Hina Karim",
+              "image": "/2025/judges/Hina_Karim.png",
+              "imageAlt": "Hina Karim",
+              "category": "STEM",
+              "competition": "Science Exhibition"
+            },
+            {
+              "name": "Faiqua Erum Arshad",
+              "image": "/2025/judges/Faiqua_erum_arshad.jpeg",
+              "imageAlt": "Faiqua Erum Arshad",
+              "category": "STEM",
+              "competition": "Science Exhibition"
+            },
+            {
+              "name": "Javeria Faiz",
+              "image": "/2025/judges/Javeria.png",
+              "imageAlt": "Javeria Faiz",
+              "category": "STEM",
+              "competition": "Science Exhibition"
+            },
+            {
+              "name": "Alina Khan",
+              "image": "/2025/judges/Alina_khan.jpeg",
+              "imageAlt": "Alina Khan",
+              "category": "STEM",
+              "competition": "Air Modeling"
+            },
+            {
+              "name": "Sharique Baig",
+              "image": "/2025/judges/Sharique_Baig.jpg",
+              "imageAlt": "Sharique Baig",
+              "category": "STEM",
+              "competition": "Mathematical Hunt"
+            },
+            {
+              "name": "Hassan Mujtaba",
+              "image": "/2025/judges/Hassan_Mujtaba.jpg",
+              "imageAlt": "Hassan Mujtaba",
+              "category": "STEM",
+              "competition": "Digital Hackathon"
+            },
+            {
+              "name": "Kehkashan Saher",
+              "image": "/2025/judges/Kehkashan_Saher.jpg",
+              "imageAlt": "Kehkashan Saher",
+              "category": "STEM",
+              "competition": "Digital Hackathon"
+            },
+            {
+              "name": "Mahjabeen Alvina",
+              "image": "/2025/judges/Mahjabeen%20_Alvina.jpeg",
+              "imageAlt": "Mahjabeen Alvina",
+              "category": "STEM",
+              "competition": "Digital Hackathon"
+            }
+          ]
+        },
+        {
+          "title": "Egaming Judges",
+          "category": "Competition Judges",
+          "profiles": [
+            {
+              "name": "Abdul Mateen",
+              "image": "/2025/judges/abdul_mateen.jpeg",
+              "imageAlt": "Abdul Mateen",
+              "category": "Egaming",
+              "competition": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ambassadors",
+      "label": "Ambassadors Profile",
+      "type": "profiles",
+      "description": "Meet the student and teacher ambassadors representing RoboFest 2025 schools.",
+      "sections": [
+        {
+          "title": "BCP PECHS Campus",
+          "profiles": [
+            {
+              "name": "Malik Dawood",
+              "image": "/2025/ambassadors/BCP_Malik_Dawood_Teacher.jpg",
+              "imageAlt": "Malik Dawood",
+              "role": "Teacher"
+            },
+            {
+              "name": "Hareem",
+              "image": "/2025/ambassadors/BCP_Hareem_Student.jpg",
+              "imageAlt": "Hareem",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "The Generation School",
+          "profiles": [
+            {
+              "name": "Shumaila Basit",
+              "image": "/2025/ambassadors/Generation_ShumailaBasit%20_Teacher.jpg",
+              "imageAlt": "Shumaila Basit",
+              "role": "Teacher"
+            },
+            {
+              "name": "Khidhar Saeed",
+              "image": "/2025/ambassadors/Generation_%20Khidhar_Saeed_Student.jpg",
+              "imageAlt": "Khidhar Saeed",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Darkhana IPD",
+          "profiles": [
+            {
+              "name": "Sumaira",
+              "image": "/2025/ambassadors/IPD_Munaf_Bhanji_Teacher.jpeg",
+              "imageAlt": "Sumaira",
+              "role": "Teacher"
+            },
+            {
+              "name": "Arshiyaan",
+              "image": "/2025/ambassadors/IPD_ArshiyaanKashif_Student.png",
+              "imageAlt": "Arshiyaan",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Alyabad Community School",
+          "profiles": [
+            {
+              "name": "Zehra Farooq",
+              "image": "/2025/ambassadors/Alyabad_Zehra%20Farooq_Teacher.png",
+              "imageAlt": "Zehra Farooq",
+              "role": "Teacher"
+            },
+            {
+              "name": "Alisha Sunil",
+              "image": "/2025/ambassadors/Alyabad_Alisha_Sunil_Student.jpg",
+              "imageAlt": "Alisha Sunil",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "CBS Sultanabad",
+          "profiles": [
+            {
+              "name": "Suraya Akash",
+              "image": "/2025/ambassadors/sultanabad_cbs_Suraya_akash_khan_Teacher.jpeg",
+              "imageAlt": "Suraya Akash",
+              "role": "Teacher"
+            },
+            {
+              "name": "Azaan Baig",
+              "image": "/2025/ambassadors/CBS_IYS_Sultanabad_Azaan_daulat_baig_Student.jpg",
+              "imageAlt": "Azaan Baig",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Aga Khan School Garden",
+          "profiles": [
+            {
+              "name": "Anees Rehman",
+              "image": "/2025/ambassadors/AKG_Anees%20Rehman_Teacher.jpg",
+              "imageAlt": "Anees Rehman",
+              "role": "Teacher"
+            },
+            {
+              "name": "Ahmed",
+              "image": "/2025/ambassadors/AKG_Ahmed_Shahzaib_Student.jpg",
+              "imageAlt": "Ahmed",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IUSS Airport Campus",
+          "profiles": [
+            {
+              "name": "Amna Mukhtar",
+              "image": "/2025/ambassadors/IUSS_Airport_Faizan_Haider_Teacher.jpg",
+              "imageAlt": "Amna Mukhtar",
+              "role": "Teacher"
+            },
+            {
+              "name": "Hafsa Adnan",
+              "image": "/2025/ambassadors/IUSSAirport_Hafsa_Adnan_Student.jpg",
+              "imageAlt": "Hafsa Adnan",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Habib Girls School",
+          "profiles": [
+            {
+              "name": "Farseen Noor",
+              "image": "/2025/ambassadors/HabibGirls_Farseen_noor_Teacher.jpg",
+              "imageAlt": "Farseen Noor",
+              "role": "Teacher"
+            },
+            {
+              "name": "Shafiya Noor",
+              "image": "/2025/ambassadors/Habib_Girls_School_Shafiya_Noor_Student.jpg",
+              "imageAlt": "Shafiya Noor",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Karachi Public School",
+          "profiles": [
+            {
+              "name": "Hareer Shakeel",
+              "image": "/2025/ambassadors/kps_Hareer_Shakeel_Teacher.jpg",
+              "imageAlt": "Hareer Shakeel",
+              "role": "Teacher"
+            },
+            {
+              "name": "Raja Abdullah",
+              "image": "/2025/ambassadors/Karachi_Public_School_Raja_Abdullah_Student.jpg",
+              "imageAlt": "Raja Abdullah",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Discovery Centre",
+          "profiles": [
+            {
+              "name": "Urooj Naz",
+              "image": "/2025/ambassadors/Discovery_Urooj_Naz_Teacher.jpg",
+              "imageAlt": "Urooj Naz",
+              "role": "Teacher"
+            },
+            {
+              "name": "M.Saifan",
+              "image": "/2025/ambassadors/discovery_Saifan_Student.jpeg",
+              "imageAlt": "M.Saifan",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "The International School",
+          "profiles": [
+            {
+              "name": "Sajjad Ali",
+              "image": "/2025/ambassadors/TIS_Sajjad%20Ali_Teacher.jpg",
+              "imageAlt": "Sajjad Ali",
+              "role": "Teacher"
+            },
+            {
+              "name": "TBD",
+              "image": "/2025/ambassadors/Empty.png",
+              "imageAlt": "TBD",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Jaffer Public School",
+          "profiles": [
+            {
+              "name": "Nazish Qasim",
+              "image": "/2025/ambassadors/JPS_Nazish_Qasim_Teacher.jpg",
+              "imageAlt": "Nazish Qasim",
+              "role": "Teacher"
+            },
+            {
+              "name": "TBD",
+              "image": "/2025/ambassadors/Empty.png",
+              "imageAlt": "TBD",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "United Charter School",
+          "profiles": [
+            {
+              "name": "Mahrukh Qureshi",
+              "image": "/2025/ambassadors/United%20_charter_school_FB_area_Mahrukh_quresh_Teacheri.jpg",
+              "imageAlt": "Mahrukh Qureshi",
+              "role": "Teacher"
+            },
+            {
+              "name": "Ayan Kamran",
+              "image": "/2025/ambassadors/United%20_charter_school%20FB%20area%20campus%20_Ayan_Kamran_Student.jpg",
+              "imageAlt": "Ayan Kamran",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "The American Foundation",
+          "profiles": [
+            {
+              "name": "Rabia Touseef",
+              "image": "/2025/ambassadors/TAFS_Rabia%20Tauseef_Teacher.jpg",
+              "imageAlt": "Rabia Touseef",
+              "role": "Teacher"
+            },
+            {
+              "name": "Jari Abbas",
+              "image": "/2025/ambassadors/TAFS_Jari_Abbas_Student.jpeg",
+              "imageAlt": "Jari Abbas",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IUSS Gulshan Campus",
+          "profiles": [
+            {
+              "name": "Asna Mughal",
+              "image": "/2025/ambassadors/IUSS_Gulshan_Asna%20Mughal_Teacher.jpg",
+              "imageAlt": "Asna Mughal",
+              "role": "Teacher"
+            },
+            {
+              "name": "Fajar Fayyaz",
+              "image": "/2025/ambassadors/IUSS_Gulshan_Fajar_Fayyaz_Teacher.jpg",
+              "imageAlt": "Fajar Fayyaz",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IUSS Shahrah e Pakistan",
+          "profiles": [
+            {
+              "name": "Samrah",
+              "image": "/2025/ambassadors/IUSS_Shahrah_e_Pakistan_Samrah_Shoukat_Teacher.jpg",
+              "imageAlt": "Samrah",
+              "role": "Teacher"
+            },
+            {
+              "name": "Romaisha Siraj",
+              "image": "/2025/ambassadors/IUSS_SP_Campus_Romaisha_siraj_Teacher.jpg",
+              "imageAlt": "Romaisha Siraj",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IUSS Block J Campus",
+          "profiles": [
+            {
+              "name": "Malaika Zahid",
+              "image": "/2025/ambassadors/IUSS_Block_J_Malaika_Zahid_Teacher.jpg",
+              "imageAlt": "Malaika Zahid",
+              "role": "Teacher"
+            },
+            {
+              "name": "TBD",
+              "image": "/2025/ambassadors/Empty.png",
+              "imageAlt": "TBD",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Fajr Academy",
+          "profiles": [
+            {
+              "name": "Haris Yousuf",
+              "image": "/2025/ambassadors/fajr_academy_Haris_yousuf_Teacher.jpg",
+              "imageAlt": "Haris Yousuf",
+              "role": "Teacher"
+            },
+            {
+              "name": "TBD",
+              "image": "/2025/ambassadors/Empty.png",
+              "imageAlt": "TBD",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IUSS Block-B Campus",
+          "profiles": [
+            {
+              "name": "Laiba Mehmood",
+              "image": "/2025/ambassadors/IUSS_North_LAIBA_MEHMOOD_Teacher.jpg",
+              "imageAlt": "Laiba Mehmood",
+              "role": "Teacher"
+            },
+            {
+              "name": "TBD",
+              "image": "/2025/ambassadors/Empty.png",
+              "imageAlt": "TBD",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "NJV School Karachi",
+          "profiles": [
+            {
+              "name": "Uzair Ganatra",
+              "image": "/2025/ambassadors/NJV_Govt_Higher_Secondary_School_Uzair_Ganatra_Teacher.jpg",
+              "imageAlt": "Uzair Ganatra",
+              "role": "Teacher"
+            },
+            {
+              "name": "Furqan Khatti",
+              "image": "/2025/ambassadors/NJV_School_Karachi_Furqan_Khatti_Student.jpg",
+              "imageAlt": "Furqan Khatti",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "SMS Aga Khan School",
+          "profiles": [
+            {
+              "name": "Shaheryar",
+              "image": "/2025/ambassadors/SMS_Aga_Khan_School_Primary_Section_Shaheryar%20Rajput_Teacher.jpg",
+              "imageAlt": "Shaheryar",
+              "role": "Teacher"
+            },
+            {
+              "name": "M Aqdus",
+              "image": "/2025/ambassadors/SMS_Aga_Khan_School_Primary_Section_Muhammad_Aqdus_Teacher.jpg",
+              "imageAlt": "M Aqdus",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "Hira Foundation",
+          "profiles": [
+            {
+              "name": "Shumaila",
+              "image": "/2025/ambassadors/f_avatar.png",
+              "imageAlt": "Shumaila",
+              "role": "Teacher"
+            },
+            {
+              "name": "Urooj Aqeel",
+              "image": "/2025/ambassadors/f_avatar.png",
+              "imageAlt": "Urooj Aqeel",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "IISAR Foundation",
+          "profiles": [
+            {
+              "name": "Anum Misbah",
+              "image": "/2025/ambassadors/f_avatar.png",
+              "imageAlt": "Anum Misbah",
+              "role": "Teacher"
+            },
+            {
+              "name": "M. Mehmood",
+              "image": "/2025/ambassadors/iisar_Muhammad_Mehmood_ijaz.JPG",
+              "imageAlt": "M. Mehmood",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "The Learning Space",
+          "profiles": [
+            {
+              "name": "Husnain Khan",
+              "image": "/2025/ambassadors/learning_space_Husnain_khan.jpeg",
+              "imageAlt": "Husnain Khan",
+              "role": "Teacher"
+            },
+            {
+              "name": "Murash Khan",
+              "image": "/2025/ambassadors/The_Learning_Space_MurashKhan_Teacher.jpg",
+              "imageAlt": "Murash Khan",
+              "role": "Student"
+            }
+          ]
+        },
+        {
+          "title": "The Intellect School",
+          "profiles": [
+            {
+              "name": "Syed Hammad",
+              "image": "/2025/ambassadors/intellect_hammad_teacher.jpeg",
+              "imageAlt": "Syed Hammad",
+              "role": "Teacher"
+            },
+            {
+              "name": "Syed Shanzer",
+              "image": "/2025/ambassadors/Theintellectschool_Syed_Shanzer_Ali_Student.jpeg",
+              "imageAlt": "Syed Shanzer",
+              "role": "Student"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "volunteers",
+      "label": "Volunteers",
+      "type": "profiles",
+      "description": "Meet the RoboFest 2025 taskforce supporting event operations and competitions.",
+      "sections": [
+        {
+          "title": "Registration and Administration",
+          "profiles": [
+            {
+              "name": "Iffat Iqbal",
+              "image": "/2025/volunteers/iffatiqbal.png",
+              "imageAlt": "Iffat Iqbal",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            },
+            {
+              "name": "Rizwana Alam",
+              "image": "/2025/volunteers/Rizwanaalam.png",
+              "imageAlt": "Rizwana Alam",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            },
+            {
+              "name": "Arwa Aziz",
+              "image": "/2025/volunteers/Arwa.png",
+              "imageAlt": "Arwa Aziz",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            },
+            {
+              "name": "Neha Noorallah",
+              "image": "/2025/volunteers/NehaMawani.png",
+              "imageAlt": "Neha Noorallah",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            },
+            {
+              "name": "Anum Malik",
+              "image": "/2025/volunteers/Anum%20Malik.jpg",
+              "imageAlt": "Anum Malik",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            },
+            {
+              "name": "Maheen Mashooq",
+              "image": "/2025/volunteers/Maheen.jpeg",
+              "imageAlt": "Maheen Mashooq",
+              "role": "Event Coordination",
+              "domain": "Registration"
+            }
+          ]
+        },
+        {
+          "title": "Robotics",
+          "profiles": [
+            {
+              "name": "M Muneer",
+              "image": "/2025/volunteers/M.Muneer_Align.jpg",
+              "imageAlt": "M Muneer",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Rahil Rahim",
+              "image": "/2025/volunteers/rahilrahim.png",
+              "imageAlt": "Rahil Rahim",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Karim Vadseriya",
+              "image": "/2025/volunteers/karimvadseriya.png",
+              "imageAlt": "Karim Vadseriya",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Afsheen Ghalib",
+              "image": "/2025/volunteers/afsheengalib.png",
+              "imageAlt": "Afsheen Ghalib",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Ateeb",
+              "image": "/2025/volunteers/Ateeb.png",
+              "imageAlt": "Ateeb",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Aiman",
+              "image": "/2025/volunteers/aiman.jpeg",
+              "imageAlt": "Aiman",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            },
+            {
+              "name": "Bilal Ahmed",
+              "imageAlt": "Bilal Ahmed",
+              "role": "Event Coordination",
+              "domain": "Robotics"
+            }
+          ]
+        },
+        {
+          "title": "Programming",
+          "profiles": [
+            {
+              "name": "Sadia Tariq",
+              "image": "/2025/volunteers/sadiatariq.png",
+              "imageAlt": "Sadia Tariq",
+              "role": "Event Coordination",
+              "domain": "Programming"
+            },
+            {
+              "name": "Aina Hyder",
+              "image": "/2025/volunteers/AinaHyder.png",
+              "imageAlt": "Aina Hyder",
+              "role": "Event Coordination",
+              "domain": "Programming"
+            },
+            {
+              "name": "Haram Ullah",
+              "image": "/2025/volunteers/haramullah.png",
+              "imageAlt": "Haram Ullah",
+              "role": "Event Coordination",
+              "domain": "Programming"
+            },
+            {
+              "name": "Zargham Nadeem",
+              "image": "/2025/volunteers/Zargham_Nadeem.png",
+              "imageAlt": "Zargham Nadeem",
+              "role": "Event Coordination",
+              "domain": "Programming"
+            }
+          ]
+        },
+        {
+          "title": "STEM",
+          "profiles": [
+            {
+              "name": "Zehra Galib",
+              "image": "/2025/volunteers/zehragalib.png",
+              "imageAlt": "Zehra Galib",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Rizwana Soomro",
+              "image": "/2025/volunteers/rizwanasomoro.png",
+              "imageAlt": "Rizwana Soomro",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Javeria Javed",
+              "image": "/2025/volunteers/Javeria_Javed.jpg",
+              "imageAlt": "Javeria Javed",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Raahina Rahim",
+              "image": "/2025/volunteers/Raahina_Rahim.jpeg",
+              "imageAlt": "Raahina Rahim",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Kainat Soomro",
+              "image": "/2025/volunteers/kainatsomoro.png",
+              "imageAlt": "Kainat Soomro",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Sara Jawed",
+              "image": "/2025/volunteers/sarajawed.png",
+              "imageAlt": "Sara Jawed",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "M Aashir Khan",
+              "image": "/2025/volunteers/M_Aashir_Khan.jpeg",
+              "imageAlt": "M Aashir Khan",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            },
+            {
+              "name": "Abdul Munim",
+              "image": "/2025/volunteers/Abdul_Munim.jpg",
+              "imageAlt": "Abdul Munim",
+              "role": "Event Coordination",
+              "domain": "STEM"
+            }
+          ]
+        },
+        {
+          "title": "Egaming",
+          "profiles": [
+            {
+              "name": "Wardah Najeeb",
+              "image": "/2025/volunteers/wardhanajeeb.png",
+              "imageAlt": "Wardah Najeeb",
+              "role": "Event Coordination",
+              "domain": "Egaming"
+            },
+            {
+              "name": "Aqil Khalid",
+              "image": "/2025/volunteers/Aqil_Khalid.jpg",
+              "imageAlt": "Aqil Khalid",
+              "role": "Event Coordination",
+              "domain": "Egaming"
+            },
+            {
+              "name": "Zunair Sohail",
+              "image": "/2025/volunteers/zunair_sundrani.jpg",
+              "imageAlt": "Zunair Sohail",
+              "role": "Event Coordination",
+              "domain": "Egaming"
+            },
+            {
+              "name": "M Hassan",
+              "image": "/2025/volunteers/M_hassan.jpg",
+              "imageAlt": "M Hassan",
+              "role": "Event Coordination",
+              "domain": "Egaming"
+            },
+            {
+              "name": "Sanaan Saleem",
+              "image": "/2025/volunteers/Sanaan_Saleem.jpg",
+              "imageAlt": "Sanaan Saleem",
+              "role": "Event Coordination",
+              "domain": "Egaming"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leaderboard",
+      "label": "Leaderboard",
+      "type": "leaderboard",
+      "intro": "RoboFest 2025 overall standings and competition results.",
+      "presentationLinks": [],
+      "topSchools": [
+        {
+          "place": "1st Place",
+          "name": "Karachi Public School (KPS)",
+          "total": "17",
+          "accent": "gold",
+          "logos": [
+            {
+              "src": "/2025/leaderboard/kps.png",
+              "alt": "Karachi Public School (KPS)"
+            }
+          ]
+        },
+        {
+          "place": "2nd Place",
+          "name": "Habib Girls School",
+          "total": "15",
+          "accent": "silver",
+          "logos": [
+            {
+              "src": "/2025/leaderboard/habib_girls.jpg",
+              "alt": "Habib Girls School"
+            }
+          ]
+        },
+        {
+          "place": "3rd Place",
+          "name": "IUSS Airport Campus",
+          "total": "12",
+          "accent": "bronze",
+          "logos": [
+            {
+              "src": "/2025/leaderboard/iuss.png",
+              "alt": "IUSS Airport Campus"
+            }
+          ]
+        }
+      ],
+      "categories": [
+        {
+          "title": "Robotics",
+          "competitions": [
+            {
+              "name": "Hunt the Block Junior",
+              "results": [
+                "1st: Amir Hamza , Muhammad Diyan (Block Dominators) (TFS)| 2nd: Aliyan, Shahzain (Black Rocket) (TFS) | | 3rd: Anabia , Mubashira (TFS)"
+              ]
+            },
+            {
+              "name": "Hunt the Block Senior",
+              "results": [
+                "1st: Generation - Ali Mansoor , Khidher Saeed | | 2nd: Align Stem - Arham , Taha | | 3rd: Fajr Academy - Amaan Babar, Hanzala Adil"
+              ]
+            },
+            {
+              "name": "RoboLFR",
+              "results": [
+                "1st: AROUSH MAJID , MANAHIL KHAN (The Learning Space) | 2nd: SAKEENA FATIMA, SAYYADA REZA (HABIB | GIRLS) | 3rd: AIZA BATOOL,TEHREEM FATIMA (HABIB GIRLS)"
+              ]
+            },
+            {
+              "name": "Robo Football League 1 vs 1",
+              "results": [
+                "1st: IISAR Foundation - Hamza , Mehmood Ijaz | 2nd: Korangi Academy - Muhammad Moosa | 3rd: ISSAR Foundation - Hur Mehdi, M Jasir"
+              ]
+            },
+            {
+              "name": "Rescue Line",
+              "results": [
+                "1st: Fajr Academy - Sameeha , Syeda Eshaal | 2nd: Fajr Academy - Muhammad Hunain , Muhammad Sudais | 3rd: Dawood Public School - Minaal Sheikh, Zara Mohsin"
+              ]
+            },
+            {
+              "name": "Remote Control Package Delivery",
+              "results": [
+                "1st: DHA CSS - Hanniel Austin , Sajjad Nizar | 2nd: Step School Johar - Mustafa Shamil , Samara Rind | 3rd: ISSAR Foundation - Musab Rehan , Zehra Nasir"
+              ]
+            },
+            {
+              "name": "RoboSumo",
+              "results": [
+                "1st: The Learning Space - Arbaz Khan | 2nd: NJV - Ali Abdullah, Habibullah Saleh, Muhammad Uzair | 3rd: NJV - Taiba , Abdul Rehman, Dua Zahid"
+              ]
+            },
+            {
+              "name": "Robo Race",
+              "results": [
+                "1st: KPS - Ayan Ali , Zainab Fatima | 2nd: KPS - Abiha Farooq , Mohib Fredrick | 3rd: NJV - Waniya, ZArnain Aijaz"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Programming",
+          "competitions": [
+            {
+              "name": "TinkerCad",
+              "results": [
+                "1st: BlockBuster (Discovery Centre) - Muhammad Arham Khan | 2nd: Techno Queens (Discovery Centre) - Manahil Faisal Rehman / Zarnish Khushi Arshad | 3rd: Copper Ants (IPD) - Jawad Ullah / Aariz Ayaz Khan"
+              ]
+            },
+            {
+              "name": "Scratch Programming",
+              "results": [
+                "1st: Scratch NEW (BCPPechs) Abdul Hadi/ Humayl | 2nd: Habib Girls - Muntaha / Izzah | 3rd: The Scratchers (Fatiha Academy) - Hamna Khan / Bariah Rawasia"
+              ]
+            },
+            {
+              "name": "Python Beginners",
+              "results": [
+                "1st: One man Show (AKHSS) - Mohib | 2nd: BaitulSalam - Hashir / Urwa | 3rd: Code Crushers (Hira Foundation School) - Syeda Alishba /Ifra Naz"
+              ]
+            },
+            {
+              "name": "Web Dev Using AI",
+              "results": [
+                "1st: PrimeCreator (AKHSS) - Abdul Rafay/Muhammad Zayan | 2nd: SMS - Muhammad Saffan/Muhammad Usman Khan | 3rd: NJV - Amar Sham / Muzammil Hussain"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "STEM",
+          "competitions": [
+            {
+              "name": "Science Exhibition",
+              "results": [
+                "1st: BCPPechs - LED Light - Minahil Furqan | 2nd: UCS FB Area - Quake Alarm System - M Zubair, Meerab Shraz, Mehak Fatima | 3rd: CBS IYS Sultanabad - Piezo Electricity - Arman Navroz Ali, Shahzain Salman, Shiza Sheraz"
+              ]
+            },
+            {
+              "name": "Air Modeling Workshop",
+              "results": [
+                "1st: Golimar (Azan, Haris, Arhan), | 2nd: Sharks (Rabiya, Umaima, Imran,), | 3rd: Model Makers (Ekta, Rishika, Anushka),"
+              ]
+            },
+            {
+              "name": "Mathematical Hunt",
+              "results": [
+                "1st: IUSS Airport - Abdul Hanan | 2nd: IUSS Airport - M.Arshad Mehdi | 3rd: IUSS Airport - Yahya"
+              ]
+            },
+            {
+              "name": "Health Education Campaign",
+              "results": [
+                "1st: Dispora Emergency Rescue - Habib Girls - Fatima Faizan, Zunaira Fatima | | 2nd: NutriSahulat - Habib Girls - Syeda Soha Batool / Marzia Fatima | | 3rd: Aircane - SMS School - Seerat Sarfaraz, Simal Surani"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "E-Gaming",
+          "competitions": [
+            {
+              "name": "FIFA 25",
+              "results": [
+                "1st: SMS - Esmaeel Hussain | 2nd: IUSS Airport - Arsalan Ali | 3rd: Hira Foundation School - Muhammad Usman Umer"
+              ]
+            },
+            {
+              "name": "Tekken 8",
+              "results": [
+                "1st: KPS - Abdul Moiz | 2nd: KPS - Zaviar | 3rd: KPS - Abdul Samad"
+              ]
+            },
+            {
+              "name": "Street Fighter",
+              "results": [
+                "1st: IUSS Gulshan - Muhammad Ahmed | | 2nd: IUSS Gulshan - Wamiq Baig | | 3rd: CBS Alyabad - Hussain Shehzad"
+              ]
+            }
+          ]
+        }
+      ],
+      "specialAwards": [
+        {
+          "title": "Best Student Ambassador",
+          "text": "Hareem Abid - BCP PECHS"
+        },
+        {
+          "title": "Best Teacher Ambassador",
+          "text": "Sumaira Shahnawaz - IPD"
+        },
+        {
+          "title": "Best Volunteer",
+          "text": "Rizwana Alam"
+        },
+        {
+          "title": "School With Most Participation Award",
+          "text": "The American Foundation School (TAFS)"
+        },
+        {
+          "title": "Best One Minute Pitch",
+          "text": "Fatima and Rumaisa (Generation School)"
+        },
+        {
+          "title": "Most Patient Centric Award",
+          "text": "Rida Kamran and Hania Noman (Habib Girls School)"
+        },
+        {
+          "title": "Youngest Coder (Junior)",
+          "text": "T Hifza Aman (CBS Alyabad)"
+        },
+        {
+          "title": "Youngest Coder (Senior)",
+          "text": "Imaan Irfan (Aga Khan School Garden)"
+        },
+        {
+          "title": "Best Robot Design",
+          "text": "Abdullah Shehzad and Ahmed Khan (The Learning Space)"
+        }
+      ],
+      "qualifiedTeams": [
+        {
+          "title": "TinkerCad Finalists",
+          "text": "Copper ants IPD (Ariz and Jawad), | Techno Queens(Discovery Center) (Manahil and Zarnish), | Voltix Team(IUSS) (Ayesha), | AS Team (Discovery Center) (Sanj and Anaya), | Spark Inovators(UCS) (Rafay and Yusuf), | Block Busters(Discovery Center) (Arham), | Anabya(Ameciran Foundation School) (Anayaa and Anabia), | IPD Giants (Ayra, Aynur)"
+        },
+        {
+          "title": "Robo Race",
+          "text": "Nitro Racer (NJV Govt. Higher Secondary School ), Robo Fighters (Karachi Public School) , Robo | Tech(DHACSS), Ayan Ali(Karachi Public School)"
+        },
+        {
+          "title": "Scratch Programming Finalists",
+          "text": "Amara and Fatima(Sultanabad cbs), | Zimal Arshad and Manahil Fatima (Discovery center), | Ahmed Subhan (SMS Aga khan Karimabad ), | Maryam Imran and Anayah (Habib Girls ), | Ruhan Altaf and Ezzan Ali (Aga khan Garden ), | Ahil Amin and Aliyan (Aga khan Garden ), | Hifza and Inza(Aliyabad Community School), | Zoraiz and Aayan (BSS), | Parisa Kamal (IUSS SP), | Waqid Raza and Asad Faisal(SMS Aga Khan School), | The Scratchers(Fatiha Academy), | Mashood Alam and Moosa Malik(The Learning Space), | Noorah and Hania (The Learning Space), | Izzah Moiz and Muntahaa Umair(Habib Girls ), | Ansa and Dipika (Dr. AQKSS), | Roshany and Insiya Kashif (Habib Girls ), | Hassan And Shafy (Issar Foundation ), | Ehsan and Ahad (The Learning Space), | Affan and Hammad (IssarFoundation ), | Hmaza Kashif and Ariz Hussain (SMS Agakhan School), | Fatima and Hareem (SMS Agakhan School), | Anaya and Marium (SMS Agakhan Schhol) , | M.Ibrahim and Yasir(Issar Foundatio), | Fareed and Ismail(Fajar Academy ), | Abudullah and Rafay(SMS Agakhan Schhol), | M. Humayl Siddiqui(BSS main Campus), | Asad and Ali(Isaar Foundation), | Hadi and Tooba (Isaar Foundation), | Abdul Hadi (ILS/The Learning space ), | Noor and Ayesha (Dr.AQKSS), | Manal and Sarah (Isaar Foundation)"
+        },
+        {
+          "title": "RoboFootball Qualified Teams",
+          "text": "Alpha (Hira Foundation School), | IISAR Foundation Team 1 (IISAR Foundation), | Team Korangi Academy 1.0 , | Shadow Strikers (IPD), | IISAR Foundation Team 2 , | ZenBee9 , | Korangi academy 3, | Megaminds (Hira Foundation School)"
+        },
+        {
+          "title": "Python Beginners Finalists",
+          "text": "Phyon (Alyabad Community School) (Ajmal, Annie), | Pythonic (The Learning Space) (Dua, Inaya), | Jamia BaitulSalam (Rafay , Wasif), | Diddy Party (IPD) (Alishaz, shaaz), | Urwah's Team (BaitulSalam) (Hashir), | Jamia Baitul Salam (Hasnian, Aurangzeb), | Pythora(UTech) (Afifa , Hasan), | Ophi Coders(Hira Foundation school) (Bushra), | Code Crushers (Hira Foundation school) (Alishba , Ifra), | The One man Show (AKHSS)(Mohib), | 11 Code Venom (NJV) (Abdullah , Sohail), | SMS Aga Khan (Ashma , Mehzer)"
+        },
+        {
+          "title": "Web Dev Using AI Finalists",
+          "text": "JPS(Zoya Sakina), | AKHSS one man Show (Mohib) | Abdul Rafay, M Zayan (AKHSS), | BSS (Maiz, Shahwaiz), | NJV (Ammar , Muzamil), | Perfect Coders (KPS) (Nehal, Hasnain), | SMS Aga Khan (Arshman, Izhan), | NJV(Hasnian, Bhawani), | Habib Girls (Madhia, Soha), | Habib Girls (Code Geeks) (Safa, Aleena), | AKHSS (Hamza, Ismail), | SMS (Usman, Safan)"
+        },
+        {
+          "title": "Mathematical Hunt Finalists",
+          "text": "Muhammad Hamza Jamil (AKSG), | Huda Muzammil (AKSG), | M.Ashad Mehdi (IUSS Airport), | M.Ali (UCS Johar), | Muhammad Huzaifa Salman(IUSS Shahrahe Pakistan), | fazeelat Abid(IUSS Shahrahe Pakistan), | Shaikh Muhammad Faiq(IUSS Shahrahe Pakistan), | Ali Raza (IUSS Shahrahe Pakistan), | Marium Saad(IUSS Shahrahe Pakistan), | Ali Aryan (SMS Aga Khan), | Eman Jamil (NJV), | Azan Rizwan (NJV), | Alishba Adnan (IUSS Gulshan), | Aizah Shah Khan (IUSS Gulshan), | Muhammad Abdul Ahad (IUSS Gulshan), | Huda Fatima (IUSS Airport), | Hadi Zaidi (IUSS Airport), | Yahya (IUSS Airport), | Muhammad Shahwaiz (IUSS Block J), | Abdul Hannan (IUSS Airport), | Hur Abbas (IUSS Airport), | Tabrez (IUSS Airport),"
+        },
+        {
+          "title": "Rescue Line",
+          "text": "Byte Appetite (Fajr Academy ), | Falcons(Fajr Academy ), | Karachi Public School Team (Karachi Public School), | NJV Terra Thrusters (NJV Govt. Higher Secondary School), | Robo Follower (Karachi Public School ), | Robo Force (Fajr Academy ), | ZenBee - DPS 1 (Zencode), | ZenBee - DPS 2 (Zencode), | ZenBee - DPS 3 (Zencode), | ZenBee - DPS 5 (Zencode), | ZenBee - DPS 6 (Zencode), | ZenBee - DPS 7 (Zencode), | ZenBee7 - HMS (Zencode), | IISAR foundation (Zencode), | DHA CSS Roborangers (Zencode)"
+        },
+        {
+          "title": "Street Fighter",
+          "text": "Hassaan Mustafa (AKS Garden), | Wamiq Baig (IUSS Gulshan), | Hussain Shahzad (ACS ), | M Ahmed (IUSS Gulshan)"
+        },
+        {
+          "title": "Tekken 8",
+          "text": "Abdul Moiz (KPS) , | M Ayan Kamran (TAF) , | Ameer Hamza (Discovery Center) , | Mohsin Jalil Fida (AKS Garden) , | Ali Akbar (BSS PECHS) , | Uzair (Mixed Schools) , | M Mahad Baig (TAF), | Khadija Saqib (Generations), | Ahmed Ali (Mixed Schools), | Yousuf Hassan (BSS PECHS), | Aahil Abdullah (KPS), | Zaviar (KPS), | Abdul Samad (KPS)"
+        },
+        {
+          "title": "Fifa 25",
+          "text": "Maaz Ahmed (IUSS Block B), | M.Masil (UCS FB), | Esmaeel Hussain (SMSAK), | M. Reyyan Brohi (DC), | Muhammad Anas (BSS PECHS), | M Zuhad Rajput (IUSS Gulshan), | SYED HASSAN ALI (TAF), | M Ayyan Baig (TAFS), | Abdul Hadi (BSS PECHS), | Ayan Kamran (UCS FB), | Syed Usman Bukhari (DC), | WAMIQ BAIG (IUSS Gulshan), | Muhammad waiz khan (SMSAK), | M Kabeer (UCS), | Rania Arshad (HFS), | Muhammad Bilal Rajput (IUSS Gulshan), | Asad Abdul Jabbar (JPS), | Aliyan Ali (Alyabad), | M AZAAN AHMED (IUSS AIRPOT), | Muhammad Abbasi (Mixed Schools), | Tasbeeh Zehra (TAFS), | Yousuf Hassan ( BSS PECHS), | MUSTAFA HASSAN KHAN (TAF)"
+        }
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "name": "Beaconhouse School System",
+      "logo": "/2025/collaborators/bss.png",
+      "category": "Venue Collaboration"
+    },
+    {
+      "name": "TechTics Club",
+      "logo": "/2025/collaborators/TechTics.png",
+      "category": "Gold Sponsors"
+    },
+    {
+      "name": "AIRO",
+      "logo": "/2025/collaborators/airo.png",
+      "category": "Gold Sponsors"
+    },
+    {
+      "name": "Platos",
+      "logo": "/2025/collaborators/platos.png",
+      "category": "Gold Sponsors"
+    },
+    {
+      "name": "Indigo",
+      "logo": "/2025/collaborators/indigo.png",
+      "category": "Gold Sponsors"
+    },
+    {
+      "name": "UHU",
+      "logo": "/2025/collaborators/uhu.png",
+      "category": "Silver Sponsors"
+    },
+    {
+      "name": "Faber-Castell",
+      "logo": "/2025/collaborators/fabrecastel.png",
+      "category": "Silver Sponsors"
+    },
+    {
+      "name": "Bachaa Party",
+      "logo": "/2025/collaborators/bachaparty.png",
+      "category": "Silver Sponsors"
+    },
+    {
+      "name": "SSFH",
+      "logo": "/2025/collaborators/ssfh.png",
+      "category": "Bronze Sponsors"
+    },
+    {
+      "name": "CAC",
+      "logo": "/2025/collaborators/cac.png",
+      "category": "Bronze Sponsors"
+    },
+    {
+      "name": "Valued Partner",
+      "logo": "/2025/collaborators/image.png",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "BrainSwarm",
+      "logo": "/2025/collaborators/brainswarm.png",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "CodnBots",
+      "logo": "/2025/collaborators/CodnBotslogo.png",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "Align",
+      "logo": "/2025/collaborators/Align.png",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "ZenCode",
+      "logo": "/2025/collaborators/zencode.jpg",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "Arcanum",
+      "logo": "/2025/collaborators/arcanum.png",
+      "category": "Valued Partners"
+    },
+    {
+      "name": "GameStack",
+      "logo": "/2025/collaborators/GameStack_Logo.jpg",
+      "category": "Valued Partners"
+    }
+  ],
+  "previousYearYoutube": "https://youtube.com/embed/moF3cE_jVY4?si=CWgB4EpnW3zF2cxn",
+  "youtube": "https://youtube.com/embed/xJ-iJqfPc2Q?si=tnkT7aumrdWMOfZi",
+  "links": {
+    "conceptNote": "https://tinyurl.com/RoboFest2025ConceptNote",
+    "sponsorNote": "https://tinyurl.com/RoboFest2025SponsorNote",
+    "ruleBook": "https://tinyurl.com/RoboFest2025RuleBook",
+    "pastProblemStatements": "https://drive.google.com/drive/folders/1AUY4cq358lCQz-illyEGTB5IdTclNVw2",
+    "gallery": "",
+    "faqs": "/competition/faq"
+  }
+}

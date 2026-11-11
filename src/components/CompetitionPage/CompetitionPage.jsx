@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   FileText,
   Handshake,
@@ -13,6 +13,7 @@ import {
   ClipboardList,
   UserRound,
   Trophy,
+  Images,
   // Linkedin,
   // Github,
   // Instagram,
@@ -32,6 +33,7 @@ const iconMap = {
   Judges: Gavel,
   Organizers: ShieldCheck,
   Leaderboard: Trophy,
+  "Event Highlights": Images,
 };
 
 const CompetitionPage = ({ competition }) => {
@@ -300,6 +302,65 @@ const CompetitionPage = ({ competition }) => {
               </div>
             )}
 
+            {activeTabData.type === "highlights" && (
+              <div className="competition-highlights-content">
+                {activeTabData.description && (
+                  <p className="profile-intro">
+                    {activeTabData.description}
+                  </p>
+                )}
+
+                <div className="competition-highlights-grid">
+                  {activeTabData.events?.map((event, index) => (
+                    <article
+                      className="competition-highlight-card"
+                      key={`${event.title}-${index}`}
+                    >
+                      {event.image && (
+                        <img
+                          src={event.image}
+                          alt={event.imageAlt || event.title}
+                          className="competition-highlight-image"
+                        />
+                      )}
+
+                      <div className="competition-highlight-copy">
+                        <h3>{event.title}</h3>
+                        {event.paragraphs?.map((paragraph, paragraphIndex) => (
+                          <p key={`${event.title}-${paragraphIndex}`}>
+                            {paragraph.split(" | ").map((line, lineIndex) => (
+                              <span
+                                className="competition-highlight-paragraph-line"
+                                key={`${paragraphIndex}-${lineIndex}`}
+                              >
+                                {line}
+                              </span>
+                            ))}
+                          </p>
+                        ))}
+
+                        {event.links?.length > 0 && (
+                          <div className="competition-highlight-links">
+                            {event.links.map((link) => (
+                              <a
+                                key={`${link.url}-${link.label}`}
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {link.label}
+                                <ExternalLink size={15} />
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            )}
+
 
             {/* =====================================================
                 PROFILE TABS
@@ -441,10 +502,8 @@ const CompetitionPage = ({ competition }) => {
 
                                 <div className="profile-image-wrapper">
                                   <img
-                                    src={person.image}
-                                    alt={
-                                      person.name
-                                    }
+                                    src={person.image || undefined}
+                                    alt={person.imageAlt || person.name}
                                     className="profile-image"
                                   />
                                 </div>
@@ -535,6 +594,11 @@ const CompetitionPage = ({ competition }) => {
                       <h4>{school.place}</h4>
 
                       <p className="leaderboard-school-total">
+                        {school.name && (
+                          <span className="leaderboard-school-name">
+                            {school.name}
+                          </span>
+                        )}
                         Total Points: {school.total}
                       </p>
                     </article>
@@ -913,8 +977,8 @@ const ProfileCard = ({ person }) => {
       <div className="profile-image-wrapper">
 
         <img
-          src={person.image}
-          alt={person.name}
+          src={person.image || undefined}
+          alt={person.imageAlt || person.name}
           className="profile-image"
         />
 

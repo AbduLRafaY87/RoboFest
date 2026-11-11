@@ -21,34 +21,34 @@ const showcaseImages = [
     src: "/media/5.jpg",
     alt: "RoboFest showcase 5",
   },
-  {
-    src: "/media/6.jpg",
-    alt: "RoboFest showcase 6",
-  },
-  {
-    src: "/media/7.jpg",
-    alt: "RoboFest showcase 7",
-  },
-  {
-    src: "/media/8.jpg",
-    alt: "RoboFest showcase 8",
-  },
-  {
-    src: "/media/9.jpg",
-    alt: "RoboFest showcase 9",
-  },
-  {
-    src: "/media/10.jpg",
-    alt: "RoboFest showcase 10",
-  },
-  {
-    src: "/media/11.jpg",
-    alt: "RoboFest showcase 11",
-  },
-  {
-    src: "/media/12.jpg",
-    alt: "RoboFest showcase 12",
-  },
+  // {
+  //   src: "/media/6.jpg",
+  //   alt: "RoboFest showcase 6",
+  // },
+  // {
+  //   src: "/media/7.jpg",
+  //   alt: "RoboFest showcase 7",
+  // },
+  // {
+  //   src: "/media/8.jpg",
+  //   alt: "RoboFest showcase 8",
+  // },
+  // {
+  //   src: "/media/9.jpg",
+  //   alt: "RoboFest showcase 9",
+  // },
+  // {
+  //   src: "/media/10.jpg",
+  //   alt: "RoboFest showcase 10",
+  // },
+  // {
+  //   src: "/media/11.jpg",
+  //   alt: "RoboFest showcase 11",
+  // },
+  // {
+  //   src: "/media/12.jpg",
+  //   alt: "RoboFest showcase 12",
+  // },
 ];
 
 const ShowcaseSection = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import {
   X,
   ChevronLeft,
@@ -10,78 +10,159 @@ import {
 
 import "./styles.css";
 
-const mediaItems = [
-  {
-    type: "image",
-    src: "/images/1.jpg",
-    title: "RoboFest Highlights",
-  },
-  {
-    type: "image",
-    src: "/images/2.jpg",
-    title: "Robotics Competition",
-  },
-  {
-    type: "image",
-    src: "/images/3.jpg",
-    title: "Participants at RoboFest",
-  },
-  {
-    type: "image",
-    src: "/images/4.jpg",
-    title: "Innovation & Technology",
-  },
-  {
-    type: "image",
-    src: "/images/5.jpg",
-    title: "RoboFest Event",
-  },
-  {
-    type: "image",
-    src: "/images/6.jpg",
-    title: "Competition Highlights",
-  },
-  {
-    type: "image",
-    src: "/images/7.jpg",
-    title: "Competition Highlights",
-  },
-  {
-    type: "image",
-    src: "/images/8.jpg",
-    title: "Competition Highlights",
-  },
-];
+const mediaByYear = {
+  // Add images using { src: "/images/2022/photo.jpg", title: "Photo title" }.
+  2022: [
+    {
+      type: "image",
+      src: "/2022/1.JPG",
+      title: "RoboFest Highlights",
+    },
+    {
+      type: "image",
+      src: "/2022/2.JPG",
+      title: "Robotics Competition",
+    },
+    {
+      type: "image",
+      src: "/2022/3.JPG",
+      title: "Participants at RoboFest",
+    },
+  ],
+  2023: [
+    {
+      type: "image",
+      src: "/2023/1.JPG",
+      title: "RoboFest Highlights",
+    },
+    {
+      type: "image",
+      src: "/2023/2.JPG",
+      title: "Robotics Competition",
+    },
+    {
+      type: "image",
+      src: "/2023/3.JPG",
+      title: "Participants at RoboFest",
+    },
+  ],
+  2024: [
+    {
+      type: "image",
+      src: "/2024/1.jpg",
+      title: "RoboFest Highlights",
+    },
+    {
+      type: "image",
+      src: "/2024/2.jpg",
+      title: "Robotics Competition",
+    },
+    {
+      type: "image",
+      src: "/2024/3.jpg",
+      title: "Participants at RoboFest",
+    },
+  ],
+  2025: [
+    {
+      type: "image",
+      src: "/2025/1.jpg",
+      title: "RoboFest Highlights",
+    },
+    {
+      type: "image",
+      src: "/2025/2.jpg",
+      title: "Robotics Competition",
+    },
+    {
+      type: "image",
+      src: "/2025/3.jpg",
+      title: "Participants at RoboFest",
+    },
+  ],
+  2026: [
+    {
+      type: "image",
+      src: "/images/1.jpg",
+      title: "RoboFest Highlights",
+    },
+    {
+      type: "image",
+      src: "/images/2.jpg",
+      title: "Robotics Competition",
+    },
+    {
+      type: "image",
+      src: "/images/3.jpg",
+      title: "Participants at RoboFest",
+    },
+    // {
+    //   type: "image",
+    //   src: "/images/4.jpg",
+    //   title: "Innovation & Technology",
+    // },
+    // {
+    //   type: "image",
+    //   src: "/images/5.jpg",
+    //   title: "RoboFest Event",
+    // },
+    // {
+    //   type: "image",
+    //   src: "/images/6.jpg",
+    //   title: "Competition Highlights",
+    // },
+    // {
+    //   type: "image",
+    //   src: "/images/7.jpg",
+    //   title: "Competition Highlights",
+    // },
+    // {
+    //   type: "image",
+    //   src: "/images/8.jpg",
+    //   title: "Competition Highlights",
+    // },
+  ],
+};
 
 const mediaYears = [2022, 2023, 2024, 2025, 2026];
 
+const mediaDriveFolders = {
+  2022: "https://drive.google.com/drive/folders/1uHMfwMmb7aLefjCAVdm9q_Mtw7lSlQoh?usp=sharing",
+  2023: "https://drive.google.com/drive/folders/1GF6TXzsl-hUPMZK90ogb8p11OicVBdec?usp=sharing",
+  2024: "https://drive.google.com/drive/folders/1PyecvFB78VpcNl3wxEQhb2cT-JHLaXhL?usp=sharing",
+  2025: "https://drive.google.com/drive/folders/10aXv4kCZGRK31dp-CAUFC0RVVrauEc6e?usp=sharing",
+  2026: "https://drive.google.com/drive/folders/10aXv4kCZGRK31dp-CAUFC0RVVrauEc6e",
+};
+
 const MediaPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(null);
   const [openYear, setOpenYear] = useState(2026);
 
-  const openImage = (index) => {
+  const openImage = (year, index) => {
+    setSelectedYear(year);
     setSelectedImage(index);
   };
 
-  const closeImage = () => {
+  const closeImage = useCallback(() => {
     setSelectedImage(null);
-  };
+  }, []);
 
-  const showPrevious = () => {
-    setSelectedImage((current) =>
-      current === 0
-        ? mediaItems.length - 1
-        : current - 1
-    );
-  };
+  const showPrevious = useCallback(() => {
+    setSelectedImage((current) => {
+      if (current === null) return current;
+      const items = mediaByYear[selectedYear];
+      return current === 0 ? items.length - 1 : current - 1;
+    });
+  }, [selectedYear]);
 
-  const showNext = () => {
-    setSelectedImage((current) =>
-      current === mediaItems.length - 1
-        ? 0
-        : current + 1
-    );
-  };
+  const showNext = useCallback(() => {
+    setSelectedImage((current) => {
+      if (current === null) return current;
+      const items = mediaByYear[selectedYear];
+      return current === items.length - 1 ? 0 : current + 1;
+    });
+  }, [selectedYear]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -112,7 +193,7 @@ const MediaPage = () => {
         handleKeyDown
       );
     };
-  }, [selectedImage]);
+  }, [selectedImage, closeImage, showNext, showPrevious]);
 
   // Prevent background scrolling while popup is open
   useEffect(() => {
@@ -233,13 +314,13 @@ const MediaPage = () => {
                   id={panelId}
                   hidden={!isOpen}
                 >
-                  {year === 2026 ? (
+                  {mediaByYear[year].length > 0 ? (
                     <div className="media-grid">
-                      {mediaItems.map((item, index) => (
+                      {mediaByYear[year].map((item, index) => (
                         <button
                           key={item.src}
                           className="media-card"
-                          onClick={() => openImage(index)}
+                          onClick={() => openImage(year, index)}
                           aria-label={`Open ${item.title}`}
                         >
                           <img
@@ -268,15 +349,17 @@ const MediaPage = () => {
           })}
         </div>
 
-        <a
-          className="media-view-more"
-          href="https://drive.google.com/drive/folders/10aXv4kCZGRK31dp-CAUFC0RVVrauEc6e"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View More
-          <ExternalLink size={17} />
-        </a>
+        {openYear !== null && mediaDriveFolders[openYear] && (
+          <a
+            className="media-view-more"
+            href={mediaDriveFolders[openYear]}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View More
+            <ExternalLink size={17} />
+          </a>
+        )}
 
       </main>
 
@@ -321,16 +404,12 @@ const MediaPage = () => {
           >
 
             <img
-              src={
-                mediaItems[selectedImage].src
-              }
-              alt={
-                mediaItems[selectedImage].title
-              }
+              src={mediaByYear[selectedYear][selectedImage].src}
+              alt={mediaByYear[selectedYear][selectedImage].title}
             />
 
             <div className="media-lightbox-caption">
-              {mediaItems[selectedImage].title}
+              {mediaByYear[selectedYear][selectedImage].title}
             </div>
 
           </div>

@@ -47,13 +47,13 @@ const eventStats = {
     },
   },
   2026: {
-    students: "1k+",
-    schools: 17,
+    students: "1400",
+    schools: 41,
     volunteers: 35,
     theme: {
-      sdg: "SDGs 3 & 9",
-      title: "Robotics for a Better Tomorrow",
-      tagline: "Innovate • Protect • Sustain",
+      sdg: "SDGs 5 & 10",
+      title: "Swarm Robotics",
+      tagline: "Bridging Gaps, Empowering Equality",
     },
   },
 };

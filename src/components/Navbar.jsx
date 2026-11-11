@@ -60,13 +60,13 @@ const Navbar = () => {
 
           {/* About Robofest Dropdown */}
           <li 
-            className={`nav-item dropdown ${activeDropdown === 'about' ? 'active' : ''} ${isActivePath(['/association', '/vision', '/about/partner']) ? 'current' : ''}`}
+            className={`nav-item dropdown ${activeDropdown === 'about' ? 'active' : ''} ${isActivePath(['/association', '/vision', '/partner']) ? 'current' : ''}`}
             onMouseEnter={() => handleMouseEnter('about')}
             onMouseLeave={handleMouseLeave}
           >
             <a 
               href="#about" 
-              className={`nav-link ${isActivePath(['/association', '/vision', '/about/partner']) ? 'active' : ''}`}
+              className={`nav-link ${isActivePath(['/association', '/vision', '/partner']) ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); toggleDropdown('about'); }}
             >
               About Robofest <span className="arrow">▾</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <li><a className={pathname === '/association' ? 'active' : ''} href="/association">Association</a></li>
               <li><a className={pathname === '/vision' ? 'active' : ''} href="/vision">Vision</a></li>
-              <li><a className={pathname === '/about/partner' ? 'active' : ''} href="/about/partner">Partner</a></li>
+              <li><a className={pathname === '/partner' ? 'active' : ''} href="/partner">Partner</a></li>
             </ul>
           </li>
 

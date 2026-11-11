@@ -72,13 +72,13 @@
 
 .stories-content {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 95px 30px 70px;
+  padding: 70px 30px 80px;
 }
 
 .stories-heading {
-  margin-bottom: 48px;
+  margin-bottom: 38px;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@
   color: #0879c9;
 }
 
-.stories-heading h2 {
+.stories-heading h1 {
   margin: 12px 0 14px;
   color: #071b3a;
   font-size: clamp(34px, 4vw, 52px);
@@ -139,72 +139,190 @@
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  gap: 20px;
 }
 
 .story-card {
   overflow: hidden;
-  border: 1px solid #e3ebf5;
-  border-radius: 16px;
+  border: 1px solid #e8ebee;
+  border-radius: 10px;
   background: #ffffff;
-  box-shadow: 0 14px 35px rgba(15, 61, 105, 0.07);
+  box-shadow: 0 4px 14px rgba(16, 24, 40, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .story-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(15, 61, 105, 0.14);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.12);
+}
+
+.story-card-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .story-card-image {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1.55 / 1;
   object-fit: cover;
 }
 
 .story-card-body {
-  padding: 25px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  min-height: 132px;
+  padding: 14px 14px 16px;
 }
 
-.story-card time {
-  color: #0879c9;
-  font-size: 12px;
+.story-category {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  min-height: 23px;
+  padding: 0 9px;
+  color: #138258;
+  background: #eaf5f0;
+  border-radius: 999px;
+  font-size: 10px;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
-.story-card h3 {
-  margin: 12px 0 10px;
-  color: #071b3a;
-  font-size: 22px;
-  line-height: 1.25;
+.story-card h2 {
+  margin: 9px 0 12px;
+  color: #34383d;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.35;
 }
 
-.story-card p {
-  min-height: 76px;
-  margin: 0;
-  color: #667085;
-  font-size: 15px;
-  line-height: 1.7;
+.story-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+  color: #78818d;
+  font-size: 12px;
 }
 
-.story-read-more {
+.story-detail {
+  width: min(100% - 40px, 980px);
+  margin: 0 auto;
+  padding: 34px 0 90px;
+}
+
+.story-detail-header {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  padding: 22px 0 0;
+}
+
+.story-back-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 22px;
-  color: #0879c9;
-  font-size: 14px;
-  font-weight: 800;
-  text-decoration: none;
-  transition: gap 0.25s ease, color 0.25s ease;
+  margin: 0 0 28px;
+  padding: 0;
+  color: #667085;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
 }
 
-.story-read-more:hover {
-  gap: 12px;
-  color: #005fa3;
+.story-detail-header .story-category {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 10px;
+  font-size: 9px;
+}
+
+.story-detail-header h1 {
+  max-width: 680px;
+  margin: 0;
+  color: #101828;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+}
+
+.story-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #7a8492;
+  font-size: 13px;
+}
+
+.story-watch-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 16px;
+  color: #fff;
+  background: #087a51;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.story-watch-button:hover {
+  background: #066642;
+}
+
+.story-detail-image-wrap {
+  margin: 0;
+}
+
+.story-detail-image {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.story-detail-image-wrap figcaption {
+  margin-top: 7px;
+  color: #7a8492;
+  font-size: 11px;
+}
+
+.story-detail-body {
+  max-width: 720px;
+  margin: 28px auto 0;
+  color: #475467;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.story-detail-body > p {
+  margin: 0 0 20px;
+}
+
+.story-detail-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #0879a8;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.story-detail-source:hover {
+  text-decoration: underline;
 }
 
 .reels-grid {

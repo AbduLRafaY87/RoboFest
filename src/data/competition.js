@@ -1,5 +1,7 @@
 // src/data/competition.js
 
+import competition2025 from "./competition2025.json";
+
 export const competitions = {
   2026: {
     year: "2026",
@@ -1505,52 +1507,7 @@ export const competitions = {
       faqs: "https://robofest.pk/faq.php",
     },
   },
-  2025: {
-    year: "2025",
-    title: "",
-    theme: "",
-    description: "",
-    heroImage: "",
-    date: "",
-    venue: "",
-    eventInfo: {
-      themeTitle: "",
-      themeDescription: "",
-      date: "",
-      venue: "",
-      theme: "",
-    },
-    registration: {
-      intro: "",
-      steps: [],
-      requirements: [],
-      openTeamLink: "",
-      registrationLink: "",
-    },
-    competitions: [],
-    tabs: [
-      { id: "organizers", label: "Organizers", type: "profiles", description: "", profiles: [], sections: [] },
-      { id: "concept-note", label: "Concept Note", type: "concept", description: "", image: "", imageAlt: "", link: { url: "", text: "" } },
-      { id: "sponsor-note", label: "Sponsor Note", type: "resource", description: "", link: { url: "", text: "" } },
-      { id: "rulebook", label: "RuleBook", type: "resources", description: "", image: "", imageAlt: "", resources: [] },
-      { id: "ambassadors", label: "Ambassadors Profile", type: "profiles", description: "", profiles: [], sections: [] },
-      { id: "team-leads", label: "Team Leads", type: "profiles", description: "", profiles: [], sections: [] },
-      { id: "interns", label: "Interns", type: "profiles", description: "", profiles: [], sections: [] },
-      { id: "judges", label: "Judges", type: "judge-sections", description: "", sections: [] },
-      { id: "leaderboard", label: "Leaderboard", type: "leaderboard", intro: "", presentationLinks: [], topSchools: [], categories: [], specialAwards: [], qualifiedTeams: [] },
-    ],
-    partners: [],
-    previousYearYoutube: "",
-    youtube: "",
-    links: {
-      conceptNote: "",
-      sponsorNote: "",
-      ruleBook: "",
-      pastProblemStatements: "",
-      gallery: "",
-      faqs: "",
-    },
-  },
+  2025: competition2025,
   2024: {
     year: "2024",
     title: "",
