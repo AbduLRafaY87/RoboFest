@@ -399,7 +399,7 @@ const HomePage = () => {
         <div className="category-number">01</div>
 
         <div className="category-icon">
-          <img src="/icons/robotics.png" alt="Robotics Icon" />
+          <img src="/2026/icons/robotics.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -417,7 +417,7 @@ const HomePage = () => {
         <div className="category-number">02</div>
 
         <div className="category-icon">
-          <img src="/icons/programming.png" alt="Robotics Icon" />
+          <img src="/2026/icons/programming.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -435,7 +435,7 @@ const HomePage = () => {
         <div className="category-number">03</div>
 
         <div className="category-icon">
-          <img src="/icons/stem.png" alt="Robotics Icon" />
+          <img src="/2026/icons/stem.png" alt="Robotics Icon" />
         </div>
 
         <div>
@@ -453,7 +453,7 @@ const HomePage = () => {
         <div className="category-number">04</div>
 
         <div className="category-icon">
-          <img src="/icons/gaming.png" alt="Robotics Icon" />
+          <img src="/2026/icons/gaming.png" alt="Robotics Icon" />
         </div>
 
         <div>

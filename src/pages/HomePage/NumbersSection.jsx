@@ -17,56 +17,56 @@ const impactStats = [
     title: "Students Involved",
     description:
       "Passionate young minds shaping the future of robotics",
-    icon: "/icons/number1.png",
+    icon: "/2026/icons/number1.png",
   },
   {
     number: "2022",
     title: "Tournament Running Since",
     description:
       "Years of fostering innovation and excellence",
-    icon: "./icons/number2.png",
+    icon: "./2026/icons/number2.png",
   },
   {
     number: "41",
     title: "Schools Targeted",
     description:
       "Educational institutions participating in the event",
-    icon: "./icons/number3.png",
+    icon: "./2026/icons/number3.png",
   },
   {
     number: "3",
     title: "Cities Involvement",
     description:
       "Expanding our reach across Pakistan",
-    icon: "./icons/number4.png",
+    icon: "./2026/icons/number4.png",
   },
   {
     number: "600",
     title: "Number of Teams",
     description:
       "Competing for excellence and innovation",
-    icon: "./icons/number5.png",
+    icon: "./2026/icons/number5.png",
   },
   {
     number: "10",
     title: "Number of Sponsors",
     description:
       "Supporting the future of robotics",
-    icon: "./icons/number6.png",
+    icon: "./2026/icons/number6.png",
   },
   {
     number: "5000+",
     title: "Total Attendees",
     description:
       "Witnessing innovation in action",
-    icon: "./icons/number7.png",
+    icon: "./2026/icons/number7.png",
   },
   {
     number: "45",
     title: "Volunteers",
     description:
       "Dedicated to making RoboFest a success",
-    icon: "./icons/number8.png",
+    icon: "./2026/icons/number8.png",
   },
 ];
 
