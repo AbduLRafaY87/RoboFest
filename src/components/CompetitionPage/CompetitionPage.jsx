@@ -700,24 +700,24 @@ const CompetitionPage = ({ competition }) => {
 
                   const categoryName = category.category?.toLowerCase();
 
-                  let categoryIcon = "/icons/robotics.png";
+                  let categoryIcon = "/2026/icons/robotics.png";
                   let categoryClass = "robotics";
 
                   if (categoryName?.includes("program")) {
-                    categoryIcon = "/icons/programming.png";
+                    categoryIcon = "/2026/icons/programming.png";
                     categoryClass = "programming";
                   } else if (
                     categoryName?.includes("steam") ||
                     categoryName?.includes("stem")
                   ) {
-                    categoryIcon = "/icons/stem.png";
+                    categoryIcon = "/2026/icons/stem.png";
                     categoryClass = "steam";
                   } else if (
                     categoryName?.includes("gaming") ||
                     categoryName?.includes("e gaming") ||
                     categoryName?.includes("e-gaming")
                   ) {
-                    categoryIcon = "/icons/gaming.png";
+                    categoryIcon = "/2026/icons/gaming.png";
                     categoryClass = "gaming";
                   }
 

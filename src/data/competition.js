@@ -14,7 +14,7 @@ export const competitions = {
     description:
       "RoboFest 2026 is an innovation-driven educational festival designed to promote inclusivity, collaboration, and equal opportunities in technology. Centered around Swarm Robotics, the event highlights how collective intelligence and teamwork—both in machines and people—can help bridge social and technological gaps.",
 
-    heroImage: "/2026/banner.png",
+    heroImage: "/2026/banner.jpg",
 
     // Add these when the final event information is available
     date: "",
@@ -235,7 +235,7 @@ export const competitions = {
                 organization: "TechTics Club",
 
                 image:
-                  "/team/kamran.jpeg",
+                  "/2026/team/kamran.jpeg",
 
                 social: {
                   linkedin:
@@ -255,7 +255,7 @@ export const competitions = {
                 organization: "TechTics Club",
 
                 image:
-                  "/team/asil.jpeg",
+                  "/2026/team/asil.jpeg",
 
                 social: {
                   linkedin:
@@ -285,28 +285,28 @@ export const competitions = {
                 name: "Fazila Farooq",
                 role: "RoboFest Manager",
                 image:
-                  "/team/fazila.jpeg",
+                  "/2026/team/fazila.jpeg",
               },
 
               {
                 name: "Rozina Naveed",
                 role: "Event Coordinator",
                 image:
-                  "/team/rozina.jpeg",
+                  "/2026/team/rozina.jpeg",
               },
 
               {
                 name: "Amna Alwani",
                 role: "Registration Lead",
                 image:
-                  "/team/amna.jpg",
+                  "/2026/team/amna.jpg",
               },
 
               {
                 name: "Munaf Bhanji",
                 role: "Graphic Designer",
                 image:
-                  "/team//Munaf.png",
+                  "/2026/team//Munaf.png",
               },
             ],
           },
@@ -326,7 +326,7 @@ export const competitions = {
                 role: "Robotics Lead",
                 domain: "Robotics",
                 image:
-                  "/team/mehdi.jpeg",
+                  "/2026/team/mehdi.jpeg",
               },
 
               {
@@ -334,7 +334,7 @@ export const competitions = {
                 role: "Robotics Lead",
                 domain: "Robotics",
                 image:
-                  "/team/Rabia.jpg",
+                  "/2026/team/Rabia.jpg",
               },
 
               {
@@ -342,7 +342,7 @@ export const competitions = {
                 role: "Programming Lead",
                 domain: "Programming",
                 image:
-                  "/team/tabinda.jpg",
+                  "/2026/team/tabinda.jpg",
               },
 
               {
@@ -350,7 +350,7 @@ export const competitions = {
                 role: "STEAM Lead",
                 domain: "STEAM",
                 image:
-                  "/team/talha.jpeg",
+                  "/2026/team/talha.jpeg",
               },
 
               {
@@ -358,7 +358,7 @@ export const competitions = {
                 role: "E-Gaming Lead",
                 domain: "E-Gaming",
                 image:
-                  "/team/aliyan.jpeg",
+                  "/2026/team/aliyan.jpeg",
               },
             ],
           },
@@ -487,151 +487,151 @@ export const competitions = {
             name: "AKHSS",
             role: "School Ambassador",
             organization: "AKHSS",
-            image: "/Ambassador/AKHSS.png",
+            image: "/2026/Ambassador/AKHSS.png",
           },
           {
             name: "DHACSS Phase VII Campus",
             role: "School Ambassador",
             organization: "DHACSS Phase VII Campus",
-            image: "/Ambassador/DHACSS PHASE VII CAMPUS.png",
+            image: "/2026/Ambassador/DHACSS PHASE VII CAMPUS.png",
           },
           {
             name: "DHACSS PH 8",
             role: "School Ambassador",
             organization: "DHACSS PH 8",
-            image: "/Ambassador/DHACSS PH 8.png",
+            image: "/2026/Ambassador/DHACSS PH 8.png",
           },
           {
             name: "Discovery Centre - Beaconhouse School System",
             role: "School Ambassador",
             organization: "Discovery Centre - Beaconhouse School System",
-            image: "/Ambassador/Discovery Centre - Beaconhouse School System.png",
+            image: "/2026/Ambassador/Discovery Centre - Beaconhouse School System.png",
           },
           {
             name: "Dr Abdul Qadeer Khan",
             role: "School Ambassador",
             organization: "Dr Abdul Qadeer Khan",
-            image: "/Ambassador/Dr Abdul Qadeer Khan.png",
+            image: "/2026/Ambassador/Dr Abdul Qadeer Khan.png",
           },
           {
             name: "Fajr Academy",
             role: "School Ambassador",
             organization: "Fajr Academy",
-            image: "/Ambassador/Fajr Academy.png",
+            image: "/2026/Ambassador/Fajr Academy.png",
           },
           {
             name: "Fatiha Academy",
             role: "School Ambassador",
             organization: "Fatiha Academy",
-            image: "/Ambassador/Fatiha Academy.png",
+            image: "/2026/Ambassador/Fatiha Academy.png",
           },
           {
             name: "Haque Academy",
             role: "School Ambassador",
             organization: "Haque Academy",
-            image: "/Ambassador/Haque Academy.png",
+            image: "/2026/Ambassador/Haque Academy.png",
           },
           {
             name: "Hira Foundation",
             role: "School Ambassador",
             organization: "Hira Foundation",
-            image: "/Ambassador/Hira Foundation.png",
+            image: "/2026/Ambassador/Hira Foundation.png",
           },
           {
             name: "IISAR Foundation",
             role: "School Ambassador",
             organization: "IISAR Foundation",
-            image: "/Ambassador/IISAR Foundation.png",
+            image: "/2026/Ambassador/IISAR Foundation.png",
           },
           {
             name: "IU School System Shahrah-e-Pakistan Campus",
             role: "School Ambassador",
             organization: "IU School System Shahrah-e-Pakistan Campus",
-            image: "/Ambassador/Iu School System Shahrah-e-Pakistan Campus.png",
+            image: "/2026/Ambassador/Iu School System Shahrah-e-Pakistan Campus.png",
           },
           {
             name: "IUSS Airport Campus",
             role: "School Ambassador",
             organization: "IUSS Airport Campus",
-            image: "/Ambassador/IUSS Airport Campus.png",
+            image: "/2026/Ambassador/IUSS Airport Campus.png",
           },
           {
             name: "IUSS Block J",
             role: "School Ambassador",
             organization: "IUSS Block J",
-            image: "/Ambassador/IUSS Block J.png",
+            image: "/2026/Ambassador/IUSS Block J.png",
           },
           {
             name: "IUSS Gulshan Campus",
             role: "School Ambassador",
             organization: "IUSS Gulshan Campus",
-            image: "/Ambassador/IUSS Gulshan Campus.png",
+            image: "/2026/Ambassador/IUSS Gulshan Campus.png",
           },
           {
             name: "IUSS Safoora Campus",
             role: "School Ambassador",
             organization: "IUSS Safoora Campus",
-            image: "/Ambassador/IUSS Safoora Campus.png",
+            image: "/2026/Ambassador/IUSS Safoora Campus.png",
           },
           {
             name: "Jaffar Public School",
             role: "School Ambassador",
             organization: "Jaffar Public School",
-            image: "/Ambassador/Jaffar Public School.png",
+            image: "/2026/Ambassador/Jaffar Public School.png",
           },
           {
             name: "Kaalimah Schooling System",
             role: "School Ambassador",
             organization: "Kaalimah Schooling System",
-            image: "/Ambassador/Kaalimah Schooling System.png",
+            image: "/2026/Ambassador/Kaalimah Schooling System.png",
           },
           {
             name: "Karachi Public School",
             role: "School Ambassador",
             organization: "Karachi Public School",
-            image: "/Ambassador/Karachi Public School.png",
+            image: "/2026/Ambassador/Karachi Public School.png",
           },
           {
             name: "KPS Malir",
             role: "School Ambassador",
             organization: "KPS Malir",
-            image: "/Ambassador/KPS Malir.png",
+            image: "/2026/Ambassador/KPS Malir.png",
           },
           {
             name: "NJV",
             role: "School Ambassador",
             organization: "NJV",
-            image: "/Ambassador/NJV.png",
+            image: "/2026/Ambassador/NJV.png",
           },
           {
             name: "SMS Aga Khan School Karimabad",
             role: "School Ambassador",
             organization: "SMS Aga Khan School Karimabad",
-            image: "/Ambassador/SMS Aga Khan School Karimabad.png",
+            image: "/2026/Ambassador/SMS Aga Khan School Karimabad.png",
           },
           {
             name: "SMS AKS Secondary Section",
             role: "School Ambassador",
             organization: "SMS AKS Secondary Section",
-            image: "/Ambassador/SMS AKS Secondary Section.png",
+            image: "/2026/Ambassador/SMS AKS Secondary Section.png",
           },
           {
             name: "Sultan Mohamed Shah Aga Khan School, Primary Section",
             role: "School Ambassador",
             organization: "Sultan Mohamed Shah Aga Khan School, Primary Section",
-            image: "/Ambassador/Sultan Mohamed Shah Aga Khan School, Primary Section.png",
+            image: "/2026/Ambassador/Sultan Mohamed Shah Aga Khan School, Primary Section.png",
           },
           {
             name: "The Intellect School",
             role: "School Ambassador",
             organization: "The Intellect School",
-            image: "/Ambassador/The intellect school.png",
+            image: "/2026/Ambassador/The intellect school.png",
           },
           {
             name: "The Vantage British Curriculum",
             role: "School Ambassador",
             organization: "The Vantage British Curriculum",
-            image: "/Ambassador/The Vantage British  Curriculum.png",
+            image: "/2026/Ambassador/The Vantage British  Curriculum.png",
           },
         ],
       },
@@ -659,19 +659,19 @@ export const competitions = {
                 name: "Alina Lakhani",
                 role: "Management Lead",
                 domain: "Management",
-                image: "/Team Leads/Management Lead/Alina Lakhani.jpg",
+                image: "/2026/Team Leads/Management Lead/Alina Lakhani.jpg",
               },
               {
                 name: "Amna Mustafa",
                 role: "Management Lead",
                 domain: "Management",
-                image: "/Team Leads/Management Lead/Amna Mustafa.jpg",
+                image: "/2026/Team Leads/Management Lead/Amna Mustafa.jpg",
               },
               {
                 name: "Kashish Budhwani",
                 role: "Management Lead",
                 domain: "Management",
-                image: "/Team Leads/Management Lead/Kashish Budhwani.png",
+                image: "/2026/Team Leads/Management Lead/Kashish Budhwani.png",
               },
             ],
           },
@@ -683,7 +683,7 @@ export const competitions = {
                 name: "Tabinda",
                 role: "Programming Lead",
                 domain: "Programming",
-                image: "/Team Leads/Programming Lead/Tabinda.jpg",
+                image: "/2026/Team Leads/Programming Lead/Tabinda.jpg",
               },
             ],
           },
@@ -694,13 +694,13 @@ export const competitions = {
                 name: "Mehdi Abidi",
                 role: "Robotics Lead",
                 domain: "Robotics",
-                image: "/Team Leads/Robotics Lead/Mehdi Abidi.jpg",
+                image: "/2026/Team Leads/Robotics Lead/Mehdi Abidi.jpg",
               },
               {
                 name: "Rabia Tauseef",
                 role: "Robotics Lead",
                 domain: "Robotics",
-                image: "/Team Leads/Robotics Lead/Rabia Tauseef.jpg",
+                image: "/2026/Team Leads/Robotics Lead/Rabia Tauseef.jpg",
               },
             ],
           },
@@ -711,13 +711,13 @@ export const competitions = {
                 name: "Rizwan Ali",
                 role: "STEAM Lead",
                 domain: "STEAM",
-                image: "/Team Leads/STEAM Lead/Rizwan Ali.jpg",
+                image: "/2026/Team Leads/STEAM Lead/Rizwan Ali.jpg",
               },
               {
                 name: "Talha Ali Akbar",
                 role: "STEAM Lead",
                 domain: "STEAM",
-                image: "/Team Leads/STEAM Lead/Talha Ali Akbar.jpg",
+                image: "/2026/Team Leads/STEAM Lead/Talha Ali Akbar.jpg",
               },
             ],
           },
@@ -728,7 +728,7 @@ export const competitions = {
                 name: "Aliyan Altaf",
                 role: "E-Gaming Lead",
                 domain: "E-Gaming",
-                image: "/Team Leads/Egaming Lead/Aliyan Altaf.jpg",
+                image: "/2026/Team Leads/Egaming Lead/Aliyan Altaf.jpg",
               },
             ],
           },
@@ -751,91 +751,91 @@ export const competitions = {
                 name: "Abdul Rafay",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Abdul Rafay.png",
+                image: "/2026/Interns/Management/Abdul Rafay.png",
               },
               {
                 name: "Anara Amir",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Anara Amir.png",
+                image: "/2026/Interns/Management/Anara Amir.png",
               },
               {
                 name: "Furqan Khatti",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Furqan Khatti.jpg",
+                image: "/2026/Interns/Management/Furqan Khatti.jpg",
               },
               {
                 name: "Habiba Khizer",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Habiba Khizer.jpg",
+                image: "/2026/Interns/Management/Habiba Khizer.jpg",
               },
               {
                 name: "Hooria Sajjad",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Hooria Sajjad_.png",
+                image: "/2026/Interns/Management/Hooria Sajjad_.png",
               },
               {
                 name: "Kamil Kamran",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Kamil Kamran.jpg",
+                image: "/2026/Interns/Management/Kamil Kamran.jpg",
               },
               {
                 name: "Mahad Abbasi",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Mahad Abbasi.jpg",
+                image: "/2026/Interns/Management/Mahad Abbasi.jpg",
               },
               {
                 name: "Moiz Hussain",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Moiz Hussain.jpg",
+                image: "/2026/Interns/Management/Moiz Hussain.jpg",
               },
               {
                 name: "Rayan Ali Rahim",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Rayan Ali Rahim.jpg",
+                image: "/2026/Interns/Management/Rayan Ali Rahim.jpg",
               },
               {
                 name: "Rizwan Shah",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Rizwan Shah_.png",
+                image: "/2026/Interns/Management/Rizwan Shah_.png",
               },
               {
                 name: "Rizwana Alam",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Rizwana Alam.jpg",
+                image: "/2026/Interns/Management/Rizwana Alam.jpg",
               },
               {
                 name: "Sanaan Saleem",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Sanaan Saleem.png",
+                image: "/2026/Interns/Management/Sanaan Saleem.png",
               },
               {
                 name: "Tabish Khalani",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Tabish Khalani_.jpg",
+                image: "/2026/Interns/Management/Tabish Khalani_.jpg",
               },
               {
                 name: "Yasir Karim",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Yasir Karim.png",
+                image: "/2026/Interns/Management/Yasir Karim.png",
               },
               {
                 name: "Zunair Sohail",
                 role: "Management Intern",
                 domain: "Management",
-                image: "/Interns/Management/Zunair Sohail.png",
+                image: "/2026/Interns/Management/Zunair Sohail.png",
               },
             ],
           },
@@ -846,31 +846,31 @@ export const competitions = {
                 name: "Fatima Malik",
                 role: "Robotics Intern",
                 domain: "Robotics",
-                image: "/Interns/Robotics/Fatima Malik.png",
+                image: "/2026/Interns/Robotics/Fatima Malik.png",
               },
               {
                 name: "Israr Hussain",
                 role: "Robotics Intern",
                 domain: "Robotics",
-                image: "/Interns/Robotics/Israr Hussain.png",
+                image: "/2026/Interns/Robotics/Israr Hussain.png",
               },
               {
                 name: "Maham Ali",
                 role: "Robotics Intern",
                 domain: "Robotics",
-                image: "/Interns/Robotics/Maham Ali.png",
+                image: "/2026/Interns/Robotics/Maham Ali.png",
               },
               {
                 name: "Mahnoor Pervaiz",
                 role: "Robotics Intern",
                 domain: "Robotics",
-                image: "/Interns/Robotics/Mahnoor Pervaiz_.png",
+                image: "/2026/Interns/Robotics/Mahnoor Pervaiz_.png",
               },
               {
                 name: "Neva Kumari",
                 role: "Robotics Intern",
                 domain: "Robotics",
-                image: "/Interns/Robotics/Neva Kumari.png",
+                image: "/2026/Interns/Robotics/Neva Kumari.png",
               },
             ],
           },                   
@@ -881,37 +881,37 @@ export const competitions = {
                 name: "Aayan M Anis",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Aayan M Anis.jpg",
+                image: "/2026/Interns/Programming/Aayan M Anis.jpg",
               },
               {
                 name: "Aliza Tharwani",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Aliza Tharwani.png",
+                image: "/2026/Interns/Programming/Aliza Tharwani.png",
               },
               {
                 name: "Eisha Nasir",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Copy of file_000000001dd8820b9e2e0d09cef4875c - Eisha Nasir.png",
+                image: "/2026/Interns/Programming/Copy of file_000000001dd8820b9e2e0d09cef4875c - Eisha Nasir.png",
               },
               {
                 name: "Areesha Naz",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Copy of IMG_20260913_154905_136 - Areesha Naz.jpg",
+                image: "/2026/Interns/Programming/Copy of IMG_20260913_154905_136 - Areesha Naz.jpg",
               },
               {
                 name: "Muhammad Zayan",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Muhammad Zayan.jpg",
+                image: "/2026/Interns/Programming/Muhammad Zayan.jpg",
               },
               {
                 name: "Syeda Hadia Fatima",
                 role: "Programming Intern",
                 domain: "Programming",
-                image: "/Interns/Programming/Syeda Hadia Fatima.jpg",
+                image: "/2026/Interns/Programming/Syeda Hadia Fatima.jpg",
               },
             ],
           },
@@ -923,37 +923,37 @@ export const competitions = {
                 name: "Muhammad Salik",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Muhammad Salik_.png",
+                image: "/2026/Interns/STEAM/Muhammad Salik_.png",
               },
               {
                 name: "Muhammad Taha",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Muhammad Taha.png",
+                image: "/2026/Interns/STEAM/Muhammad Taha.png",
               },
               {
                 name: "Muhammad Umer Syed",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Muhammad Umer Syed.png",
+                image: "/2026/Interns/STEAM/Muhammad Umer Syed.png",
               },
               {
                 name: "Noman Akhtar",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Noman Akhtar_.png",
+                image: "/2026/Interns/STEAM/Noman Akhtar_.png",
               },
               {
                 name: "Usman Ali",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Usman Ali.jpg",
+                image: "/2026/Interns/STEAM/Usman Ali.jpg",
               },
               {
                 name: "Uzair Hussain",
                 role: "STEAM Intern",
                 domain: "STEAM",
-                image: "/Interns/STEAM/Uzair Hussain_.png",
+                image: "/2026/Interns/STEAM/Uzair Hussain_.png",
               },
             ],
           },
@@ -964,25 +964,25 @@ export const competitions = {
                 name: "Adnan ur Rehman",
                 role: "E-Gaming Intern",
                 domain: "E-Gaming",
-                image: "/Interns/Egaming/Adnan ur Rehman.webp",
+                image: "/2026/Interns/Egaming/Adnan ur Rehman.webp",
               },
               {
                 name: "Muhammad Mujeeb Khan",
                 role: "E-Gaming Intern",
                 domain: "E-Gaming",
-                image: "/Interns/Egaming/MUHAMMAD MUJEEB KHAN.jpg",
+                image: "/2026/Interns/Egaming/MUHAMMAD MUJEEB KHAN.jpg",
               },
               {
                 name: "Syed Abdul Hannan",
                 role: "E-Gaming Intern",
                 domain: "E-Gaming",
-                image: "/Interns/Egaming/Syed Abdul hannan.png",
+                image: "/2026/Interns/Egaming/Syed Abdul hannan.png",
               },
               {
                 name: "Yabish Charania",
                 role: "E-Gaming Intern",
                 domain: "E-Gaming",
-                image: "/Interns/Egaming/Yabish_.jpg",
+                image: "/2026/Interns/Egaming/Yabish_.jpg",
               },
             ],
           },
@@ -1017,7 +1017,7 @@ export const competitions = {
                 role: "Robotics Judge",
                 category: "Robotics",
                 competition: "Robotics",
-                image: "/Judges/Robotics/Sohaib Shree.jpg",
+                image: "/2026/Judges/Robotics/Sohaib Shree.jpg",
               },
             ],
           },
@@ -1035,28 +1035,28 @@ export const competitions = {
                 role: "Programming Judge",
                 category: "Programming",
                 competition: "Programming",
-                image: "/Judges/Programming/Ayesha_Khan.png",
+                image: "/2026/Judges/Programming/Ayesha_Khan.png",
               },
               {
                 name: "Mohsin Salman",
                 role: "Programming Judge",
                 category: "Programming",
                 competition: "Programming",
-                image: "/Judges/Programming/Mohsin Salman.jpg",
+                image: "/2026/Judges/Programming/Mohsin Salman.jpg",
               },
               {
                 name: "Muhammad Saad",
                 role: "Programming Judge",
                 category: "Programming",
                 competition: "Programming",
-                image: "/Judges/Programming/Muhammad Saad.jpg",
+                image: "/2026/Judges/Programming/Muhammad Saad.jpg",
               },
               {
                 name: "Muhammad Sohaib Kamran",
                 role: "Programming Judge",
                 category: "Programming",
                 competition: "Programming",
-                image: "/Judges/Programming/Muhammad Sohaib Kamran.jpg",
+                image: "/2026/Judges/Programming/Muhammad Sohaib Kamran.jpg",
               },
             ],
           },
@@ -1074,35 +1074,35 @@ export const competitions = {
                 role: "STEAM Judge",
                 category: "STEAM",
                 competition: "STEAM",
-                image: "/Judges/STEAM/Dania Shoaib.png",
+                image: "/2026/Judges/STEAM/Dania Shoaib.png",
               },
               {
                 name: "Faiqua Erum Arshad",
                 role: "STEAM Judge",
                 category: "STEAM",
                 competition: "STEAM",
-                image: "/Judges/STEAM/Faiqua_Erum_Arshad.png",
+                image: "/2026/Judges/STEAM/Faiqua_Erum_Arshad.png",
               },
               {
                 name: "Hina Karim",
                 role: "STEAM Judge",
                 category: "STEAM",
                 competition: "STEAM",
-                image: "/Judges/STEAM/Hina_Karim.png",
+                image: "/2026/Judges/STEAM/Hina_Karim.png",
               },
-              {
-                name: "Narmeen",
-                role: "STEAM Judge",
-                category: "STEAM",
-                competition: "STEAM",
-                image: "/Judges/STEAM/Narmeen.jpg",
-              },
+              // {
+              //   name: "Narmeen",
+              //   role: "STEAM Judge",
+              //   category: "STEAM",
+              //   competition: "STEAM",
+              //   image: "/2026/Judges/STEAM/Narmeen.jpg",
+              // },
               {
                 name: "Osailah Atif",
                 role: "STEAM Judge",
                 category: "STEAM",
                 competition: "STEAM",
-                image: "/Judges/STEAM/Osailah Atif.png",
+                image: "/2026/Judges/STEAM/Osailah Atif.png",
               },
             ],
           },
@@ -1138,6 +1138,7 @@ export const competitions = {
         topSchools: [
           {
             place: "Winner",
+            name: "IISAR Foundation",
             logos: [
               {
                 src: "/2026/iisar logo.png",
@@ -1149,6 +1150,7 @@ export const competitions = {
           },
           {
             place: "1st Runner Up",
+            name: "Aga Khan School Garden",
             logos: [
               {
                 src: "/2026/aga khan logo.png",
@@ -1160,6 +1162,7 @@ export const competitions = {
           },
           {
             place: "2nd Runner up",
+            name: "Habib Girls School & IU School System Gulshan Campus",
             logos: [
               {
                 src: "/2026/habib.jpg",
@@ -1446,33 +1449,38 @@ export const competitions = {
 
     partners: [
       {
-        name: "partner1",
-        logo: "/2025/3.png",
+        name: "partner2",
+        logo: "/2026/sponsers/beaconhouseLogo.png",
+      },
+      {
+        name: "partner3",
+        logo: "/2026/sponsers/alphas.jpg",
+      },
+      {
+        name: "partner4",
+        logo: "/2026/sponsers/GameStack Logo all colors-02.jpg",
+      },
+      {
+        name: "partner5",
+        logo: "/2026/sponsers/TechMind.jpeg",
+      },
+      {
+        name: "partner6",
+        logo: "/2026/sponsers/UHU.png",
+      },
+      {
+        name: "partner7",
+        logo: "/2026/sponsers/zencode.jpg",
       },
       {
         name: "partner1",
-        logo: "/2025/beaconhouseLogo.png",
+        logo: "/2026/sponsers/airsclogo.png",
       },
-      // {
-      //   name: "partner1",
-      //   logo: "/2025/fabercartellLogo.png",
-      // },
-      // {
-      //   name: "partner1",
-      //   logo: "/2025/g1.jpg",
-      // },
       {
-        name: "partner1",
-        logo: "/2025/g2.png",
+        name: "partner8",
+        logo: "/2026/sponsers/mlsc.png",
       },
-      // {
-      //   name: "partner1",
-      //   logo: "/2025/indigoLogo.png",
-      // },
-      {
-        name: "partner1",
-        logo: "/2025/s2.png",
-      },
+      
     ],
 
     /*
