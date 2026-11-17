@@ -11,8 +11,8 @@ const partners = [
   {
     year: "2023",
     school: "The Generation School",
-    name: "Ms Aliya and Ms Rohma",
-    designation: "STEM & Robotics Leads",
+    name: "Miss Sadia Aamir",
+    designation: "Principal",
     image: "/partners/2023.jpeg",
   },
   {
@@ -32,8 +32,8 @@ const partners = [
   {
     year: "2026",
     school: "BCP PECHS",
-    name: "Ms Tabinda",
-    designation: "Principal",
+    name: "Miss Faiza Batool",
+    designation: "Coordinator",
     image: "/partners/2026.jpeg",
   },
 ];
